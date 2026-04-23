@@ -8,20 +8,20 @@ interface ProcessStepsProps {
 
 export function ProcessSteps({ steps }: ProcessStepsProps) {
   return (
-    <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+    <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       {steps.map((step) => {
         const IconComponent = (Icons as Record<string, React.ComponentType<{ className?: string }>>)[step.icon];
         return (
           <StaggerItem key={step.stepNumber}>
-            <div className="relative text-center p-6">
-              <div className="w-14 h-14 rounded-full bg-teal/10 flex items-center justify-center mx-auto mb-4 relative">
-                {IconComponent && <IconComponent className="w-6 h-6 text-teal" />}
-                <span className="absolute -top-1 -right-1 w-6 h-6 bg-navy text-white text-xs font-bold rounded-full flex items-center justify-center">
+            <div className="relative text-center p-8 bg-white rounded-lg border border-gray-100 hover:shadow-lg transition-shadow h-full">
+              <div className="w-16 h-16 rounded-full bg-teal/10 flex items-center justify-center mx-auto mb-6 relative">
+                {IconComponent && <IconComponent className="w-7 h-7 text-teal" />}
+                <span className="absolute -top-2 -right-2 w-7 h-7 bg-navy text-white text-sm font-bold rounded-full flex items-center justify-center">
                   {step.stepNumber}
                 </span>
               </div>
-              <h4 className="font-display font-semibold text-navy text-sm mb-2">{step.title}</h4>
-              <p className="text-gray-500 text-xs leading-relaxed">{step.description}</p>
+              <h4 className="font-display font-semibold text-navy text-lg mb-3">{step.title}</h4>
+              <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
             </div>
           </StaggerItem>
         );

@@ -36,9 +36,9 @@ export default function ServiceDetailPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollReveal>
-            <div className="max-w-3xl">
-              <h2 className="font-display font-bold text-2xl text-navy mb-4">Service Overview</h2>
-              <p className="text-gray-600 leading-relaxed">{service.fullDescription}</p>
+            <div>
+              <h2 className="font-display font-bold text-3xl sm:text-4xl text-navy mb-6">Service Overview</h2>
+              <p className="text-gray-600 leading-relaxed text-lg">{service.fullDescription}</p>
             </div>
           </ScrollReveal>
         </div>
@@ -56,12 +56,12 @@ export default function ServiceDetailPage() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading title="Why Choose Us" alignment="left" overline="Our Advantage" />
-          <StaggerContainer className="grid sm:grid-cols-2 gap-4 max-w-3xl">
+          <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {service.whyChooseUs.map((item, i) => (
               <StaggerItem key={i}>
-                <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg">
-                  <CheckCircle className="w-5 h-5 text-teal mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-700 text-sm">{item}</p>
+                <div className="flex items-start gap-3 p-6 bg-gray-50 rounded-lg h-full">
+                  <CheckCircle className="w-6 h-6 text-teal mt-0.5 flex-shrink-0" />
+                  <p className="text-gray-700 text-base leading-relaxed">{item}</p>
                 </div>
               </StaggerItem>
             ))}
