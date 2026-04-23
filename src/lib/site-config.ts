@@ -8,10 +8,10 @@ export const siteConfig: SiteConfig = {
   email: "infoegypt@arab-security.com",
   address: "Cairo, Egypt",
   socialLinks: [
-    { platform: "LinkedIn", url: "https://linkedin.com/company/asggroup", icon: "Linkedin" },
-    { platform: "Twitter", url: "https://twitter.com/asggroup", icon: "Twitter" },
-    { platform: "Facebook", url: "https://facebook.com/asggroup", icon: "Facebook" },
-    { platform: "Instagram", url: "https://instagram.com/asggroup", icon: "Instagram" },
+    { platform: "LinkedIn", url: "https://www.linkedin.com/company/arab-security-group/posts/?feedView=all", icon: "Linkedin" },
+    { platform: "Youtube", url: "https://www.youtube.com/@ArabSecurityGroup", icon: "Youtube" },
+    { platform: "Facebook", url: "https://www.facebook.com/ASG.GroupEG", icon: "Facebook" },
+    { platform: "Instagram", url: "https://www.instagram.com/arabsecuritygroup", icon: "Instagram" },
   ],
   stats: [
     { label: "Years of Experience", value: 15, suffix: "+" },
