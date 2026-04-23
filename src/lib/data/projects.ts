@@ -40,7 +40,7 @@ export const projects: Project[] = [
       { label: "System Reliability", value: 99.9, suffix: "%" },
       { label: "Response Efficiency", value: 40, suffix: "% ↑" },
     ],
-    isFeatured: false,
+    isFeatured: true,
   },
 
   {
@@ -111,7 +111,7 @@ export const projects: Project[] = [
       { label: "System Operation", value: 24, suffix: "/7" },
       { label: "Security Efficiency", value: 99, suffix: "%" },
     ],
-    isFeatured: false,
+    isFeatured: true,
   },
   {
     slug: "al-nasr-club",
@@ -254,7 +254,7 @@ export const projects: Project[] = [
       { label: "System Reliability", value: 99, suffix: "%" },
       { label: "Installation Efficiency", value: 40, suffix: "% ↑" },
     ],
-    isFeatured: false,
+    isFeatured: true,
   },
 
   // 3) Champion Gym
@@ -665,7 +665,7 @@ export const projects: Project[] = [
       { label: "System Reliability", value: 99, suffix: "%" },
       { label: "Installation Efficiency", value: 40, suffix: "% ↑" },
     ],
-    isFeatured: true,
+    isFeatured: false,
   },
 
 
@@ -736,7 +736,7 @@ export const projects: Project[] = [
       { label: "System Reliability", value: 99, suffix: "%" },
       { label: "Installation Efficiency", value: 40, suffix: "% ↑" },
     ],
-    isFeatured: true,
+    isFeatured: false,
   },
   
   {
@@ -779,7 +779,7 @@ export const projects: Project[] = [
       { label: "System Reliability", value: 99, suffix: "%" },
       { label: "Response Efficiency", value: 40, suffix: "% ↑" },
     ],
-    isFeatured: true,
+    isFeatured: false,
   },
 
 
