@@ -45,13 +45,13 @@ export function Header() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link to="/" className="flex-shrink-0">
             <img
               src="/assets/logos/logo-white.png"
               alt="Arab Security Group"
-              className="h-10 lg:h-12 w-auto"
+              className="h-12 lg:h-14 w-auto"
             />
           </Link>
 
@@ -122,7 +122,7 @@ function MegaMenu({ columns, isLarge }: { columns: MegaMenuColumn[]; isLarge?: b
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -10 }}
         transition={{ duration: 0.2 }}
-        className="fixed top-16 lg:top-20 left-0 right-0 pt-0 z-50"
+        className="fixed top-20 lg:top-24 left-0 right-0 pt-0 z-50"
       >
         <div className="bg-white shadow-2xl border-t border-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
