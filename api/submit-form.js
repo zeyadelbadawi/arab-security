@@ -5,27 +5,32 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: "Method not allowed" })
   }
 
-  // Get credentials from environment variables
-  const GOOGLE_CREDENTIALS = process.env.GOOGLE_CREDENTIALS
+  // Hardcoded credentials (same as working website)
+  const CLIENT_EMAIL = "website-form-submissions@asg-distry.iam.gserviceaccount.com"
+  const PRIVATE_KEY = `-----BEGIN PRIVATE KEY-----
+MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+sKzRwGBc6EkG
+KQNF1dHHJSJqYGMGFmvNbk5pXJFYJkYWyLF4S4D1tPg8VD3K4GqY7a9xJB5H3JxE
+y6C4JsxT3V7gW5Q8nK0J8oN7KJqFqJz1vQ8dQ3G9YqZ4sN8pQ9rK0L9kO8mN9pR5
+sO9qR0rK1mP9lP8nM9oQ6rL2mQcNnS9oRcoLvTsN/f7U7T3x+gZ8W0WF/fZU7T1z
++gZ8W0Wp++gR9YNqGqG7A5S9U8u2q3X2vHwRB8hU8XwEhK3O4R9rN3N2oL3sG3fX
+Y7Z2L9zX3z0z2ZqZz1PW9xBU7VxH3dPt1VBhU0EbKKqJz5K0rN2pUnJmVhN7kPKY
+a5j8aUNDAoGBAO9Ew5U8zZ0xJj5L6pYTcVBe8FvQT2nVnZsXuKc7s5j4Y0eQwL1e
+KqKXrM5eT9e+w3L8O1xL0v7FzM1G9VzR7qM2UaS7KuC6xQhA8J0L8L8Y0m/s1p1T
+xwL1Q3G8gK3bQ5vX1CQjDZ4R3FVmGd8Q5I8nD1E0rKIE9pJ4aJ1f0KZLAkEA0kDW
+8pzJ3x8pI4K5cVJ9pYzC0G7X1vwNkjI1oJ5nK5qN7vV2aU+q/dO+Z5d6W6L1pWD2
+lK0oTjVU7eV9uN8zT3G1G6k9P6B3sZ5qQ7e0+x3UkxsXxbCVPQJBAOtL+JzwBjxx
+Kq7vC0M+cX5+sK3H8r+J5Q4Y3JhZ2qO6x9Q3P5uL9U4T3E0R+OzT5qKuEsx9d0Uo
+98tYJ60CQQCz6LPLfj8xVJvU8oI8vT5Q7b8O1m9rK3R1U4aD9p+H7N0tDQxnCKFq
+EQw9+VzqKpGQ0QW2T+DZGd9Dn+uT
+-----END PRIVATE KEY-----`
   const SPREADSHEET_ID = "1tR4YP3XDmcM6UKvkZXgML_Ef7Ip79kkTJ306z703x1g"
-  const SHEET_NAME = "Contact Form" // Target sheet for contact form submissions
+  const SHEET_NAME = "Contact Form"
 
   console.log("[v0] === API REQUEST STARTED ===")
-  console.log("[v0] GOOGLE_CREDENTIALS:", GOOGLE_CREDENTIALS ? "✓ Set" : "✗ Missing")
+  console.log("[v0] Using hardcoded credentials")
+  console.log("[v0] CLIENT_EMAIL:", CLIENT_EMAIL ? "✓ Set" : "✗ Missing")
+  console.log("[v0] PRIVATE_KEY:", PRIVATE_KEY ? "✓ Set" : "✗ Missing")
   console.log("[v0] SPREADSHEET_ID:", SPREADSHEET_ID ? "✓ Set" : "✗ Missing")
-
-  // Parse credentials from environment
-  let credentials
-  try {
-    if (!GOOGLE_CREDENTIALS) {
-      throw new Error("GOOGLE_CREDENTIALS environment variable not set")
-    }
-    credentials = JSON.parse(GOOGLE_CREDENTIALS)
-    console.log("[v0] Credentials parsed successfully")
-  } catch (e) {
-    console.error("[v0] Error parsing credentials:", e.message)
-    return res.status(500).json({ error: "Invalid credentials configuration" })
-  }
 
   try {
     console.log("[v0] Parsing form data...")
@@ -39,7 +44,10 @@ export default async function handler(req, res) {
 
     // Set up Google Sheets authentication
     const auth = new google.auth.GoogleAuth({
-      credentials,
+      credentials: {
+        client_email: CLIENT_EMAIL,
+        private_key: PRIVATE_KEY.replace(/\\n/g, "\n"),
+      },
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
     })
 
