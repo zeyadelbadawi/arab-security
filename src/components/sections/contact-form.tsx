@@ -23,15 +23,41 @@ export function ContactForm() {
     e.preventDefault();
     if (!validate()) return;
     setIsSubmitting(true);
-    await new Promise((r) => setTimeout(r, 1500));
-    setIsSubmitting(false);
-    setIsSuccess(true);
+    
+    try {
+      // Submit form to Google Sheets via API
+      const response = await fetch("/api/submit-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to submit form");
+      }
+
+      const result = await response.json();
+      console.log("[v0] Form submission response:", result);
+      
+      setIsSubmitting(false);
+      setIsSuccess(true);
+    } catch (error) {
+      console.error("[v0] Error submitting form:", error);
+      setIsSubmitting(false);
+      setErrors({ submit: "Failed to submit form. Please try again." });
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     if (errors[e.target.name]) {
       setErrors({ ...errors, [e.target.name]: "" });
+    }
+    // Clear submit error when user starts typing
+    if (errors.submit) {
+      setErrors({ ...errors, submit: "" });
     }
   };
 
@@ -53,6 +79,11 @@ export function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
+      {errors.submit && (
+        <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+          <p className="text-red-600 text-sm">{errors.submit}</p>
+        </div>
+      )}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">Full Name *</label>
