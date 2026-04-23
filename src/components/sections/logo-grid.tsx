@@ -49,7 +49,7 @@ export function LogoGrid({ logos, variant = "static", grayscale = true }: LogoGr
             <img
               src={logo.logo}
               alt={logo.name}
-              className={`max-h-14 object-contain ${
+              className={`h-40 object-contain ${
                 grayscale ? "opacity-50 grayscale hover:opacity-100 hover:grayscale-0" : ""
               } transition-all duration-300`}
               loading="lazy"
