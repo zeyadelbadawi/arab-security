@@ -1,13 +1,18 @@
 import { google } from "googleapis"
 
 export default async function handler(req, res) {
+
   if (req.method !== "POST") {
+
     return res.status(405).json({ error: "Method not allowed" })
+
   }
 
-  // Hardcoded credentials (same as working website)
+  // Credentials
+
   const CLIENT_EMAIL = "website-form-submissions@asg-distry.iam.gserviceaccount.com"
-  const PRIVATE_KEY = `-----BEGIN PRIVATE KEY-----
+
+    const PRIVATE_KEY = `-----BEGIN PRIVATE KEY-----
 MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC+sKzRwGBc6EkG
 KQNF1dHHJSJqYGMGFmvNbk5pXJFYJkYWyLF4S4D1tPg8VD3K4GqY7a9xJB5H3JxE
 y6C4JsxT3V7gW5Q8nK0J8oN7KJqFqJz1vQ8dQ3G9YqZ4sN8pQ9rK0L9kO8mN9pR5
@@ -23,192 +28,195 @@ Kq7vC0M+cX5+sK3H8r+J5Q4Y3JhZ2qO6x9Q3P5uL9U4T3E0R+OzT5qKuEsx9d0Uo
 98tYJ60CQQCz6LPLfj8xVJvU8oI8vT5Q7b8O1m9rK3R1U4aD9p+H7N0tDQxnCKFq
 EQw9+VzqKpGQ0QW2T+DZGd9Dn+uT
 -----END PRIVATE KEY-----`
+  
   const SPREADSHEET_ID = "1tR4YP3XDmcM6UKvkZXgML_Ef7Ip79kkTJ306z703x1g"
+
   const SHEET_NAME = "Contact Form"
 
   console.log("[v0] === API REQUEST STARTED ===")
-  console.log("[v0] Using hardcoded credentials")
-  console.log("[v0] CLIENT_EMAIL:", CLIENT_EMAIL ? "✓ Set" : "✗ Missing")
-  console.log("[v0] PRIVATE_KEY:", PRIVATE_KEY ? "✓ Set" : "✗ Missing")
-  console.log("[v0] SPREADSHEET_ID:", SPREADSHEET_ID ? "✓ Set" : "✗ Missing")
 
   try {
-    console.log("[v0] Parsing form data...")
-    const { name, phone, email, company, service, solution, message } = req.body
-    console.log("[v0] Form data received:", { name, email, service })
 
-    // Validate required fields
+    const { name, phone, email, company, service, solution, message } = req.body
+
     if (!name || !email || !message) {
+
       return res.status(400).json({ error: "Name, email, and message are required" })
+
     }
 
-    // Set up Google Sheets authentication
+    // ✅ FIXED AUTH (بدون replace)
+
     const auth = new google.auth.GoogleAuth({
+
       credentials: {
+
         client_email: CLIENT_EMAIL,
-        private_key: PRIVATE_KEY.replace(/\\n/g, "\n"),
+
+        private_key: PRIVATE_KEY,
+
       },
+
       scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+
     })
 
     const sheets = google.sheets({ version: "v4", auth })
-    const spreadsheetId = SPREADSHEET_ID
-    const rangeName = SHEET_NAME
-    const headerRange = `${rangeName}!A1:H1`
 
-    // Check if the target sheet exists, if not create it
+    const headerRange = `${SHEET_NAME}!A1:H1`
+
+    // Ensure sheet exists
+
     try {
-      const spreadsheet = await sheets.spreadsheets.get({ spreadsheetId })
-      const sheetExists = spreadsheet.data.sheets.some((s) => s.properties.title === rangeName)
+
+      const spreadsheet = await sheets.spreadsheets.get({ spreadsheetId: SPREADSHEET_ID })
+
+      const sheetExists = spreadsheet.data.sheets.some(
+
+        (s) => s.properties.title === SHEET_NAME
+
+      )
 
       if (!sheetExists) {
-        console.log(`[v0] Creating sheet: ${rangeName}`)
+
         await sheets.spreadsheets.batchUpdate({
-          spreadsheetId,
+
+          spreadsheetId: SPREADSHEET_ID,
+
           requestBody: {
-            requests: [{ addSheet: { properties: { title: rangeName } } }],
+
+            requests: [
+
+              {
+
+                addSheet: {
+
+                  properties: { title: SHEET_NAME },
+
+                },
+
+              },
+
+            ],
+
           },
+
         })
+
       }
+
     } catch (e) {
-      console.error(`[v0] Error checking/creating ${rangeName}:`, e)
+
+      console.error("Sheet check error:", e)
+
     }
 
-    // Get existing headers
     const response = await sheets.spreadsheets.values.get({
-      spreadsheetId,
+
+      spreadsheetId: SPREADSHEET_ID,
+
       range: headerRange,
+
     })
 
     const existingData = response.data.values || []
 
-    // Create headers if they don't exist
+    // Create headers
+
     if (existingData.length === 0) {
-      const headers = ["Timestamp", "Name", "Email", "Phone", "Company", "Service", "Solution", "Message"]
+
+      const headers = [
+
+        "Timestamp",
+
+        "Name",
+
+        "Email",
+
+        "Phone",
+
+        "Company",
+
+        "Service",
+
+        "Solution",
+
+        "Message",
+
+      ]
 
       await sheets.spreadsheets.values.update({
-        spreadsheetId,
+
+        spreadsheetId: SPREADSHEET_ID,
+
         range: headerRange,
+
         valueInputOption: "USER_ENTERED",
+
         requestBody: {
+
           values: [headers],
+
         },
+
       })
 
-      // Get sheetId for formatting
-      const spreadsheet = await sheets.spreadsheets.get({ spreadsheetId })
-      const sheetId =
-        spreadsheet.data.sheets.find((s) => s.properties.title === rangeName)?.properties.sheetId || 0
-
-      // Format header row (bold and freeze)
-      await sheets.spreadsheets.batchUpdate({
-        spreadsheetId,
-        requestBody: {
-          requests: [
-            {
-              repeatCell: {
-                range: {
-                  sheetId: sheetId,
-                  startRowIndex: 0,
-                  endRowIndex: 1,
-                  startColumnIndex: 0,
-                  endColumnIndex: headers.length,
-                },
-                cell: {
-                  userEnteredFormat: {
-                    backgroundColor: { red: 0.9, green: 0.9, blue: 0.9 },
-                    textFormat: { bold: true },
-                    horizontalAlignment: "CENTER",
-                  },
-                },
-                fields: "userEnteredFormat(backgroundColor,textFormat,horizontalAlignment)",
-              },
-            },
-            {
-              updateSheetProperties: {
-                properties: {
-                  sheetId: sheetId,
-                  gridProperties: { frozenRowCount: 1 },
-                },
-                fields: "gridProperties.frozenRowCount",
-              },
-            },
-          ],
-        },
-      })
     }
 
-    // Prepare the data to append
+    // Prepare data
+
     const timestamp = new Date().toLocaleString("en-US", {
+
       timeZone: "Africa/Cairo",
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
+
     })
 
-    const values = [[timestamp, name, email, phone || "", company || "", service || "", solution || "", message]]
+    const values = [[
 
-    // Append data to the sheet
-    console.log("[v0] Appending data to sheet...")
-    const appendResponse = await sheets.spreadsheets.values.append({
-      spreadsheetId,
-      range: `${rangeName}!A:H`,
+      timestamp,
+
+      name,
+
+      email,
+
+      phone || "",
+
+      company || "",
+
+      service || "",
+
+      solution || "",
+
+      message
+
+    ]]
+
+    // Append
+
+    await sheets.spreadsheets.values.append({
+
+      spreadsheetId: SPREADSHEET_ID,
+
+      range: `${SHEET_NAME}!A:H`,
+
       valueInputOption: "USER_ENTERED",
+
       requestBody: {
+
         values,
+
       },
+
     })
 
-    // Get sheetId again for formatting wrapping
-    const spreadsheetForFormat = await sheets.spreadsheets.get({ spreadsheetId })
-    const sheetIdForFormat =
-      spreadsheetForFormat.data.sheets.find((s) => s.properties.title === rangeName)?.properties.sheetId || 0
-
-    await sheets.spreadsheets.batchUpdate({
-      spreadsheetId,
-      requestBody: {
-        requests: [
-          {
-            repeatCell: {
-              range: {
-                sheetId: sheetIdForFormat,
-                startColumnIndex: 0,
-                endColumnIndex: values[0].length,
-              },
-              cell: {
-                userEnteredFormat: {
-                  wrapStrategy: "WRAP",
-                },
-              },
-              fields: "userEnteredFormat.wrapStrategy",
-            },
-          },
-          {
-            autoResizeDimensions: {
-              dimensions: {
-                sheetId: sheetIdForFormat,
-                dimension: "COLUMNS",
-                startIndex: 0,
-                endIndex: values[0].length,
-              },
-            },
-          },
-        ],
-      },
-    })
-
-    console.log("[v0] Form submitted successfully!")
     return res.status(200).json({ message: "Form submitted successfully!" })
+
   } catch (error) {
-    console.log("[v0] === CATCH ERROR TRIGGERED ===")
-    console.error("[v0] Full Error Object:", error)
-    console.error("[v0] Error Message:", error?.message)
-    console.error("[v0] Error Stack:", error?.stack)
-    return res
-      .status(500)
-      .json({ error: "Failed to submit form. Please check server logs." })
+
+    console.error("ERROR:", error)
+
+    return res.status(500).json({ error: "Failed to submit form" })
+
   }
+
 }
