@@ -12,7 +12,7 @@ export default async function handler(req, res) {
 
   const CLIENT_EMAIL = "website-form-submissions@asg-distry.iam.gserviceaccount.com"
 
-    const PRIVATE_KEY = `-----BEGIN PRIVATE KEY-----
+  const PRIVATE_KEY = `-----BEGIN PRIVATE KEY-----
 MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDDbC8XgB/PLftj
 NjQ4HB1vBWSbvavLFds3yd7EyguyXi06Vg0dmB2CEMTlGtAYyfHqJpAIl2TDqso2
 bxEDTcudRXl46zBWtQI4QuTeXmOXnc8OOLEHkEfp2Yk21KX10yKTpb0BTblO0Xq+
@@ -40,21 +40,27 @@ deAe6IXDcHfaWhCpHMMDHU0pNrxixV9LvEVpwU2GKi1Nfne4ysfyFFES6/S7jOGd
 vPmm2sS9el97og2SoJFRBtJt3aP5Dh7wTmjx5oYtYuxVpNmDJI02eNkbgsbbZZCA
 Q7shvPdald8b7asNmRZfow0q
 -----END PRIVATE KEY-----`
-  
-  const SPREADSHEET_ID = "1tR4YP3XDmcM6UKvkZXgML_Ef7Ip79kkTJ306z703x1g"
 
-  const SHEET_NAME = "Contact Form"
+  const SPREADSHEET_ID = "1tR4YP3XDmcM6UKvkZXgML_Ef7Ip79kkTJ306z703x1g"
 
   console.log("[v0] === API REQUEST STARTED ===")
 
   try {
 
-    const { name, phone, email, company, service, solution, message } = req.body
+    const { name, phone, email, company, service, solution, message, type } = req.body
 
-    if (!name || !email || !message) {
+    // Determine sheet name based on submission type
+    const SHEET_NAME = type === "newsletter" ? "Newsletter" : "Contact Form"
 
-      return res.status(400).json({ error: "Name, email, and message are required" })
-
+    // Validate required fields based on submission type
+    if (type === "newsletter") {
+      if (!email) {
+        return res.status(400).json({ error: "Email is required for newsletter" })
+      }
+    } else {
+      if (!name || !email || !message) {
+        return res.status(400).json({ error: "Name, email, and message are required" })
+      }
     }
 
     // ✅ FIXED AUTH (بدون replace)
@@ -127,17 +133,27 @@ Q7shvPdald8b7asNmRZfow0q
 
       spreadsheetId: SPREADSHEET_ID,
 
-      range: headerRange,
+      range: `${SHEET_NAME}!A1:Z1`,
 
     })
 
     const existingData = response.data.values || []
 
-    // Create headers
+    // Prepare headers and data based on sheet type
+    let headers, values, range
 
-    if (existingData.length === 0) {
+    const timestamp = new Date().toLocaleString("en-US", {
 
-      const headers = [
+      timeZone: "Africa/Cairo",
+
+    })
+
+    if (type === "newsletter") {
+      headers = ["Timestamp", "Email"]
+      values = [[timestamp, email]]
+      range = `${SHEET_NAME}!A:B`
+    } else {
+      headers = [
 
         "Timestamp",
 
@@ -156,12 +172,37 @@ Q7shvPdald8b7asNmRZfow0q
         "Message",
 
       ]
+      values = [[
+
+        timestamp,
+
+        name,
+
+        email,
+
+        phone || "",
+
+        company || "",
+
+        service || "",
+
+        solution || "",
+
+        message
+
+      ]]
+      range = `${SHEET_NAME}!A:H`
+    }
+
+    // Create headers if sheet is empty
+
+    if (existingData.length === 0) {
 
       await sheets.spreadsheets.values.update({
 
         spreadsheetId: SPREADSHEET_ID,
 
-        range: headerRange,
+        range: `${SHEET_NAME}!A1:${String.fromCharCode(64 + headers.length)}1`,
 
         valueInputOption: "USER_ENTERED",
 
@@ -175,41 +216,13 @@ Q7shvPdald8b7asNmRZfow0q
 
     }
 
-    // Prepare data
-
-    const timestamp = new Date().toLocaleString("en-US", {
-
-      timeZone: "Africa/Cairo",
-
-    })
-
-    const values = [[
-
-      timestamp,
-
-      name,
-
-      email,
-
-      phone || "",
-
-      company || "",
-
-      service || "",
-
-      solution || "",
-
-      message
-
-    ]]
-
-    // Append
+    // Append data
 
     await sheets.spreadsheets.values.append({
 
       spreadsheetId: SPREADSHEET_ID,
 
-      range: `${SHEET_NAME}!A:H`,
+      range: range,
 
       valueInputOption: "USER_ENTERED",
 
