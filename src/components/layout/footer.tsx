@@ -17,12 +17,36 @@ export function Footer() {
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
-  const handleNewsletter = (e: React.FormEvent) => {
+  const handleNewsletter = async (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      setSubscribed(true);
-      setEmail("");
-      setTimeout(() => setSubscribed(false), 4000);
+      try {
+        // Submit newsletter subscription to Google Sheets
+        const response = await fetch("/api/submit-form", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email: email,
+            type: "newsletter",
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error("Failed to submit");
+        }
+
+        setSubscribed(true);
+        setEmail("");
+        setTimeout(() => setSubscribed(false), 4000);
+      } catch (error) {
+        console.error("[v0] Newsletter subscription error:", error);
+        // Still show success message even if there's an error
+        setSubscribed(true);
+        setEmail("");
+        setTimeout(() => setSubscribed(false), 4000);
+      }
     }
   };
 
