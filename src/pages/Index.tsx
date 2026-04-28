@@ -80,7 +80,7 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <HeroSection
-        title="More Secure Than Ever"
+        title="The Integrated Intelligence Behind Tomorrow's Smart Cities"
         subtitle="Integrated Security & Technology Solutions for the Enterprise. From design to deployment and beyond — Arab Security Group delivers end-to-end systems integration for organizations that demand reliability."
         backgroundImage={IMAGES.heroCommandCenter}
         primaryCTA={{ text: "Explore Solutions", href: "/solutions", variant: "primary" }}
