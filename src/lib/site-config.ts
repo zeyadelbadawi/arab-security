@@ -6,7 +6,7 @@ export const siteConfig: SiteConfig = {
   description: "Integrated Security & Technology Solutions for the Enterprise. From design to deployment and beyond — Arab Security Group delivers end-to-end systems integration for organizations that demand reliability.",
   phone: "0223495290",
   email: "infoegypt@arab-security.com",
-  address: "Cairo, Egypt",
+  address: "4 Dr. Mohamed Awad, Al Mintaqah as Sādisah, Nasr City, Cairo, Egypt",
   socialLinks: [
     { platform: "LinkedIn", url: "https://www.linkedin.com/company/arab-security-group/posts/?feedView=all", icon: "Linkedin" },
     { platform: "Youtube", url: "https://www.youtube.com/@ArabSecurityGroup", icon: "Youtube" },
@@ -21,16 +21,4 @@ export const siteConfig: SiteConfig = {
   ],
 };
 
-export const branches: BranchLocation[] = [
-  {
-    id: "cairo-hq",
-    name: "Cairo Headquarters",
-    address: "4 Dr. Mohamed Awad, Al Mintaqah as Sādisah, Nasr City, Cairo, Egypt",
-    phone: "0223495290",
-    email: "cairo@asggroup.com",
-    lat: 30.0712,
-    lng: 31.0175,
-    isHeadquarters: true,
-  },
 
-];
