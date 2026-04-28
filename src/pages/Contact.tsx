@@ -109,26 +109,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Newsletter */}
-                <div className="mt-8 bg-navy rounded-2xl p-6">
-                  <h3 className="font-display font-bold text-lg text-white mb-2">Newsletter</h3>
-                  <p className="text-white/60 text-sm mb-4">Subscribe to get the latest updates and insights.</p>
-                  <form onSubmit={handleNewsletter} className="flex gap-2">
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Your email"
-                      required
-                      className="flex-1 px-3 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder:text-white/40 text-sm focus:outline-none focus:border-teal transition-colors"
-                    />
-                    <button
-                      type="submit"
-                      className="px-4 py-2 bg-teal hover:bg-teal-dark text-white text-sm font-semibold rounded-lg transition-colors flex items-center gap-1"
-                    >
-                      {subscribed ? "Done!" : <Send className="w-4 h-4" />}
-                    </button>
-                  </form>
-                </div>
+                
               </ScrollReveal>
             </div>
           </div>
