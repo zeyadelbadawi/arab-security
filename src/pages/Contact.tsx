@@ -81,32 +81,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Branch Locations */}
-                <h3 className="font-display font-bold text-lg text-navy mb-4">Our Offices</h3>
-                <div className="space-y-4">
-                  {branches.map((branch) => (
-                    <div key={branch.id} className="bg-gray-50 rounded-xl p-5 border border-gray-100">
-                      <div className="flex items-center justify-between mb-2">
-                        <div className="flex items-center gap-2">
-                          <h4 className="font-display font-semibold text-navy text-sm">{branch.name}</h4>
-                          {branch.isHeadquarters && (
-                            <span className="px-2 py-0.5 bg-teal/10 text-teal text-xs font-medium rounded-full">HQ</span>
-                          )}
-                        </div>
-                        <a
-                          href={`https://www.google.com/maps?q=${branch.lat},${branch.lng}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-teal hover:text-teal-dark transition-colors"
-                          aria-label={`View ${branch.name} on Google Maps`}
-                        >
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      </div>
-                      <p className="text-gray-500 text-xs mb-1">{branch.address}</p>
-                      <p className="text-gray-500 text-xs">{branch.phone}</p>
-                    </div>
-                  ))}
-                </div>
+                
 
                 {/* Newsletter */}
                 
