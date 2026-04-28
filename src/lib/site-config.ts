@@ -33,24 +33,4 @@ export const branches: BranchLocation[] = [
     isHeadquarters: true,
   },
 
-  {
-    id: "riyadh",
-    name: "Kuwait Branch",
-    address: "Al-Mirqab – AlSoor St -Burj Jassim – Floor 12, Office A-D – Kuwait.",
-    phone: "+965 22612501",
-    email: "riyadh@asggroup.com",
-    lat: 24.7136,
-    lng: 46.6753,
-    isHeadquarters: false,
-  },
-  {
-    id: "alexandria",
-    name: "UAE Branch",
-    address: "Office 300-06 Rasis Business Center Al Barsha First - Dubai , Dubai, United Arab Emirates",
-    phone: "+971 43250111",
-    email: "alex@asggroup.com",
-    lat: 31.2156,
-    lng: 29.9553,
-    isHeadquarters: false,
-  },
 ];
