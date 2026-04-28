@@ -37,11 +37,11 @@ export default function ClientsPage() {
              <div
                className="w-[140px] h-[140px] bg-white rounded-2xl border border-gray-200 p-4 flex items-center justify-center hover:shadow-md hover:border-teal/30 transition-all duration-300"
              >
-               <img
-                 src={client.logo}
-                 alt={client.name}
-                 className="max-w-[75%] max-h-[75%] object-contain"
-               />
+            <img
+  src={client.logo}
+  alt={client.name}
+  className="max-w-[75%] max-h-[75%] object-contain filter grayscale group-hover:grayscale-0 transition duration-300"
+/>
              </div>
            
              <span className="mt-3 text-sm font-medium text-navy/80 text-center leading-snug max-w-[140px]">
