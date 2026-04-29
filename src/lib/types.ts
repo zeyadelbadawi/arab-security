@@ -106,6 +106,7 @@ export interface Project {
   duration: string;
   heroImage: string;
   galleryImages: string[];
+  videos?: string[];
   industry: string;
   solutionsUsed: string[];
   servicesProvided: string[];
