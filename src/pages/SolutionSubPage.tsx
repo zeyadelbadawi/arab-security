@@ -61,23 +61,24 @@ export default function SolutionSubPage() {
       </section>
 
       {/* Technical Specs */}
-      {subSolution.technicalSpecs.length > 0 && (
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <ScrollReveal>
-              <h2 className="font-display font-bold text-2xl text-navy mb-8">Technical Specifications</h2>
-              <div className="max-w-2xl bg-white rounded-xl border border-gray-200 overflow-hidden">
-                {subSolution.technicalSpecs.map((spec, i) => (
-                  <div key={i} className={`flex items-center justify-between px-6 py-4 ${i > 0 ? "border-t border-gray-100" : ""}`}>
-                    <span className="text-gray-500 text-sm font-medium">{spec.label}</span>
-                    <span className="text-navy font-semibold text-sm">{spec.value}</span>
-                  </div>
-                ))}
-              </div>
-            </ScrollReveal>
-          </div>
-        </section>
-      )}
+{/* Technical Description */}
+{subSolution.technicalDescription && (
+  <section className="py-16 bg-gray-50">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal>
+        <h2 className="font-display font-bold text-2xl text-navy mb-8">
+        Technical Description
+        </h2>
+
+        <div className="max-w-4xl bg-white rounded-xl border border-gray-200 p-8">
+          <p className="text-gray-600 text-base leading-8">
+            {subSolution.technicalDescription}
+          </p>
+        </div>
+      </ScrollReveal>
+    </div>
+  </section>
+)}
 
       {/* Related Projects */}
       {relatedProjects.length > 0 && (
