@@ -26,7 +26,7 @@ export const projects: Project[] = [
       "https://arabsecuritygulf.com/wp-content/uploads/2026/04/ASG-ITS-Solution-HQ.mp4",
     ],
   
-    industry: "transportation-logistics",
+    industry: "Government & Public Sector",
   
     solutionsUsed: [
       "smart-intelligent",
