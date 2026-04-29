@@ -145,6 +145,38 @@ export default function ProjectDetailPage() {
         </section>
       )}
 
+
+{/* Project Videos */}
+{project.videos && project.videos.length > 0 && (
+  <section className="py-16 bg-gray-50">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ScrollReveal>
+        <h2 className="font-display font-bold text-2xl text-navy mb-8">
+          Project Videos
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {project.videos.map((video, i) => (
+            <div
+              key={i}
+              className="rounded-xl overflow-hidden bg-black aspect-video border border-gray-200 shadow-sm"
+            >
+              <video
+                src={video}
+                controls
+                preload="metadata"
+                className="w-full h-full object-cover"
+              >
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          ))}
+        </div>
+      </ScrollReveal>
+    </div>
+  </section>
+)}
+
       {/* Related Projects */}
       {relatedProjects.length > 0 && (
         <section className="py-16 bg-gray-50">
