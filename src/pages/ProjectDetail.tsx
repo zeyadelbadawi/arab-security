@@ -147,6 +147,7 @@ export default function ProjectDetailPage() {
 
 
 {/* Project Videos */}
+{/* Project Videos */}
 {project.videos && project.videos.length > 0 && (
   <section className="py-16 bg-gray-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -155,17 +156,17 @@ export default function ProjectDetailPage() {
           Project Videos
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="space-y-8">
           {project.videos.map((video, i) => (
             <div
               key={i}
-              className="rounded-xl overflow-hidden bg-black aspect-video border border-gray-200 shadow-sm"
+              className="w-full rounded-xl overflow-hidden bg-black border border-gray-200 shadow-sm"
             >
               <video
                 src={video}
                 controls
                 preload="metadata"
-                className="w-full h-full object-cover"
+                className="w-full aspect-video object-cover"
               >
                 Your browser does not support the video tag.
               </video>
