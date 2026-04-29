@@ -51,6 +51,7 @@ export interface SubSolution {
   heroImage: string;
   features: Feature[];
   technicalSpecs: TechnicalSpec[];
+  technicalDescription?: string;
   relatedProjects: string[];
   relatedPartners: string[];
 }
