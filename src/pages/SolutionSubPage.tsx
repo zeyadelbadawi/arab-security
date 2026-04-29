@@ -70,7 +70,7 @@ export default function SolutionSubPage() {
         Technical Description
         </h2>
 
-        <div className="max-w-4xl bg-white rounded-xl border border-gray-200 p-8">
+        <div className="max-w-7xl bg-white rounded-xl border border-gray-200 p-8">
           <p className="text-gray-600 text-base leading-8">
             {subSolution.technicalDescription}
           </p>
