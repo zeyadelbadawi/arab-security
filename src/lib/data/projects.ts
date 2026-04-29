@@ -2,6 +2,170 @@ import type { Project } from "../types";
 import { IMAGES } from "../constants";
 
 export const projects: Project[] = [
+  {
+    slug: "its-egypt-radar-smart-system",
+    title: "ITS - Egypt Radar Smart System",
+    client: "ITS Egypt",
+    location: "Egypt",
+    duration: "N/A",
+    heroImage: "https://arabsecuritygulf.com/wp-content/uploads/2026/04/1-scaled.jpg",
+  
+    galleryImages: [
+      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/1-scaled.jpg",
+      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-2.jpeg",
+      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-5.jpeg",
+      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-8.jpeg",
+      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-9.jpeg",
+      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-10.jpeg",
+      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-11.jpeg",
+      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-12.jpeg",
+      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-13.jpeg",
+    ],
+  
+    videos: [
+      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/ASG-ITS-Solution-HQ.mp4",
+    ],
+  
+    industry: "transportation-logistics",
+  
+    solutionsUsed: [
+      "smart-intelligent",
+      "integrated-security",
+      "parking-traffic",
+    ],
+  
+    servicesProvided: [
+      "installation-commissioning",
+      "testing-integration",
+    ],
+  
+    challenge:
+      "Managing road safety, speed monitoring, and real-time traffic control across highways and urban roads in Egypt required a highly accurate and scalable smart system capable of operating in diverse environmental and traffic conditions.",
+  
+    solution:
+      "Arab Security Group deployed an advanced ITS radar-based smart system designed to monitor vehicle speed, detect violations, and provide real-time traffic insights. The solution integrated high-precision radar sensors with intelligent analytics and centralized monitoring platforms, enabling seamless detection, tracking, and reporting across multiple road networks.",
+  
+    result:
+      "The implementation of the ITS radar smart system significantly enhanced traffic monitoring capabilities, improved road safety enforcement, and enabled authorities to make data-driven decisions. The system delivered accurate real-time insights, reduced violations, and supported efficient traffic management across key locations.",
+  
+    impactMetrics: [
+      { label: "Monitoring Coverage", value: 100, suffix: "%" },
+      { label: "System Operation", value: 24, suffix: "/7" },
+      { label: "Detection Accuracy", value: 99, suffix: "%" },
+      { label: "Violation Reduction", value: 40, suffix: "% ↑" },
+    ],
+  
+    isFeatured: true,
+  },
+
+  {
+    slug: "capital-walk-led-displays",
+    title: "Capital Walk | Advertising LED Displays",
+    client: "Capital Walk",
+    location: "New Administrative Capital",
+    duration: "N/A",
+    heroImage: IMAGES.capitalWalkFeatured,
+    galleryImages: [
+      IMAGES.capitalWalkFeatured,
+      IMAGES.capitalWalk01,
+      IMAGES.capitalWalk02,
+      IMAGES.capitalWalk03,
+      IMAGES.capitalWalk04,
+      IMAGES.capitalWalk05,
+      IMAGES.capitalWalk06,
+      IMAGES.capitalWalk07,
+    ],
+    industry: "retail-commercial-centers",
+    solutionsUsed: [
+      "audio-visual",
+    ],
+    servicesProvided: [
+      "installation-commissioning",
+    ],
+    challenge: "It was a challenge to install on walls, but utilizing front maintenance cabinets solved it and was approved by ECG consultant.",
+    solution: "Supplying, installing, and commissioning Dahua LED outdoor displays.",
+    result: "The LED display system was successfully installed and approved.",
+    impactMetrics: [
+      { label: "Display Coverage", value: 100, suffix: "%" },
+      { label: "Surveillance Operation", value: 24, suffix: "/7" },
+      { label: "System Reliability", value: 99, suffix: "%" },
+      { label: "Installation Efficiency", value: 40, suffix: "% ↑" },
+    ],
+    isFeatured: true,
+  },
+
+  {
+    slug: "highway-al-watanyah",
+    title: "Highway | Al Watanyah",
+    client: "Al Watanyah",
+    location: "Egypt",
+    duration: "N/A",
+    heroImage: IMAGES.alWatanyahFeatured,
+    galleryImages: [
+      IMAGES.alWatanyahFeatured,
+      IMAGES.alWatanyah01,
+      IMAGES.alWatanyah02,
+    ],
+    industry: "transportation-logistics",
+    solutionsUsed: [
+      "integrated-security",
+    ],
+    servicesProvided: [
+      "installation-commissioning",
+      "testing-integration",
+    ],
+    challenge: "Introducing Dahua systems to replace existing vendors across road networks.",
+    solution: "Deployment of IP surveillance and DSS platform across highways and toll gates.",
+    result: "The system supports monitoring across roads and toll infrastructure.",
+    impactMetrics: [
+      { label: "Network Coverage", value: 100, suffix: "%" },
+      { label: "Surveillance Operation", value: 24, suffix: "/7" },
+      { label: "System Reliability", value: 99, suffix: "%" },
+      { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+    ],
+    isFeatured: true,
+  },
+
+
+  // 5) Hilton Nile Towers
+  {
+    slug: "hilton-nile-towers",
+    title: "Hilton Nile Towers",
+    client: "Hilton",
+    location: "Maadi, Cairo",
+    duration: "N/A",
+    heroImage: IMAGES.hiltonNileFeatured,
+    galleryImages: [
+      IMAGES.hiltonNileFeatured,
+      IMAGES.hiltonNile01,
+      IMAGES.hiltonNile02,
+      IMAGES.hiltonNile03,
+      IMAGES.hiltonNile04,
+      IMAGES.hiltonNile05,
+      IMAGES.hiltonNile06,
+      IMAGES.hiltonNile07,
+      IMAGES.hiltonNile08,
+    ],
+    industry: "hospitality",
+    solutionsUsed: [
+      "access-control",
+      "physical-security",
+    ],
+    servicesProvided: [
+      "installation-commissioning",
+    ],
+    challenge: "Securing entrances for both pedestrians and vehicles.",
+    solution: "Installation of hydraulic bollards and sliding gate motors.",
+    result: "Enhanced entrance security and controlled access.",
+    impactMetrics: [
+      { label: "Access Control", value: 100, suffix: "%" },
+      { label: "Surveillance Operation", value: 24, suffix: "/7" },
+      { label: "System Reliability", value: 99, suffix: "%" },
+      { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+    ],
+    isFeatured: false,
+  },
+
 
   {
     slug: "al-burouj-compound",
@@ -40,39 +204,9 @@ export const projects: Project[] = [
       { label: "System Reliability", value: 99.9, suffix: "%" },
       { label: "Response Efficiency", value: 40, suffix: "% ↑" },
     ],
-    isFeatured: true,
-  },
-
-  {
-    slug: "al-hamra-tower-office",
-    title: "Al Hamra Tower Office",
-    client: "Al Hamra Tower",
-    location: "Kuwait City",
-    duration: "N/A",
-    heroImage: IMAGES.alHamra1,
-    galleryImages: [
-      IMAGES.alHamra1,
-      IMAGES.alHamra2,
-    ],
-    industry: "commercial-corporate",
-    solutionsUsed: [
-      "physical-security",
-      "light-current-elv",
-    ],
-    servicesProvided: [
-      "installation-commissioning",
-    ],
-    challenge: "The project required installing an automatic sliding frameless glass door system suitable for a high-end office environment.",
-    solution: "Supplying, installing and commissioning of Deutschtec Primedrive 240 automatic sliding frameless glass door.",
-    result: "The system was successfully installed and commissioned, providing a smooth and reliable entrance solution for the office.",
-    impactMetrics: [
-      { label: "System Coverage", value: 100, suffix: "%" },
-      { label: "Installation Status", value: 100, suffix: "%" },
-      { label: "Operation", value: 24, suffix: "/7" },
-      { label: "System Efficiency", value: 99, suffix: "%" },
-    ],
     isFeatured: false,
   },
+
 
   {
     slug: "aura-compound-cfc-barrier-gates",
@@ -111,7 +245,40 @@ export const projects: Project[] = [
       { label: "System Operation", value: 24, suffix: "/7" },
       { label: "Security Efficiency", value: 99, suffix: "%" },
     ],
-    isFeatured: true,
+    isFeatured: false,
+  },
+
+
+
+  {
+    slug: "al-hamra-tower-office",
+    title: "Al Hamra Tower Office",
+    client: "Al Hamra Tower",
+    location: "Kuwait City",
+    duration: "N/A",
+    heroImage: IMAGES.alHamra1,
+    galleryImages: [
+      IMAGES.alHamra1,
+      IMAGES.alHamra2,
+    ],
+    industry: "commercial-corporate",
+    solutionsUsed: [
+      "physical-security",
+      "light-current-elv",
+    ],
+    servicesProvided: [
+      "installation-commissioning",
+    ],
+    challenge: "The project required installing an automatic sliding frameless glass door system suitable for a high-end office environment.",
+    solution: "Supplying, installing and commissioning of Deutschtec Primedrive 240 automatic sliding frameless glass door.",
+    result: "The system was successfully installed and commissioned, providing a smooth and reliable entrance solution for the office.",
+    impactMetrics: [
+      { label: "System Coverage", value: 100, suffix: "%" },
+      { label: "Installation Status", value: 100, suffix: "%" },
+      { label: "Operation", value: 24, suffix: "/7" },
+      { label: "System Efficiency", value: 99, suffix: "%" },
+    ],
+    isFeatured: false,
   },
   {
     slug: "al-nasr-club",
@@ -221,42 +388,7 @@ export const projects: Project[] = [
   },
 
   // 2) Capital Walk
-  {
-    slug: "capital-walk-led-displays",
-    title: "Capital Walk | Advertising LED Displays",
-    client: "Capital Walk",
-    location: "New Administrative Capital",
-    duration: "N/A",
-    heroImage: IMAGES.capitalWalkFeatured,
-    galleryImages: [
-      IMAGES.capitalWalkFeatured,
-      IMAGES.capitalWalk01,
-      IMAGES.capitalWalk02,
-      IMAGES.capitalWalk03,
-      IMAGES.capitalWalk04,
-      IMAGES.capitalWalk05,
-      IMAGES.capitalWalk06,
-      IMAGES.capitalWalk07,
-    ],
-    industry: "retail-commercial-centers",
-    solutionsUsed: [
-      "audio-visual",
-    ],
-    servicesProvided: [
-      "installation-commissioning",
-    ],
-    challenge: "It was a challenge to install on walls, but utilizing front maintenance cabinets solved it and was approved by ECG consultant.",
-    solution: "Supplying, installing, and commissioning Dahua LED outdoor displays.",
-    result: "The LED display system was successfully installed and approved.",
-    impactMetrics: [
-      { label: "Display Coverage", value: 100, suffix: "%" },
-      { label: "Surveillance Operation", value: 24, suffix: "/7" },
-      { label: "System Reliability", value: 99, suffix: "%" },
-      { label: "Installation Efficiency", value: 40, suffix: "% ↑" },
-    ],
-    isFeatured: true,
-  },
-
+  
   // 3) Champion Gym
   {
     slug: "champion-gym",
@@ -302,77 +434,7 @@ export const projects: Project[] = [
   },
 
   // 4) Highway | Al Watanyah
-  {
-    slug: "highway-al-watanyah",
-    title: "Highway | Al Watanyah",
-    client: "Al Watanyah",
-    location: "Egypt",
-    duration: "N/A",
-    heroImage: IMAGES.alWatanyahFeatured,
-    galleryImages: [
-      IMAGES.alWatanyahFeatured,
-      IMAGES.alWatanyah01,
-      IMAGES.alWatanyah02,
-    ],
-    industry: "transportation-logistics",
-    solutionsUsed: [
-      "integrated-security",
-    ],
-    servicesProvided: [
-      "installation-commissioning",
-      "testing-integration",
-    ],
-    challenge: "Introducing Dahua systems to replace existing vendors across road networks.",
-    solution: "Deployment of IP surveillance and DSS platform across highways and toll gates.",
-    result: "The system supports monitoring across roads and toll infrastructure.",
-    impactMetrics: [
-      { label: "Network Coverage", value: 100, suffix: "%" },
-      { label: "Surveillance Operation", value: 24, suffix: "/7" },
-      { label: "System Reliability", value: 99, suffix: "%" },
-      { label: "Response Efficiency", value: 40, suffix: "% ↑" },
-    ],
-    isFeatured: false,
-  },
-
-  // 5) Hilton Nile Towers
-  {
-    slug: "hilton-nile-towers",
-    title: "Hilton Nile Towers",
-    client: "Hilton",
-    location: "Maadi, Cairo",
-    duration: "N/A",
-    heroImage: IMAGES.hiltonNileFeatured,
-    galleryImages: [
-      IMAGES.hiltonNileFeatured,
-      IMAGES.hiltonNile01,
-      IMAGES.hiltonNile02,
-      IMAGES.hiltonNile03,
-      IMAGES.hiltonNile04,
-      IMAGES.hiltonNile05,
-      IMAGES.hiltonNile06,
-      IMAGES.hiltonNile07,
-      IMAGES.hiltonNile08,
-    ],
-    industry: "hospitality",
-    solutionsUsed: [
-      "access-control",
-      "physical-security",
-    ],
-    servicesProvided: [
-      "installation-commissioning",
-    ],
-    challenge: "Securing entrances for both pedestrians and vehicles.",
-    solution: "Installation of hydraulic bollards and sliding gate motors.",
-    result: "Enhanced entrance security and controlled access.",
-    impactMetrics: [
-      { label: "Access Control", value: 100, suffix: "%" },
-      { label: "Surveillance Operation", value: 24, suffix: "/7" },
-      { label: "System Reliability", value: 99, suffix: "%" },
-      { label: "Response Efficiency", value: 40, suffix: "% ↑" },
-    ],
-    isFeatured: false,
-  },
-
+  
   // 6) Huawei Egypt Offices
   {
     slug: "huawei-egypt-offices",
