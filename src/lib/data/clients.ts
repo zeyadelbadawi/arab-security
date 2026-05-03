@@ -60,6 +60,28 @@ export const clients: Client[] = [
   { slug: "lulu", name: "LuLu Hypermarket", logo: "/assets/clients/61.png", industry: "commercial", isFeatured: true },
   { slug: "carrefour", name: "Carrefour", logo: "/assets/clients/62.png", industry: "commercial", isFeatured: true },
   { slug: "citystars-heliopolis", name: "Citystars Heliopolis", logo: "/assets/clients/63.png", industry: "commercial", isFeatured: true },
+  { slug: "totalenergies", name: "TotalEnergies", logo: "/assets/clients/64.png", industry: "industrial", isFeatured: true },
+  { slug: "suez-oil-processing-co", name: "Suez Oil Processing Co.", logo: "/assets/clients/65.png", industry: "industrial", isFeatured: true },
+  { slug: "chillout-gas-stations", name: "ChillOut Gas Stations", logo: "/assets/clients/66.png", industry: "industrial", isFeatured: true },
+  { slug: "nasr-petroleum-company", name: "Nasr Petroleum Company", logo: "/assets/clients/67.png", industry: "industrial", isFeatured: true },
+  { slug: "egyptian-refining-company", name: "Egyptian Refining Company", logo: "/assets/clients/68.png", industry: "industrial", isFeatured: true },
+  { slug: "ogs-oil-and-gas-skills", name: "OGS Oil & Gas Skills", logo: "/assets/clients/69.png", industry: "industrial", isFeatured: false },
+  { slug: "epc", name: "EPC", logo: "/assets/clients/70.png", industry: "industrial", isFeatured: false },
+  { slug: "petroleum-pipelines-company", name: "Petroleum Pipelines Co.", logo: "/assets/clients/71.png", industry: "industrial", isFeatured: false },
+  { slug: "middle-east-oil-refinery", name: "Middle East Oil Refinery", logo: "/assets/clients/72.png", industry: "industrial", isFeatured: false },
+  { slug: "petrojet", name: "Petrojet", logo: "/assets/clients/73.png", industry: "industrial", isFeatured: true },
+  { slug: "capital-medical-city", name: "Capital Medical City", logo: "/assets/clients/74.png", industry: "healthcare", isFeatured: false },
+  { slug: "citystars-heliopolis-new", name: "Citystars Heliopolis", logo: "/assets/clients/75.png", industry: "commercial", isFeatured: true },
+  { slug: "petrojet-2", name: "Petrojet", logo: "/assets/clients/76.png", industry: "industrial", isFeatured: false },
+  { slug: "banque-du-caire", name: "Banque du Caire", logo: "/assets/clients/77.png", industry: "enterprise", isFeatured: true },
+  { slug: "faisal-islamic-bank-of-egypt", name: "Faisal Islamic Bank of Egypt", logo: "/assets/clients/78.png", industry: "enterprise", isFeatured: true },
+  { slug: "hassan-allam-trading-and-engineering", name: "Hassan Allam Trading & Engineering", logo: "/assets/clients/79.png", industry: "infrastructure", isFeatured: true },
+  { slug: "tmg", name: "TMG", logo: "/assets/clients/80.png", industry: "real-estate", isFeatured: true },
+  { slug: "wosdac-world-sport-academy", name: "WOSDAC World Sport Academy", logo: "/assets/clients/81.png", industry: "commercial", isFeatured: false },
+  { slug: "al-ahly-sc", name: "Al Ahly SC", logo: "/assets/clients/82.png", industry: "commercial", isFeatured: true },
+  { slug: "proxy-sc", name: "Proxy S.C", logo: "/assets/clients/83.png", industry: "commercial", isFeatured: false },
+  { slug: "egyptian-ministry-of-defense", name: "Egyptian Ministry of Defense", logo: "/assets/clients/84.png", industry: "government", isFeatured: true },
+
 ];
 
 export function getClients(): Client[] {
