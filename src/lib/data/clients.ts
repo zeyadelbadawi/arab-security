@@ -72,7 +72,6 @@ export const clients: Client[] = [
   { slug: "petrojet", name: "Petrojet", logo: "/assets/clients/73.png", industry: "industrial", isFeatured: true },
   { slug: "capital-medical-city", name: "Capital Medical City", logo: "/assets/clients/74.png", industry: "healthcare", isFeatured: false },
   { slug: "citystars-heliopolis-new", name: "Citystars Heliopolis", logo: "/assets/clients/75.png", industry: "commercial", isFeatured: true },
-  { slug: "petrojet-2", name: "Petrojet", logo: "/assets/clients/76.png", industry: "industrial", isFeatured: false },
   { slug: "banque-du-caire", name: "Banque du Caire", logo: "/assets/clients/77.png", industry: "enterprise", isFeatured: true },
   { slug: "faisal-islamic-bank-of-egypt", name: "Faisal Islamic Bank of Egypt", logo: "/assets/clients/78.png", industry: "enterprise", isFeatured: true },
   { slug: "hassan-allam-trading-and-engineering", name: "Hassan Allam Trading & Engineering", logo: "/assets/clients/79.png", industry: "infrastructure", isFeatured: true },
