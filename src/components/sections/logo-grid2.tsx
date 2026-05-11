@@ -11,7 +11,7 @@ interface LogoGridProps {
   grayscale?: boolean;
 }
 
-export function LogoGrid({ logos, variant = "static", grayscale = true }: LogoGridProps) {
+export function LogoGrid2({ logos, variant = "static", grayscale = true }: LogoGridProps) {
   if (variant === "carousel") {
     return (
       <ScrollReveal>
