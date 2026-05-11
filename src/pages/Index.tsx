@@ -6,6 +6,8 @@ import { SectionHeading } from "@/components/sections/section-heading";
 import { CTABlock } from "@/components/sections/cta-block";
 import { TestimonialCarousel } from "@/components/sections/testimonial-carousel";
 import { LogoGrid } from "@/components/sections/logo-grid";
+import { LogoGrid2 } from "@/components/sections/logo-grid2";
+
 import { SolutionCard } from "@/components/cards/solution-card";
 import { ProjectCard } from "@/components/cards/project-card";
 import { IndustryCard } from "@/components/cards/industry-card";
@@ -328,7 +330,7 @@ export default function HomePage() {
             subtitle="Trusted by leading organizations across enterprise, government, and industrial sectors."
             overline="Who We Serve"
           />
-          <LogoGrid logos={featuredClients} variant="static" grayscale />
+          <LogoGrid2 logos={featuredClients} variant="static" grayscale />
           <div className="text-center mt-8">
             <Link to="/clients" className="inline-flex items-center gap-2 text-teal font-display font-semibold hover:gap-3 transition-all text-sm">
               See All Clients <ArrowRight className="w-4 h-4" />
