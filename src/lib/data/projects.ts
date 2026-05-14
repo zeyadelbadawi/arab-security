@@ -8,22 +8,22 @@ export const projects: Project[] = [
     client: "ITS Egypt",
     location: "Egypt",
     duration: "N/A",
-    heroImage: "https://arabsecuritygulf.com/wp-content/uploads/2026/04/1-scaled.jpg",
+    heroImage: "https://imoukuwait.com/wp-content/uploads/2026/04/1-scaled.jpg",
   
     galleryImages: [
-      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/1-scaled.jpg",
-      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-2.jpeg",
-      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-5.jpeg",
-      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-8.jpeg",
-      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-9.jpeg",
-      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-10.jpeg",
-      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-11.jpeg",
-      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-12.jpeg",
-      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-13.jpeg",
+      "https://imoukuwait.com/wp-content/uploads/2026/04/1-scaled.jpg",
+      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-2.jpeg",
+      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-5.jpeg",
+      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-8.jpeg",
+      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-9.jpeg",
+      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-10.jpeg",
+      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-11.jpeg",
+      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-12.jpeg",
+      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-13.jpeg",
     ],
   
     videos: [
-      "https://arabsecuritygulf.com/wp-content/uploads/2026/04/ASG-ITS-Solution-HQ.mp4",
+      "https://imoukuwait.com/wp-content/uploads/2026/04/ASG-ITS-Solution-HQ.mp4",
     ],
   
     industry: "Government & Public Sector",
