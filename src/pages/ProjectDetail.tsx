@@ -277,40 +277,98 @@ export default function ProjectDetailPage() {
                   </div>
 
                   <div className="grid sm:grid-cols-2 gap-4">
-                    <a
-                      href="tel:+201093006001"
-                      className="group flex items-center gap-4 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 hover:border-[#5aa4b1]/60 px-5 py-4 transition-all duration-300"
-                    >
-                      <span className="w-12 h-12 rounded-full bg-[#5aa4b1]/15 flex items-center justify-center text-2xl">
-                        🇪🇬
-                      </span>
+  {/* Card 1 */}
+  <div className="group rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 hover:border-[#5aa4b1]/60 px-5 py-5 transition-all duration-300">
+    <div className="flex items-center gap-4">
+      <span className="w-12 h-12 rounded-full bg-[#5aa4b1]/15 flex items-center justify-center text-2xl">
+        🇪🇬
+      </span>
 
-                      <div>
-                        <p className="text-white/55 text-xs mb-1">Egypt</p>
-                        <div className="flex items-center gap-2 text-white font-semibold">
-                          <Phone className="w-4 h-4 text-[#5aa4b1]" />
-                          <span>(+20) 109 300 6001</span>
-                        </div>
-                      </div>
-                    </a>
+      <div>
+        <p className="text-white/55 text-xs mb-1">Egypt</p>
 
-                    <a
-                      href="tel:+201012344772"
-                      className="group flex items-center gap-4 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 hover:border-[#5aa4b1]/60 px-5 py-4 transition-all duration-300"
-                    >
-                      <span className="w-12 h-12 rounded-full bg-[#5aa4b1]/15 flex items-center justify-center text-2xl">
-                        🇪🇬
-                      </span>
+        <div className="flex items-center gap-2 text-white font-semibold text-lg">
+          <Phone className="w-4 h-4 text-[#5aa4b1]" />
+          <span>(+20) 109 300 6001</span>
+        </div>
+      </div>
+    </div>
 
-                      <div>
-                        <p className="text-white/55 text-xs mb-1">Egypt</p>
-                        <div className="flex items-center gap-2 text-white font-semibold">
-                          <Phone className="w-4 h-4 text-[#5aa4b1]" />
-                          <span>(+20) 101 234 4772</span>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
+    {/* Buttons */}
+    <div className="flex gap-3 mt-5">
+      <a
+        href="tel:+201093006001"
+        className="flex-1 inline-flex items-center justify-center gap-2 bg-[#5aa4b1] hover:bg-[#4b8d98] text-white text-sm font-medium py-3 rounded-lg transition-all duration-300"
+      >
+        <Phone className="w-4 h-4" />
+        Call
+      </a>
+
+      <a
+        href="https://wa.me/201093006001"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex-1 inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white text-sm font-medium py-3 rounded-lg transition-all duration-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          fill="currentColor"
+          className="w-4 h-4"
+        >
+          <path d="M16.002 3C8.822 3 3 8.822 3 16c0 2.52.738 4.97 2.133 7.067L3 29l6.133-2.067A12.944 12.944 0 0016.002 29C23.18 29 29 23.178 29 16S23.18 3 16.002 3zm0 23.667a10.6 10.6 0 01-5.4-1.48l-.387-.227-3.64 1.227 1.227-3.547-.253-.4A10.593 10.593 0 015.333 16c0-5.882 4.786-10.667 10.669-10.667 5.88 0 10.665 4.785 10.665 10.667s-4.785 10.667-10.665 10.667zm5.84-7.947c-.32-.16-1.893-.933-2.187-1.04-.293-.107-.507-.16-.72.16-.213.32-.826 1.04-1.013 1.253-.187.213-.373.24-.693.08-.32-.16-1.347-.496-2.567-1.58-.947-.84-1.587-1.88-1.773-2.2-.187-.32-.02-.493.14-.653.144-.143.32-.373.48-.56.16-.187.213-.32.32-.533.107-.213.053-.4-.027-.56-.08-.16-.72-1.733-.987-2.373-.26-.627-.52-.54-.72-.547l-.613-.013c-.213 0-.56.08-.853.4-.293.32-1.12 1.093-1.12 2.667 0 1.573 1.147 3.093 1.307 3.307.16.213 2.253 3.44 5.46 4.827.763.33 1.36.527 1.827.673.767.244 1.467.21 2.02.127.616-.093 1.893-.773 2.16-1.52.267-.747.267-1.387.187-1.52-.08-.133-.293-.213-.613-.373z" />
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+
+  {/* Card 2 */}
+  <div className="group rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 hover:border-[#5aa4b1]/60 px-5 py-5 transition-all duration-300">
+    <div className="flex items-center gap-4">
+      <span className="w-12 h-12 rounded-full bg-[#5aa4b1]/15 flex items-center justify-center text-2xl">
+        🇪🇬
+      </span>
+
+      <div>
+        <p className="text-white/55 text-xs mb-1">Egypt</p>
+
+        <div className="flex items-center gap-2 text-white font-semibold text-lg">
+          <Phone className="w-4 h-4 text-[#5aa4b1]" />
+          <span>(+20) 101 234 4772</span>
+        </div>
+      </div>
+    </div>
+
+    {/* Buttons */}
+    <div className="flex gap-3 mt-5">
+      <a
+        href="tel:+201012344772"
+        className="flex-1 inline-flex items-center justify-center gap-2 bg-[#5aa4b1] hover:bg-[#4b8d98] text-white text-sm font-medium py-3 rounded-lg transition-all duration-300"
+      >
+        <Phone className="w-4 h-4" />
+        Call
+      </a>
+
+      <a
+        href="https://wa.me/201012344772"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex-1 inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white text-sm font-medium py-3 rounded-lg transition-all duration-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+          fill="currentColor"
+          className="w-4 h-4"
+        >
+          <path d="M16.002 3C8.822 3 3 8.822 3 16c0 2.52.738 4.97 2.133 7.067L3 29l6.133-2.067A12.944 12.944 0 0016.002 29C23.18 29 29 23.178 29 16S23.18 3 16.002 3zm0 23.667a10.6 10.6 0 01-5.4-1.48l-.387-.227-3.64 1.227 1.227-3.547-.253-.4A10.593 10.593 0 015.333 16c0-5.882 4.786-10.667 10.669-10.667 5.88 0 10.665 4.785 10.665 10.667s-4.785 10.667-10.665 10.667zm5.84-7.947c-.32-.16-1.893-.933-2.187-1.04-.293-.107-.507-.16-.72.16-.213.32-.826 1.04-1.013 1.253-.187.213-.373.24-.693.08-.32-.16-1.347-.496-2.567-1.58-.947-.84-1.587-1.88-1.773-2.2-.187-.32-.02-.493.14-.653.144-.143.32-.373.48-.56.16-.187.213-.32.32-.533.107-.213.053-.4-.027-.56-.08-.16-.72-1.733-.987-2.373-.26-.627-.52-.54-.72-.547l-.613-.013c-.213 0-.56.08-.853.4-.293.32-1.12 1.093-1.12 2.667 0 1.573 1.147 3.093 1.307 3.307.16.213 2.253 3.44 5.46 4.827.763.33 1.36.527 1.827.673.767.244 1.467.21 2.02.127.616-.093 1.893-.773 2.16-1.52.267-.747.267-1.387.187-1.52-.08-.133-.293-.213-.613-.373z" />
+        </svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
                 </div>
               </div>
             </ScrollReveal>
