@@ -308,7 +308,7 @@ export default function ProjectDetailPage() {
         href="https://wa.me/201093006001"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex-1 inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white text-sm font-medium py-3 rounded-lg transition-all duration-300"
+        className="flex-1 inline-flex items-center justify-center gap-2 bg-[#5aa4b1] hover:bg-[#4b8d98] text-white text-sm font-medium py-3 rounded-lg transition-all duration-300"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -354,7 +354,7 @@ export default function ProjectDetailPage() {
         href="https://wa.me/201012344772"
         target="_blank"
         rel="noopener noreferrer"
-        className="flex-1 inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white text-sm font-medium py-3 rounded-lg transition-all duration-300"
+        className="flex-1 inline-flex items-center justify-center gap-2 bg-[#5aa4b1] hover:bg-[#4b8d98] text-white text-sm font-medium py-3 rounded-lg transition-all duration-300"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
