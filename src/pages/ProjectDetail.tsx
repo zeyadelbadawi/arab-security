@@ -269,8 +269,8 @@ export default function ProjectDetailPage() {
                     onClick={() => setActiveVideo(video)}
                     className={`group text-left bg-white rounded-xl border overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl ${
                       i === 0
-                        ? "border-orange-300 shadow-md"
-                        : "border-gray-200 hover:border-orange-300"
+                        ? "border-[#5aa4b1]/40 shadow-md"
+                        : "border-gray-200 hover:border-[#5aa4b1]"
                     }`}
                   >
                     <div className="relative aspect-video bg-black overflow-hidden m-5 mb-0 rounded-lg">
@@ -292,7 +292,7 @@ export default function ProjectDetailPage() {
                       <div className="absolute inset-0 bg-black/20" />
 
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="w-14 h-14 rounded-full bg-orange-500 text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-orange-600 transition-all">
+                        <span className="w-14 h-14 rounded-full bg-[#5aa4b1] text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-orange-600 transition-all">
                           <Play className="w-6 h-6 fill-white ml-1" />
                         </span>
                       </div>
@@ -302,8 +302,8 @@ export default function ProjectDetailPage() {
                       <h3
                         className={`font-display font-bold text-base mb-2 transition-colors ${
                           i === 0
-                            ? "text-orange-500"
-                            : "text-navy group-hover:text-orange-500"
+                            ? "text-[#5aa4b1]"
+                            : "text-navy group-hover:text-[#5aa4b1]"
                         }`}
                       >
                         {video.label}
