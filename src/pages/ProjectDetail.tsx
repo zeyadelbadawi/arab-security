@@ -16,6 +16,7 @@ import {
   ArrowRight,
   Play,
   X,
+  Phone,
 } from "lucide-react";
 
 export default function ProjectDetailPage() {
@@ -154,6 +155,7 @@ export default function ProjectDetailPage() {
             </div>
           </ScrollReveal>
 
+          {/* Challenge / Solution / Result */}
           <div className="grid lg:grid-cols-3 gap-8">
             <ScrollReveal>
               <div className="bg-white rounded-xl border border-gray-200 p-6 h-full">
@@ -252,6 +254,70 @@ export default function ProjectDetailPage() {
         </section>
       )}
 
+      {/* Contact Our Experts - Only ITS Egypt */}
+      {project.slug === "its-egypt-radar-smart-system" && (
+        <section className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <ScrollReveal>
+              <div className="bg-navy rounded-[28px] px-6 sm:px-10 lg:px-14 py-12 lg:py-16 overflow-hidden">
+                <div className="grid lg:grid-cols-[280px_1fr] gap-10 lg:gap-14 items-center">
+                  <div>
+                    <span className="text-[#5aa4b1] uppercase tracking-[0.25em] text-xs font-bold">
+                      Contact
+                    </span>
+
+                    <h2 className="font-display font-bold text-3xl sm:text-4xl text-white mt-5 leading-tight">
+                      Contact Our Experts
+                    </h2>
+
+                    <p className="text-white/65 text-sm sm:text-base leading-relaxed mt-5 max-w-sm">
+                      Speak directly with our specialists for more details about
+                      this smart radar system project.
+                    </p>
+                  </div>
+
+                  <div className="grid sm:grid-cols-2 gap-4">
+                    <a
+                      href="tel:+201093006001"
+                      className="group flex items-center gap-4 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 hover:border-[#5aa4b1]/60 px-5 py-4 transition-all duration-300"
+                    >
+                      <span className="w-12 h-12 rounded-full bg-[#5aa4b1]/15 flex items-center justify-center text-2xl">
+                        🇪🇬
+                      </span>
+
+                      <div>
+                        <p className="text-white/55 text-xs mb-1">Egypt</p>
+                        <div className="flex items-center gap-2 text-white font-semibold">
+                          <Phone className="w-4 h-4 text-[#5aa4b1]" />
+                          <span>(+20) 109 300 6001</span>
+                        </div>
+                      </div>
+                    </a>
+
+                    <a
+                      href="tel:+201012344772"
+                      className="group flex items-center gap-4 rounded-xl bg-white/10 hover:bg-white/15 border border-white/10 hover:border-[#5aa4b1]/60 px-5 py-4 transition-all duration-300"
+                    >
+                      <span className="w-12 h-12 rounded-full bg-[#5aa4b1]/15 flex items-center justify-center text-2xl">
+                        🇪🇬
+                      </span>
+
+                      <div>
+                        <p className="text-white/55 text-xs mb-1">Egypt</p>
+                        <div className="flex items-center gap-2 text-white font-semibold">
+                          <Phone className="w-4 h-4 text-[#5aa4b1]" />
+                          <span>(+20) 101 234 4772</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+      )}
+
       {/* Project Videos - Only ITS Egypt */}
       {projectVideoCards.length > 0 && (
         <section className="py-16 bg-gray-50">
@@ -292,7 +358,7 @@ export default function ProjectDetailPage() {
                       <div className="absolute inset-0 bg-black/20" />
 
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="w-14 h-14 rounded-full bg-[#5aa4b1] text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-orange-600 transition-all">
+                        <span className="w-14 h-14 rounded-full bg-[#5aa4b1] text-white flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-[#4b8d98] transition-all">
                           <Play className="w-6 h-6 fill-white ml-1" />
                         </span>
                       </div>
