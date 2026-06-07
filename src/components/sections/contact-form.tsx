@@ -90,7 +90,7 @@ export function ContactForm() {
           <input
             name="name" value={formData.name} onChange={handleChange}
             className={`w-full px-4 py-3 rounded-lg border ${errors.name ? "border-red-400" : "border-gray-200"} focus:border-teal focus:ring-1 focus:ring-teal outline-none transition-colors text-sm`}
-            placeholder="Ziad Elbadawi"
+            placeholder="Enter Your Name"
           />
           {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name}</p>}
         </div>
@@ -99,7 +99,7 @@ export function ContactForm() {
           <input
             name="email" type="email" value={formData.email} onChange={handleChange}
             className={`w-full px-4 py-3 rounded-lg border ${errors.email ? "border-red-400" : "border-gray-200"} focus:border-teal focus:ring-1 focus:ring-teal outline-none transition-colors text-sm`}
-            placeholder="ziad@company.com"
+            placeholder="info-egypt@arab-security.com"
           />
           {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email}</p>}
         </div>
