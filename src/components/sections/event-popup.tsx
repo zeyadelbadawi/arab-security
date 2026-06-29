@@ -23,7 +23,7 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
     const timer = setTimeout(() => {
       setIsOpen(true);
       setShowContent(true);
-    }, 1000);
+    }, 3000);
 
     return () => clearTimeout(timer);
   }, []);
