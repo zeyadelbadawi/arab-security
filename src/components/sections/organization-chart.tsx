@@ -1,170 +1,168 @@
-import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/animation/scroll-reveal";
+'use client';
 
-interface ChartNode {
+import { ScrollReveal } from "@/components/animation/scroll-reveal";
+
+interface ChartPosition {
   name: string;
   title: string;
-  children?: ChartNode[];
 }
 
-const organizationData: ChartNode[] = [
-  {
-    name: "Basem Bahaa",
-    title: "CEO",
-    children: [
-      {
-        name: "Farid Galila",
-        title: "Chairman",
-      },
-      {
-        name: "Ahmed Safwat",
-        title: "Vice President",
-      },
-    ],
-  },
-  {
+interface ChartNode {
+  position: ChartPosition;
+  children?: ChartNode[];
+  isHighlight?: boolean;
+}
+
+const organizationData: ChartNode = {
+  position: {
     name: "Hassan Mansour",
-    title: "General Manager",
-    children: [
-      {
+    title: "GENERAL MANAGER",
+  },
+  isHighlight: true,
+  children: [
+    {
+      position: {
         name: "Kareem Moamen",
-        title: "Product Manager",
-        children: [
-          {
-            name: "---",
-            title: "Product Manager Assistant",
-          },
-        ],
+        title: "PRODUCT MANAGER",
       },
-      {
+      children: [
+        {
+          position: {
+            name: "---",
+            title: "PRODUCT MANAGER ASSISTANT",
+          },
+        },
+      ],
+    },
+    {
+      position: {
         name: "Mohamed Rabiea",
-        title: "Business Unit Head (Channels & SMB)",
-        children: [
-          {
-            name: "---",
-            title: "SMB's Department",
-            children: [
-              {
-                name: "Amira Zalat",
-                title: "Sales Manager",
-                children: [
-                  {
-                    name: "Katim Sweilam",
-                    title: "Sales Account Manager",
-                  },
-                  {
-                    name: "Ibrahim Metwaley",
-                    title: "Sales Account Manager",
-                  },
-                ],
-              },
-            ],
-          },
-        ],
+        title: "BUSINESS UNIT HEAD\n(CHANNELS & SMB)",
       },
-      {
-        name: "Sales Projects Department",
-        title: "",
-        children: [
-          {
-            name: "Haidy Nabieh",
-            title: "Sales Manager - Residential & Hospitality",
+      children: [
+        {
+          position: {
+            name: "---",
+            title: "SMB'S DEPARTMENT",
           },
-          {
+        },
+        {
+          position: {
+            name: "Amira Zalat",
+            title: "SALES MANAGER",
+          },
+          children: [
+            {
+              position: {
+                name: "Katim Sweilam",
+                title: "SALES ACCOUNT MANAGER",
+              },
+            },
+            {
+              position: {
+                name: "Ibrahim Metwaley",
+                title: "SALES ACCOUNT MANAGER",
+              },
+            },
+          ],
+        },
+      ],
+    },
+    {
+      position: {
+        name: "---",
+        title: "SALES PROJECTS DEPARTMENT",
+      },
+      children: [
+        {
+          position: {
+            name: "Haidy Nabieh",
+            title: "SALES MANAGER -\nRESIDENIAL & HOSPITALITY",
+          },
+        },
+        {
+          position: {
             name: "Bishoy George",
             title: "BDM",
           },
-          {
-            name: "Sameh Mohamed",
-            title: "BDM - ITS Governmental Sector",
-          },
-          {
+        },
+        {
+          position: {
             name: "Shaima Fathy",
-            title: "Sales Manager",
+            title: "SALES MANAGER",
           },
-          {
+        },
+        {
+          position: {
             name: "Sama Emira",
             title: "BDM",
           },
-          {
-            name: "Kareem Shanawaney",
-            title: "BDM - ITS Private Sector",
+        },
+        {
+          position: {
+            name: "Sameh Mohamed",
+            title: "BDM - ITS\nGOVERNMENTAL SECTOR",
           },
-        ],
-      },
-    ],
-  },
-];
+        },
+        {
+          position: {
+            name: "Kareem Shanawaney",
+            title: "BDM - ITS PRIVATE\nSECTOR",
+          },
+        },
+      ],
+    },
+  ],
+};
 
-interface ChartNodeProps {
+interface OrgChartNodeProps {
   node: ChartNode;
   level: number;
-  isLastChild?: boolean;
 }
 
-function ChartNodeComponent({ node, level, isLastChild = false }: ChartNodeProps) {
+function OrgChartNode({ node, level }: OrgChartNodeProps) {
   return (
     <div className="flex flex-col items-center">
-      {/* Card */}
-      <StaggerItem>
-        <div className="bg-white rounded-lg border border-gray-200 p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow min-w-max max-w-xs">
-          <h4 className="font-display font-bold text-navy text-base sm:text-lg text-center">
-            {node.name}
-          </h4>
-          {node.title && (
-            <p className="text-teal text-xs sm:text-sm font-medium text-center mt-1">
-              {node.title}
-            </p>
-          )}
+      {/* Position Box */}
+      <div
+        className={`
+          border-2 rounded-lg p-4 min-w-[200px] text-center
+          ${
+            node.isHighlight
+              ? "border-orange-500 bg-white shadow-lg"
+              : "border-gray-800 bg-white"
+          }
+        `}
+      >
+        <div className="font-bold text-sm md:text-base text-gray-900">
+          {node.position.name}
         </div>
-      </StaggerItem>
+        <div className="text-xs md:text-sm text-gray-700 mt-1 whitespace-pre-line font-semibold">
+          {node.position.title}
+        </div>
+      </div>
 
-      {/* Connecting lines and children */}
+      {/* Vertical Line to Children */}
       {node.children && node.children.length > 0 && (
-        <div className="flex flex-col items-center w-full">
-          {/* Vertical line down from card */}
-          <div className="h-6 w-0.5 bg-gray-300" />
+        <>
+          <div className="w-1 h-8 bg-gray-800"></div>
 
-          {/* Horizontal line connecting all children */}
-          {node.children.length > 1 && (
-            <div className="flex items-center justify-center w-full mb-6">
-              {/* Left connector */}
-              <div className="h-0.5 flex-1 bg-gray-300" />
-              {/* Center dot */}
-              <div className="w-2 h-2 rounded-full bg-gray-300 mx-0" />
-              {/* Right connector */}
-              <div className="h-0.5 flex-1 bg-gray-300" />
-            </div>
-          )}
+          {/* Horizontal Line connecting multiple children */}
+          <div className="relative flex items-start">
+            <div className="absolute h-1 bg-gray-800" style={{width: '100%'}} />
 
-          {/* Single child or multiple children */}
-          {node.children.length === 1 ? (
-            <div className="flex flex-col items-center">
-              <div className="h-6 w-0.5 bg-gray-300" />
-              <div className="mt-0">
-                <ChartNodeComponent node={node.children[0]} level={level + 1} />
-              </div>
-            </div>
-          ) : (
-            <StaggerContainer className="flex flex-wrap justify-center gap-6 lg:gap-8 w-full">
-              {node.children.map((child, idx) => (
-                <div
-                  key={idx}
-                  className="relative flex flex-col items-center"
-                >
-                  {/* Vertical line from horizontal connector to card */}
-                  <div className="absolute -top-6 left-1/2 -translate-x-1/2 h-6 w-0.5 bg-gray-300" />
-                  <div className="mt-6">
-                    <ChartNodeComponent
-                      node={child}
-                      level={level + 1}
-                      isLastChild={idx === node.children.length - 1}
-                    />
-                  </div>
+            {/* Children Container */}
+            <div className="flex gap-8 md:gap-12 justify-center pt-8 flex-wrap">
+              {node.children.map((child, index) => (
+                <div key={index} className="relative">
+                  {/* Vertical line from horizontal to child */}
+                  <div className="absolute w-1 h-8 bg-gray-800 left-1/2 -translate-x-1/2 -top-8"></div>
+                  <OrgChartNode node={child} level={level + 1} />
                 </div>
               ))}
-            </StaggerContainer>
-          )}
-        </div>
+            </div>
+          </div>
+        </>
       )}
     </div>
   );
@@ -172,37 +170,27 @@ function ChartNodeComponent({ node, level, isLastChild = false }: ChartNodeProps
 
 export function OrganizationChart() {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-gradient-to-br from-navy/5 to-teal/5">
       <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto">
-          {/* Section Header */}
-          <ScrollReveal>
-            <div className="text-center mb-12 sm:mb-16">
-              <p className="text-teal font-display font-bold text-sm tracking-wide mb-2">
-                ORGANIZATION STRUCTURE
-              </p>
-              <h2 className="font-display font-bold text-3xl sm:text-4xl text-navy mb-4">
-                Organization Structure
-              </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg">
-                A clear leadership and departmental structure built to support operational excellence and growth.
-              </p>
-            </div>
-          </ScrollReveal>
+        <ScrollReveal variant="slideUp">
+          <div className="text-center mb-16">
+            <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-2">
+              Organization Chart
+            </h2>
+            <p className="text-gray-600 text-lg">
+              Our leadership structure and team hierarchy
+            </p>
+          </div>
+        </ScrollReveal>
 
-          {/* Chart Container - Scrollable on mobile */}
+        {/* Chart Container - Horizontally Scrollable on Mobile */}
+        <ScrollReveal variant="slideUp" delay={0.2}>
           <div className="overflow-x-auto pb-8">
-            <div className="inline-block min-w-full">
-              <StaggerContainer className="flex flex-col items-center gap-12 py-8 px-4">
-                {organizationData.map((topNode, idx) => (
-                  <div key={idx} className="w-full flex justify-center">
-                    <ChartNodeComponent node={topNode} level={0} />
-                  </div>
-                ))}
-              </StaggerContainer>
+            <div className="flex justify-center min-w-max px-4 md:px-0">
+              <OrgChartNode node={organizationData} level={0} />
             </div>
           </div>
-        </div>
+        </ScrollReveal>
       </div>
     </section>
   );
