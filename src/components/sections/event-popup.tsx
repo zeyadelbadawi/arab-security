@@ -1,15 +1,22 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { X, ArrowRight } from 'lucide-react';
+import { X, ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface EventPopupProps {
   eventSlug?: string;
   autoClose?: boolean;
 }
 
+const CAROUSEL_IMAGES = [
+  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Connect.%20Collaborate.%20Celebrate.-Gxs2S5ljSk3lq802Mnls7qHFhAmQ2X.jpg',
+  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1781724150530-IVffbnPAcYW2bvrJycgBSbkTlA0LtC.jpeg',
+  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1781724154367-QshqsmosldMBXCmrYthyZ7KjmWSqWE.jpeg',
+];
+
 export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: EventPopupProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [showContent, setShowContent] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     // Show popup after page renders (1 second delay)
@@ -21,12 +28,31 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
     return () => clearTimeout(timer);
   }, []);
 
+  // Auto-rotate carousel every 5 seconds
+  useEffect(() => {
+    if (!showContent) return;
+    
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % CAROUSEL_IMAGES.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [showContent]);
+
   const handleClose = () => {
     setShowContent(false);
     // Wait for fade-out animation to complete before removing from DOM
     setTimeout(() => {
       setIsOpen(false);
     }, 300);
+  };
+
+  const handlePrevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + CAROUSEL_IMAGES.length) % CAROUSEL_IMAGES.length);
+  };
+
+  const handleNextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % CAROUSEL_IMAGES.length);
   };
 
   if (!isOpen) return null;
@@ -50,13 +76,46 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
 
         {/* 2-Column Layout */}
         <div className="flex flex-1 overflow-hidden">
-          {/* Left Column - Single Hero Image (45%) */}
-          <div className="w-2/5 bg-gradient-to-br from-navy to-navy/90 flex items-center justify-center overflow-hidden">
+          {/* Left Column - Image Carousel (45%) */}
+          <div className="w-2/5 bg-white flex items-center justify-center overflow-hidden relative group">
+            {/* Carousel Image */}
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Connect.%20Collaborate.%20Celebrate.-Gxs2S5ljSk3lq802Mnls7qHFhAmQ2X.jpg"
+              src={CAROUSEL_IMAGES[currentImageIndex]}
               alt="El Gouna Partnership Event"
-              className="w-1200 h-1200 object-contain"
+              className="w-full h-full object-contain transition-opacity duration-300"
             />
+
+            {/* Left Arrow */}
+            <button
+              onClick={handlePrevImage}
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-navy/80 hover:bg-navy text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+
+            {/* Right Arrow */}
+            <button
+              onClick={handleNextImage}
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-navy/80 hover:bg-navy text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10"
+              aria-label="Next image"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
+
+            {/* Image Indicators */}
+            <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
+              {CAROUSEL_IMAGES.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImageIndex(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    index === currentImageIndex ? 'bg-navy w-6' : 'bg-navy/40'
+                  }`}
+                  aria-label={`Go to image ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
 
           {/* Right Column - Content (55%) */}
