@@ -24,6 +24,7 @@ function OrgBox({ name, title, highlight = false, className = "" }: OrgBoxProps)
           {name}
         </div>
       )}
+
       <div className="text-[12px] uppercase tracking-[0.16em] text-gray-900 leading-snug whitespace-pre-line">
         {title}
       </div>
@@ -34,7 +35,7 @@ function OrgBox({ name, title, highlight = false, className = "" }: OrgBoxProps)
 export function OrganizationChart() {
   return (
     <section className="py-16 md:py-20 bg-gradient-to-br from-navy/5 to-teal/5 overflow-hidden">
-     <div className="max-w-[1600px] mx-auto px-4">
+      <div className="max-w-[1600px] mx-auto px-4">
         <ScrollReveal variant="slideUp">
           <div className="text-center mb-10">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-2">
@@ -47,8 +48,8 @@ export function OrganizationChart() {
         </ScrollReveal>
 
         <ScrollReveal variant="slideUp" delay={0.2}>
-         <div className="overflow-x-auto xl:overflow-x-visible pb-6">
-  <div className="relative mx-auto bg-white rounded-2xl border border-gray-200 shadow-xl px-6 xl:px-8 py-10 w-[1320px] xl:w-full xl:scale-[0.86] 2xl:scale-100 xl:origin-top">
+          <div className="overflow-hidden pb-6 h-[260px] sm:h-[430px] md:h-[580px] lg:h-[720px] xl:h-[850px] 2xl:h-auto">
+            <div className="relative mx-auto w-[1320px] origin-top-left scale-[0.25] sm:scale-[0.42] md:scale-[0.58] lg:scale-[0.72] xl:scale-[0.86] 2xl:scale-100 bg-white rounded-2xl border border-gray-200 shadow-xl px-10 py-10">
 
               {/* Executives */}
               <div className="flex justify-center gap-8 mb-8">
@@ -93,7 +94,9 @@ export function OrganizationChart() {
                     title="PRODUCT MANAGER"
                     className="w-[220px] min-h-[78px]"
                   />
+
                   <div className="w-px h-8 bg-navy/80" />
+
                   <OrgBox
                     title={"PRODUCT MANAGER\nASSISTANT"}
                     className="w-[220px] min-h-[78px]"
@@ -165,6 +168,7 @@ export function OrganizationChart() {
 
                   <div className="relative w-[720px] h-8">
                     <div className="absolute top-0 left-[55px] right-[55px] h-px bg-navy/80" />
+
                     {[55, 177, 299, 421, 543, 665].map((left) => (
                       <div
                         key={left}
