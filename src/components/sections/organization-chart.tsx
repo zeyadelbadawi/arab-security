@@ -34,7 +34,7 @@ function OrgBox({ name, title, highlight = false, className = "" }: OrgBoxProps)
 export function OrganizationChart() {
   return (
     <section className="py-16 md:py-20 bg-gradient-to-br from-navy/5 to-teal/5 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4">
+     <div className="max-w-[1600px] mx-auto px-4">
         <ScrollReveal variant="slideUp">
           <div className="text-center mb-10">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-2">
@@ -47,8 +47,8 @@ export function OrganizationChart() {
         </ScrollReveal>
 
         <ScrollReveal variant="slideUp" delay={0.2}>
-          <div className="overflow-x-auto pb-6">
-            <div className="relative mx-auto bg-white rounded-2xl border border-gray-200 shadow-xl px-10 py-10 min-w-[1320px]">
+         <div className="overflow-x-auto xl:overflow-x-visible pb-6">
+  <div className="relative mx-auto bg-white rounded-2xl border border-gray-200 shadow-xl px-6 xl:px-8 py-10 w-[1320px] xl:w-full xl:scale-[0.86] 2xl:scale-100 xl:origin-top">
 
               {/* Executives */}
               <div className="flex justify-center gap-8 mb-8">
