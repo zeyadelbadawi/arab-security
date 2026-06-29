@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
 import type { CTAConfig, StatItem } from "@/lib/types";
 import { CounterAnimation } from "@/components/animation/counter-animation";
 
@@ -25,6 +26,22 @@ export function HeroSection({
   variant = "page",
   overlay = "navy",
 }: HeroSectionProps) {
+  const [displayedText, setDisplayedText] = useState("");
+  const [isTypingComplete, setIsTypingComplete] = useState(false);
+  const typingSpeed = 50; // milliseconds per character
+  const titleLength = title.length;
+
+  useEffect(() => {
+    if (displayedText.length < titleLength) {
+      const timer = setTimeout(() => {
+        setDisplayedText(title.substring(0, displayedText.length + 1));
+      }, typingSpeed);
+      return () => clearTimeout(timer);
+    } else if (displayedText.length === titleLength && !isTypingComplete) {
+      setIsTypingComplete(true);
+    }
+  }, [displayedText, titleLength, isTypingComplete]);
+
   const heightClass = {
     home: "min-h-screen",
     page: "min-h-[60vh]",
@@ -53,10 +70,7 @@ export function HeroSection({
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-3xl">
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+          <div
             className={`font-display font-extrabold text-white leading-tight ${
               variant === "home"
                 ? "text-4xl sm:text-5xl lg:text-6xl xl:text-7xl"
@@ -65,14 +79,27 @@ export function HeroSection({
                 : "text-2xl sm:text-3xl lg:text-4xl"
             }`}
           >
-            {title}
-          </motion.h1>
+            <motion.h1
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              className="inline"
+            >
+              {displayedText}
+              <motion.span
+                initial={{ opacity: 1 }}
+                animate={{ opacity: [1, 1, 0, 0] }}
+                transition={{ duration: 0.8, repeat: !isTypingComplete ? Infinity : 0 }}
+                className="inline-block w-1 h-full bg-white ml-1"
+              />
+            </motion.h1>
+          </div>
 
           {subtitle && (
             <motion.p
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              animate={isTypingComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
               className="mt-6 text-white/80 text-lg sm:text-xl leading-relaxed max-w-2xl"
             >
               {subtitle}
@@ -82,8 +109,8 @@ export function HeroSection({
           {(primaryCTA || secondaryCTA) && (
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
+              animate={isTypingComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
               className="mt-8 flex flex-wrap gap-4"
             >
               {primaryCTA && (
@@ -111,8 +138,8 @@ export function HeroSection({
         {stats && variant === "home" && (
           <motion.div
             initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.8 }}
+            animate={isTypingComplete ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
             className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl"
           >
             {stats.map((stat) => (
