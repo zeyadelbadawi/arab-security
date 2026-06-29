@@ -61,8 +61,8 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
     <div className={`fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm transition-opacity duration-300 ${
       showContent ? 'opacity-100' : 'opacity-0'
     }`}>
-      {/* Premium 2-Column Modal - No Scrolling */}
-      <div className={`relative w-full max-w-5xl h-[560px] bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col transition-all duration-300 ${
+      {/* Premium Responsive Modal */}
+      <div className={`relative w-full max-w-5xl md:h-[560px] bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row transition-all duration-300 max-h-[90vh] md:max-h-none ${
         showContent ? 'animate-in fade-in duration-500 scale-100' : 'scale-95'
       }`}>
         {/* Close Button */}
@@ -74,10 +74,10 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
           <X className="w-6 h-6" />
         </button>
 
-        {/* 2-Column Layout */}
-        <div className="flex flex-1 overflow-hidden">
-          {/* Left Column - Image Carousel (45%) */}
-          <div className="w-2/5 bg-white flex items-center justify-center overflow-hidden relative group">
+        {/* Responsive Layout */}
+        <div className="flex flex-col md:flex-row flex-1 overflow-hidden">
+          {/* Left Column - Image Carousel (Mobile: full width, Desktop: 45%) */}
+          <div className="w-full md:w-2/5 h-64 md:h-auto bg-white flex items-center justify-center overflow-hidden relative group">
             {/* Carousel Image */}
             <img
               src={CAROUSEL_IMAGES[currentImageIndex]}
@@ -118,23 +118,23 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
             </div>
           </div>
 
-          {/* Right Column - Content (55%) */}
-          <div className="w-3/5 p-8 flex flex-col justify-between">
+          {/* Right Column - Content (Mobile: full width, Desktop: 55%) */}
+          <div className="w-full md:w-3/5 p-4 md:p-8 flex flex-col justify-between overflow-y-auto md:overflow-y-hidden max-h-64 md:max-h-none">
             {/* Top Content */}
             <div>
               {/* Event Badge */}
-              <div className="inline-block px-3 py-1 bg-teal/10 rounded-full text-teal text-xs font-bold tracking-wide mb-4">
+              <div className="inline-block px-2 py-1 bg-teal/10 rounded-full text-teal text-xs font-bold tracking-wide mb-3 md:mb-4">
                 FEATURED EVENT
               </div>
 
               {/* Title */}
-              <h2 className="font-display text-3xl font-bold text-navy mb-1 leading-tight">
+              <h2 className="font-display text-xl md:text-3xl font-bold text-navy mb-1 leading-tight">
                 Connect. Collaborate. Celebrate.
               </h2>
-              <p className="text-teal font-semibold text-sm mb-5">El Gouna, Egypt 2026</p>
+              <p className="text-teal font-semibold text-xs md:text-sm mb-3 md:mb-5">El Gouna, Egypt 2026</p>
 
               {/* Description */}
-              <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
+              <div className="space-y-2 md:space-y-4 text-gray-700 text-xs md:text-sm leading-relaxed hidden md:block">
                 <p>
                   ASG Distribution and Dahua Technology brought together leading System Integrators and End-Users to celebrate strong partnerships and shared success.
                 </p>
@@ -159,10 +159,10 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
         </div>
 
         {/* Bottom - Centered CTA Button */}
-        <div className="border-t border-gray-200 bg-gradient-to-r from-navy/5 to-teal/5 px-8 py-6 flex justify-center">
+        <div className="border-t border-gray-200 bg-gradient-to-r from-navy/5 to-teal/5 px-4 md:px-8 py-4 md:py-6 flex justify-center">
           <Link
             to={`/media/elgouna-2026`}
-            className="inline-flex items-center gap-2 px-8 py-3 bg-teal hover:bg-teal/90 text-white font-semibold rounded-lg transition-all duration-300 shadow-md hover:shadow-lg group"
+            className="inline-flex items-center gap-2 px-6 md:px-8 py-2 md:py-3 bg-teal hover:bg-teal/90 text-white font-semibold text-sm md:text-base rounded-lg transition-all duration-300 shadow-md hover:shadow-lg group"
           >
             View Full Event Details
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
