@@ -9,8 +9,8 @@ interface EventPopupProps {
 
 const CAROUSEL_IMAGES = [
   'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Connect.%20Collaborate.%20Celebrate.-Gxs2S5ljSk3lq802Mnls7qHFhAmQ2X.jpg',
-  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1781724150530-IVffbnPAcYW2bvrJycgBSbkTlA0LtC.jpeg',
-  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1781724154367-QshqsmosldMBXCmrYthyZ7KjmWSqWE.jpeg',
+  '/assets/partners/12121212.jpg',
+  '/assets/partners/121.jpg',
 ];
 
 export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: EventPopupProps) {
