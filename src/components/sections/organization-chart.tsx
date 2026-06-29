@@ -2,205 +2,31 @@
 
 import { ScrollReveal } from "@/components/animation/scroll-reveal";
 
-interface ChartPosition {
-  name: string;
+interface OrgBoxProps {
+  name?: string;
   title: string;
+  highlight?: boolean;
+  className?: string;
 }
 
-interface ChartNode {
-  position: ChartPosition;
-  children?: ChartNode[];
-  isHighlight?: boolean;
-}
-
-const organizationData: ChartNode = {
-  position: {
-    name: "---",
-    title: "EXECUTIVE LEVEL",
-  },
-  children: [
-    {
-      position: {
-        name: "Basem Bahaa",
-        title: "CEO",
-      },
-    },
-    {
-      position: {
-        name: "Farid Galila",
-        title: "CHAIRMAN",
-      },
-    },
-    {
-      position: {
-        name: "Ahmed Safwat",
-        title: "VICE PRESIDENT",
-      },
-    },
-  ],
-};
-
-const generalManagerData: ChartNode = {
-  position: {
-    name: "Hassan Mansour",
-    title: "GENERAL MANAGER",
-  },
-  isHighlight: true,
-  children: [
-    {
-      position: {
-        name: "Kareem Moamen",
-        title: "PRODUCT MANAGER",
-      },
-      children: [
-        {
-          position: {
-            name: "---",
-            title: "PRODUCT MANAGER\nASSISTANT",
-          },
-        },
-      ],
-    },
-    {
-      position: {
-        name: "Mohamed Rabiea",
-        title: "BUSINESS UNIT HEAD\n(CHANNELS & SMB)",
-      },
-      children: [
-        {
-          position: {
-            name: "---",
-            title: "SMB'S\nDEPARTMENT",
-          },
-        },
-        {
-          position: {
-            name: "Amira Zalat",
-            title: "SALES\nMANAGER",
-          },
-          children: [
-            {
-              position: {
-                name: "Katim Sweilam",
-                title: "SALES ACCOUNT\nMANAGER",
-              },
-            },
-            {
-              position: {
-                name: "Ibrahim Metwaley",
-                title: "SALES ACCOUNT\nMANAGER",
-              },
-            },
-          ],
-        },
-      ],
-    },
-    {
-      position: {
-        name: "---",
-        title: "SALES PROJECTS\nDEPARTMENT",
-      },
-      children: [
-        {
-          position: {
-            name: "Haidy Nabieh",
-            title: "SALES MANAGER -\nRESIDENTIAL &\nHOSPITALITY",
-          },
-        },
-        {
-          position: {
-            name: "Bishoy George",
-            title: "BDM",
-          },
-        },
-        {
-          position: {
-            name: "Shaima Fathy",
-            title: "SALES\nMANAGER",
-          },
-        },
-        {
-          position: {
-            name: "Sama Emira",
-            title: "BDM",
-          },
-        },
-        {
-          position: {
-            name: "Sameh Mohamed",
-            title: "BDM - ITS\nGOVERNMENTAL\nSECTOR",
-          },
-        },
-        {
-          position: {
-            name: "Kareem Shanawaney",
-            title: "BDM - ITS\nPRIVATE\nSECTOR",
-          },
-        },
-      ],
-    },
-  ],
-};
-
-interface OrgChartNodeProps {
-  node: ChartNode;
-  level: number;
-  isExecutiveRow?: boolean;
-}
-
-function OrgChartNode({ node, level, isExecutiveRow }: OrgChartNodeProps) {
-  // Same box size for all positions for consistency
-  const boxWidth = "w-40";
-  
+function OrgBox({ name, title, highlight = false, className = "" }: OrgBoxProps) {
   return (
-    <div className="flex flex-col items-center">
-      {/* Position Box */}
-      <div
-        className={`
-          border-2 rounded-lg p-3 text-center transition-all ${boxWidth}
-          ${
-            node.isHighlight
-              ? "border-orange-500 bg-white shadow-lg"
-              : node.position.name === "---"
-              ? "border-gray-400 bg-gray-50 opacity-60"
-              : "border-gray-800 bg-white"
-          }
-        `}
-      >
-        <div className="font-bold text-xs md:text-sm text-gray-900">
-          {node.position.name}
+    <div
+      className={`
+        bg-white border rounded-md px-4 py-3 text-center shadow-sm
+        min-h-[72px] flex flex-col items-center justify-center
+        ${highlight ? "border-2 border-orange-500" : "border-navy/80"}
+        ${className}
+      `}
+    >
+      {name && (
+        <div className="font-display font-bold text-navy text-sm leading-tight tracking-wide">
+          {name}
         </div>
-        <div className="text-gray-700 mt-1 whitespace-pre-line font-semibold text-xs">
-          {node.position.title}
-        </div>
-      </div>
-
-      {/* Vertical Line to Children */}
-      {node.children && node.children.length > 0 && (
-        <>
-          <div className="w-0.5 h-6 bg-gray-800"></div>
-
-          {/* Horizontal Line connecting multiple children */}
-          <div className="relative">
-            <div className="absolute h-0.5 bg-gray-800" style={{
-              width: 'calc(100% + 2rem)',
-              left: '-1rem',
-              top: 0
-            }} />
-
-            {/* Children Container */}
-            <div className={`flex ${node.children.length > 1 ? "gap-3 md:gap-6" : "gap-2"} justify-center pt-8 flex-wrap`}>
-              {node.children.map((child, index) => (
-                <div key={index} className="relative">
-                  {/* Vertical line from horizontal to child */}
-                  <div className="absolute w-0.5 h-6 bg-gray-800 left-1/2 -translate-x-1/2 -top-8"></div>
-                  <OrgChartNode node={child} level={level + 1} isExecutiveRow={false} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </>
       )}
+      <div className="text-[12px] uppercase tracking-[0.14em] text-gray-900 leading-snug whitespace-pre-line">
+        {title}
+      </div>
     </div>
   );
 }
@@ -210,7 +36,7 @@ export function OrganizationChart() {
     <section className="py-16 md:py-20 bg-gradient-to-br from-navy/5 to-teal/5 overflow-hidden">
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
         <ScrollReveal variant="slideUp">
-          <div className="text-center mb-12 md:mb-16">
+          <div className="text-center mb-10">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-2">
               Organization Chart
             </h2>
@@ -220,25 +46,169 @@ export function OrganizationChart() {
           </div>
         </ScrollReveal>
 
-        {/* Chart Container - Horizontally Scrollable on Mobile, Centered on Desktop */}
         <ScrollReveal variant="slideUp" delay={0.2}>
-          <div className="overflow-x-auto pb-4 md:pb-8 -mx-3 md:mx-0 px-3 md:px-0">
-            <div className="flex flex-col items-center space-y-8 md:space-y-12 min-w-max md:min-w-0 py-4">
-              {/* Executive Level */}
-              <div className="flex gap-4 md:gap-8 justify-center flex-wrap">
-                {organizationData.children?.map((executive, index) => (
-                  <OrgChartNode key={index} node={executive} level={0} isExecutiveRow={true} />
-                ))}
+          <div className="overflow-x-auto pb-6">
+            <div className="relative mx-auto bg-white rounded-2xl border border-gray-200 shadow-xl px-10 py-10 min-w-[1180px]">
+              
+              {/* Executive Row */}
+              <div className="flex justify-center gap-8 mb-8">
+                <OrgBox name="Farid Galila" title="CHAIRMAN" className="w-[210px]" />
+                <OrgBox name="Basem Bahaa" title="CEO" className="w-[210px]" />
+                <OrgBox name="Ahmed Safwat" title="VICE PRESIDENT" className="w-[210px]" />
               </div>
 
-              {/* Connecting line from executives to General Manager */}
-              <div className="flex flex-col items-center w-full">
-                <div className="w-0.5 h-8 bg-gray-800"></div>
+              {/* Line from executive row to GM */}
+              <div className="flex justify-center">
+                <div className="w-px h-8 bg-navy/80" />
               </div>
 
-              {/* General Manager and below */}
-              <div className="w-full flex justify-center">
-                <OrgChartNode node={generalManagerData} level={1} isExecutiveRow={false} />
+              {/* General Manager */}
+              <div className="flex justify-center">
+                <OrgBox
+                  name="Hassan Mansour"
+                  title="GENERAL MANAGER"
+                  highlight
+                  className="w-[250px] min-h-[86px]"
+                />
+              </div>
+
+              {/* GM vertical line */}
+              <div className="flex justify-center">
+                <div className="w-px h-7 bg-navy/80" />
+              </div>
+
+              {/* Main horizontal line */}
+              <div className="relative h-8 mx-[70px]">
+                <div className="absolute top-0 left-0 right-0 h-px bg-navy/80" />
+                <div className="absolute top-0 left-[0px] w-px h-8 bg-navy/80" />
+                <div className="absolute top-0 left-[215px] w-px h-8 bg-navy/80" />
+                <div className="absolute top-0 right-[250px] w-px h-8 bg-navy/80" />
+              </div>
+
+              {/* Main branches row */}
+              <div className="grid grid-cols-[190px_260px_1fr] gap-8 items-start">
+                
+                {/* Product Manager Branch */}
+                <div className="flex flex-col items-center">
+                  <OrgBox
+                    name="Kareem Moamen"
+                    title="PRODUCT MANAGER"
+                    className="w-[190px]"
+                  />
+                  <div className="w-px h-8 bg-navy/80" />
+                  <OrgBox
+                    title="PRODUCT MANAGER&#10;ASSISTANT"
+                    className="w-[190px]"
+                  />
+                </div>
+
+                {/* Business Unit Branch */}
+                <div className="flex flex-col items-center">
+                  <OrgBox
+                    name="Mohamed Rabiea"
+                    title={"BUSINESS UNIT HEAD\n(CHANNELS & SMB)"}
+                    className="w-[230px] min-h-[100px]"
+                  />
+
+                  <div className="w-px h-6 bg-navy/80" />
+
+                  <div className="relative w-[330px] h-8">
+                    <div className="absolute top-0 left-[65px] right-[65px] h-px bg-navy/80" />
+                    <div className="absolute top-0 left-[65px] w-px h-8 bg-navy/80" />
+                    <div className="absolute top-0 right-[65px] w-px h-8 bg-navy/80" />
+                  </div>
+
+                  <div className="flex justify-center gap-6">
+                    <OrgBox
+                      name="SMB’s"
+                      title="DEPARTMENT"
+                      className="w-[150px]"
+                    />
+
+                    <div className="flex flex-col items-center">
+                      <OrgBox
+                        name="Amira Zalat"
+                        title="SALES MANAGER"
+                        className="w-[150px]"
+                      />
+
+                      <div className="w-px h-6 bg-navy/80" />
+
+                      <div className="relative w-[290px] h-8">
+                        <div className="absolute top-0 left-[55px] right-[55px] h-px bg-navy/80" />
+                        <div className="absolute top-0 left-[55px] w-px h-8 bg-navy/80" />
+                        <div className="absolute top-0 right-[55px] w-px h-8 bg-navy/80" />
+                      </div>
+
+                      <div className="flex gap-6">
+                        <OrgBox
+                          name="Katim Sweilam"
+                          title={"SALES ACCOUNT\nMANAGER"}
+                          className="w-[135px]"
+                        />
+                        <OrgBox
+                          name="Ibrahim Metwaley"
+                          title={"SALES ACCOUNT\nMANAGER"}
+                          className="w-[135px]"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Sales Projects Branch */}
+                <div className="flex flex-col items-center">
+                  <OrgBox
+                    title={"SALES PROJECTS\nDEPARTMENT"}
+                    className="w-[230px]"
+                  />
+
+                  <div className="w-px h-6 bg-navy/80" />
+
+                  <div className="relative w-[650px] h-8">
+                    <div className="absolute top-0 left-[55px] right-[55px] h-px bg-navy/80" />
+
+                    <div className="absolute top-0 left-[55px] w-px h-8 bg-navy/80" />
+                    <div className="absolute top-0 left-[170px] w-px h-8 bg-navy/80" />
+                    <div className="absolute top-0 left-[285px] w-px h-8 bg-navy/80" />
+                    <div className="absolute top-0 left-[400px] w-px h-8 bg-navy/80" />
+                    <div className="absolute top-0 left-[515px] w-px h-8 bg-navy/80" />
+                    <div className="absolute top-0 right-[55px] w-px h-8 bg-navy/80" />
+                  </div>
+
+                  <div className="grid grid-cols-6 gap-4">
+                    <OrgBox
+                      name="Haidy Nabieh"
+                      title={"SALES MANAGER -\nRESIDENTIAL &\nHOSPITALITY"}
+                      className="w-[105px] min-h-[92px]"
+                    />
+                    <OrgBox
+                      name="Bishoy George"
+                      title="BDM"
+                      className="w-[105px] min-h-[92px]"
+                    />
+                    <OrgBox
+                      name="Sameh Mohamed"
+                      title={"BDM - ITS\nGOVERNMENTAL\nSECTOR"}
+                      className="w-[105px] min-h-[92px]"
+                    />
+                    <OrgBox
+                      name="Shaima Fathy"
+                      title="SALES MANAGER"
+                      className="w-[105px] min-h-[92px]"
+                    />
+                    <OrgBox
+                      name="Sama Emira"
+                      title="BDM"
+                      className="w-[105px] min-h-[92px]"
+                    />
+                    <OrgBox
+                      name="Kareem Shanawaney"
+                      title={"BDM - ITS\nPRIVATE\nSECTOR"}
+                      className="w-[105px] min-h-[92px]"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
