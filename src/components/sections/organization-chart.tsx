@@ -104,7 +104,7 @@ const generalManagerData: ChartNode = {
         {
           position: {
             name: "Haidy Nabieh",
-            title: "SALES MANAGER -\nRESIDENIAL &\nHOSPITALITY",
+            title: "SALES MANAGER -\nRESIDENTIAL &\nHOSPITALITY",
           },
         },
         {
@@ -149,14 +149,15 @@ interface OrgChartNodeProps {
 }
 
 function OrgChartNode({ node, level, isExecutiveRow }: OrgChartNodeProps) {
-  const boxWidth = level === 0 ? "w-32" : level === 1 ? "w-36" : "w-40";
+  // Same box size for all positions for consistency
+  const boxWidth = "w-40";
   
   return (
     <div className="flex flex-col items-center">
       {/* Position Box */}
       <div
         className={`
-          border-2 rounded-lg p-3 text-center transition-all
+          border-2 rounded-lg p-3 text-center transition-all ${boxWidth}
           ${
             node.isHighlight
               ? "border-orange-500 bg-white shadow-lg"
@@ -164,13 +165,12 @@ function OrgChartNode({ node, level, isExecutiveRow }: OrgChartNodeProps) {
               ? "border-gray-400 bg-gray-50 opacity-60"
               : "border-gray-800 bg-white"
           }
-          ${isExecutiveRow ? "min-w-max" : boxWidth}
         `}
       >
-        <div className={`font-bold ${isExecutiveRow ? "text-sm" : "text-xs md:text-sm"} text-gray-900`}>
+        <div className="font-bold text-xs md:text-sm text-gray-900">
           {node.position.name}
         </div>
-        <div className={`text-gray-700 mt-1 whitespace-pre-line font-semibold ${isExecutiveRow ? "text-xs" : "text-xs"}`}>
+        <div className="text-gray-700 mt-1 whitespace-pre-line font-semibold text-xs">
           {node.position.title}
         </div>
       </div>
