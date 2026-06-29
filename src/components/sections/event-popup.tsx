@@ -62,7 +62,7 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
       showContent ? 'opacity-100' : 'opacity-0'
     }`}>
       {/* Premium Responsive Modal */}
-      <div className={`relative w-full max-w-5xl md:h-[560px] bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row transition-all duration-300 max-h-[90vh] md:max-h-none ${
+      <div className={`relative w-full max-w-5xl h-auto md:h-[560px] bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col transition-all duration-300 ${
         showContent ? 'animate-in fade-in duration-500 scale-100' : 'scale-95'
       }`}>
         {/* Close Button */}
@@ -75,9 +75,9 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
         </button>
 
         {/* Responsive Layout */}
-        <div className="flex flex-col md:flex-row flex-1 overflow-hidden">
-          {/* Left Column - Image Carousel (Mobile: full width, Desktop: 45%) */}
-          <div className="w-full md:w-2/5 h-64 md:h-auto bg-white flex items-center justify-center overflow-hidden relative group">
+        <div className="flex flex-col md:flex-row flex-1 overflow-hidden w-full">
+          {/* Left Column - Image Carousel (Mobile: full width h-64, Desktop: 45%) */}
+          <div className="w-full md:w-2/5 h-64 md:h-full bg-white flex items-center justify-center overflow-hidden relative group">
             {/* Carousel Image */}
             <img
               src={CAROUSEL_IMAGES[currentImageIndex]}
@@ -119,29 +119,32 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
           </div>
 
           {/* Right Column - Content (Mobile: full width, Desktop: 55%) */}
-          <div className="w-full md:w-3/5 p-4 md:p-8 flex flex-col justify-between overflow-y-auto md:overflow-y-hidden max-h-64 md:max-h-none">
+          <div className="w-full md:w-3/5 p-4 md:p-8 flex flex-col justify-between overflow-y-auto md:overflow-y-visible">
             {/* Top Content */}
             <div>
               {/* Event Badge */}
-              <div className="inline-block px-2 py-1 bg-teal/10 rounded-full text-teal text-xs font-bold tracking-wide mb-3 md:mb-4">
+              <div className="inline-block px-3 py-1 bg-teal/10 rounded-full text-teal text-xs font-bold tracking-wide mb-2 md:mb-4">
                 FEATURED EVENT
               </div>
 
               {/* Title */}
-              <h2 className="font-display text-xl md:text-3xl font-bold text-navy mb-1 leading-tight">
+              <h2 className="font-display text-lg md:text-3xl font-bold text-navy mb-1 leading-tight">
                 Connect. Collaborate. Celebrate.
               </h2>
               <p className="text-teal font-semibold text-xs md:text-sm mb-3 md:mb-5">El Gouna, Egypt 2026</p>
 
-              {/* Description */}
-              <div className="space-y-2 md:space-y-4 text-gray-700 text-xs md:text-sm leading-relaxed hidden md:block">
-                <p>
+              {/* Description - Show full on desktop, compact on mobile */}
+              <div className="space-y-2 md:space-y-3 text-gray-700 text-xs md:text-sm leading-relaxed">
+                <p className="md:block hidden">
                   ASG Distribution and Dahua Technology brought together leading System Integrators and End-Users to celebrate strong partnerships and shared success.
                 </p>
-                <p>
+                <p className="md:block hidden">
                   With the presence of both companies&apos; leadership teams, the event highlighted El Gouna as a successful showcase of security solutions.
                 </p>
-                <p className="font-semibold text-navy">
+                <p className="block md:hidden">
+                  ASG Distribution and Dahua Technology brought together partners to celebrate success.
+                </p>
+                <p className="font-semibold text-navy text-xs md:text-sm">
                   Together, we build a smarter, safer future.
                 </p>
 
@@ -158,14 +161,14 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
           </div>
         </div>
 
-        {/* Bottom - Centered CTA Button */}
-        <div className="border-t border-gray-200 bg-gradient-to-r from-navy/5 to-teal/5 px-4 md:px-8 py-4 md:py-6 flex justify-center">
+        {/* Bottom - Centered CTA Button (Responsive) */}
+        <div className="border-t border-gray-200 bg-gradient-to-r from-navy/5 to-teal/5 px-3 md:px-8 py-3 md:py-6 flex justify-center">
           <Link
             to={`/media/elgouna-2026`}
-            className="inline-flex items-center gap-2 px-6 md:px-8 py-2 md:py-3 bg-teal hover:bg-teal/90 text-white font-semibold text-sm md:text-base rounded-lg transition-all duration-300 shadow-md hover:shadow-lg group"
+            className="inline-flex items-center gap-1 md:gap-2 px-4 md:px-8 py-2 md:py-3 bg-teal hover:bg-teal/90 text-white font-semibold text-xs md:text-base rounded-lg transition-all duration-300 shadow-md hover:shadow-lg group"
           >
             View Full Event Details
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-3 h-3 md:w-4 md:h-4 group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
       </div>
