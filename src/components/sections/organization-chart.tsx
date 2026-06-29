@@ -20,7 +20,7 @@ export function OrganizationChart() {
         <ScrollReveal variant="slideUp" delay={0.2}>
           <div className="bg-white rounded-2xl border border-gray-200 shadow-xl p-3 sm:p-5 lg:p-8">
             <img
-              src="/assets/about/organization-chart.webp"
+              src="/assets/organization-chart.jpg"
               alt="ASG Distribution organization chart"
               className="w-full h-auto object-contain rounded-xl"
               loading="lazy"
