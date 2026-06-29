@@ -8,23 +8,7 @@ interface EventPopupProps {
 }
 
 export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: EventPopupProps) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    // Check if popup has been shown this session
-    const popupKey = `event-popup-shown-${eventSlug}`;
-    const shown = sessionStorage.getItem(popupKey);
-    
-    if (!shown) {
-      // Small delay for better UX
-      const timer = setTimeout(() => {
-        setIsOpen(true);
-        sessionStorage.setItem(popupKey, 'true');
-      }, 800);
-      
-      return () => clearTimeout(timer);
-    }
-  }, [eventSlug]);
+  const [isOpen, setIsOpen] = useState(true);
 
   const handleClose = () => {
     setIsOpen(false);
@@ -35,7 +19,7 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
       {/* Premium 2-Column Modal - No Scrolling */}
-      <div className="relative w-full max-w-5xl h-[560px] bg-white rounded-2xl shadow-2xl overflow-hidden animate-in fade-in zoom-in-95 duration-300 flex flex-col">
+      <div className="relative w-full max-w-5xl h-[560px] bg-white rounded-2xl shadow-2xl overflow-hidden animate-in fade-in duration-500 flex flex-col">
         {/* Close Button */}
         <button
           onClick={handleClose}
@@ -50,7 +34,7 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
           {/* Left Column - Single Hero Image (45%) */}
           <div className="w-2/5 bg-gradient-to-br from-navy to-navy/90 flex items-center justify-center overflow-hidden">
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1781724154367-QshqsmosldMBXCmrYthyZ7KjmWSqWE.jpeg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSC09627-2-S2Wz4UvNIgZqLOnHCL3llMhtfYFF5K.jpg"
               alt="El Gouna Partnership Event"
               className="w-full h-full object-cover"
             />
