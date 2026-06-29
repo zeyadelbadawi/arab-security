@@ -2,243 +2,159 @@
 
 import { ScrollReveal } from "@/components/animation/scroll-reveal";
 
-interface ChartPosition {
+interface PositionBoxProps {
   name: string;
   title: string;
-}
-
-interface ChartNode {
-  position: ChartPosition;
-  children?: ChartNode[];
   isHighlight?: boolean;
 }
 
-const organizationData: ChartNode = {
-  position: {
-    name: "---",
-    title: "EXECUTIVE LEVEL",
-  },
-  children: [
-    {
-      position: {
-        name: "Basem Bahaa",
-        title: "CEO",
-      },
-    },
-    {
-      position: {
-        name: "Farid Galila",
-        title: "CHAIRMAN",
-      },
-    },
-    {
-      position: {
-        name: "Ahmed Safwat",
-        title: "VICE PRESIDENT",
-      },
-    },
-  ],
-};
-
-const generalManagerData: ChartNode = {
-  position: {
-    name: "Hassan Mansour",
-    title: "GENERAL MANAGER",
-  },
-  isHighlight: true,
-  children: [
-    {
-      position: {
-        name: "Kareem Moamen",
-        title: "PRODUCT MANAGER",
-      },
-      children: [
-        {
-          position: {
-            name: "---",
-            title: "PRODUCT MANAGER\nASSISTANT",
-          },
-        },
-      ],
-    },
-    {
-      position: {
-        name: "Mohamed Rabiea",
-        title: "BUSINESS UNIT HEAD\n(CHANNELS & SMB)",
-      },
-      children: [
-        {
-          position: {
-            name: "---",
-            title: "SMB'S\nDEPARTMENT",
-          },
-        },
-        {
-          position: {
-            name: "Amira Zalat",
-            title: "SALES\nMANAGER",
-          },
-          children: [
-            {
-              position: {
-                name: "Katim Sweilam",
-                title: "SALES ACCOUNT\nMANAGER",
-              },
-            },
-            {
-              position: {
-                name: "Ibrahim Metwaley",
-                title: "SALES ACCOUNT\nMANAGER",
-              },
-            },
-          ],
-        },
-      ],
-    },
-    {
-      position: {
-        name: "---",
-        title: "SALES PROJECTS\nDEPARTMENT",
-      },
-      children: [
-        {
-          position: {
-            name: "Haidy Nabieh",
-            title: "SALES MANAGER -\nRESIDENTIAL &\nHOSPITALITY",
-          },
-        },
-        {
-          position: {
-            name: "Bishoy George",
-            title: "BDM",
-          },
-        },
-        {
-          position: {
-            name: "Shaima Fathy",
-            title: "SALES\nMANAGER",
-          },
-        },
-        {
-          position: {
-            name: "Sama Emira",
-            title: "BDM",
-          },
-        },
-        {
-          position: {
-            name: "Sameh Mohamed",
-            title: "BDM - ITS\nGOVERNMENTAL\nSECTOR",
-          },
-        },
-        {
-          position: {
-            name: "Kareem Shanawaney",
-            title: "BDM - ITS\nPRIVATE\nSECTOR",
-          },
-        },
-      ],
-    },
-  ],
-};
-
-interface OrgChartNodeProps {
-  node: ChartNode;
-  level: number;
-  isExecutiveRow?: boolean;
-}
-
-function OrgChartNode({ node, level, isExecutiveRow }: OrgChartNodeProps) {
-  // Same box size for all positions for consistency
-  const boxWidth = "w-40";
-  
+function PositionBox({ name, title, isHighlight }: PositionBoxProps) {
   return (
-    <div className="flex flex-col items-center">
-      {/* Position Box */}
-      <div
-        className={`
-          border-2 rounded-lg p-3 text-center transition-all ${boxWidth}
-          ${
-            node.isHighlight
-              ? "border-orange-500 bg-white shadow-lg"
-              : node.position.name === "---"
-              ? "border-gray-400 bg-gray-50 opacity-60"
-              : "border-gray-800 bg-white"
-          }
-        `}
-      >
-        <div className="font-bold text-xs md:text-sm text-gray-900">
-          {node.position.name}
-        </div>
-        <div className="text-gray-700 mt-1 whitespace-pre-line font-semibold text-xs">
-          {node.position.title}
-        </div>
+    <div
+      className={`
+        w-40 border-2 rounded-lg p-3 text-center
+        ${
+          isHighlight
+            ? 'border-orange-500 bg-white shadow-md'
+            : name === '---'
+            ? 'border-gray-300 bg-gray-50'
+            : 'border-navy bg-white'
+        }
+      `}
+    >
+      <div className="font-bold text-sm text-navy">{name}</div>
+      <div className="text-gray-700 mt-2 whitespace-pre-line font-semibold text-xs leading-snug">
+        {title}
       </div>
-
-      {/* Vertical Line to Children */}
-      {node.children && node.children.length > 0 && (
-        <>
-          <div className="w-0.5 h-6 bg-gray-800"></div>
-
-          {/* Horizontal Line connecting multiple children */}
-          <div className="relative">
-            <div className="absolute h-0.5 bg-gray-800" style={{
-              width: 'calc(100% + 2rem)',
-              left: '-1rem',
-              top: 0
-            }} />
-
-            {/* Children Container */}
-            <div className={`flex ${node.children.length > 1 ? "gap-3 md:gap-6" : "gap-2"} justify-center pt-8 flex-wrap`}>
-              {node.children.map((child, index) => (
-                <div key={index} className="relative">
-                  {/* Vertical line from horizontal to child */}
-                  <div className="absolute w-0.5 h-6 bg-gray-800 left-1/2 -translate-x-1/2 -top-8"></div>
-                  <OrgChartNode node={child} level={level + 1} isExecutiveRow={false} />
-                </div>
-              ))}
-            </div>
-          </div>
-        </>
-      )}
     </div>
   );
 }
 
 export function OrganizationChart() {
   return (
-    <section className="py-16 md:py-20 bg-gradient-to-br from-navy/5 to-teal/5 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8">
+    <section className="py-16 md:py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollReveal variant="slideUp">
-          <div className="text-center mb-12 md:mb-16">
+          <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-navy mb-2">
               Organization Chart
             </h2>
-            <p className="text-gray-600 text-base md:text-lg">
-              Our leadership structure and team hierarchy
-            </p>
+            <p className="text-gray-600">Our leadership structure and team hierarchy</p>
           </div>
         </ScrollReveal>
 
-        {/* Chart Container - Horizontally Scrollable on Mobile, Centered on Desktop */}
         <ScrollReveal variant="slideUp" delay={0.2}>
-          <div className="overflow-x-auto pb-4 md:pb-8 -mx-3 md:mx-0 px-3 md:px-0">
-            <div className="flex flex-col items-center space-y-8 md:space-y-12 min-w-max md:min-w-0 py-4">
-              {/* Executive Level */}
-              <div className="flex gap-4 md:gap-8 justify-center flex-wrap">
-                {organizationData.children?.map((executive, index) => (
-                  <OrgChartNode key={index} node={executive} level={0} isExecutiveRow={true} />
-                ))}
-              </div>
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 md:p-12 overflow-x-auto">
+            <div className="relative" style={{ minHeight: '900px' }}>
+              {/* SVG for connector lines */}
+              <svg
+                className="absolute inset-0 w-full h-full"
+                style={{ pointerEvents: 'none' }}
+                preserveAspectRatio="none"
+              >
+                {/* Executive to Hassan line */}
+                <line x1="50%" y1="80" x2="50%" y2="130" stroke="#1e2455" strokeWidth="2" />
 
-              {/* Connecting line from executives to General Manager */}
-              <div className="flex flex-col items-center w-full">
-                <div className="w-0.5 h-8 bg-gray-800"></div>
-              </div>
+                {/* Hassan to branch line */}
+                <line x1="50%" y1="210" x2="50%" y2="260" stroke="#1e2455" strokeWidth="2" />
 
-              {/* General Manager and below */}
-              <div className="w-full flex justify-center">
-                <OrgChartNode node={generalManagerData} level={1} isExecutiveRow={false} />
+                {/* Main horizontal branch line */}
+                <line x1="15%" y1="260" x2="85%" y2="260" stroke="#1e2455" strokeWidth="2" />
+
+                {/* Left branch vertical */}
+                <line x1="15%" y1="260" x2="15%" y2="310" stroke="#1e2455" strokeWidth="2" />
+
+                {/* Middle branch vertical */}
+                <line x1="50%" y1="260" x2="50%" y2="310" stroke="#1e2455" strokeWidth="2" />
+
+                {/* Right branch vertical */}
+                <line x1="85%" y1="260" x2="85%" y2="310" stroke="#1e2455" strokeWidth="2" />
+
+                {/* Left branch - Kareem to Assistant */}
+                <line x1="15%" y1="390" x2="15%" y2="440" stroke="#1e2455" strokeWidth="2" />
+
+                {/* Middle branch - Mohamed Rabiea split */}
+                <line x1="35%" y1="390" x2="65%" y2="390" stroke="#1e2455" strokeWidth="2" />
+                <line x1="35%" y1="390" x2="35%" y2="440" stroke="#1e2455" strokeWidth="2" />
+                <line x1="65%" y1="390" x2="65%" y2="440" stroke="#1e2455" strokeWidth="2" />
+
+                {/* Amira to Account Managers */}
+                <line x1="65%" y1="520" x2="65%" y2="570" stroke="#1e2455" strokeWidth="2" />
+                <line x1="50%" y1="570" x2="80%" y2="570" stroke="#1e2455" strokeWidth="2" />
+                <line x1="50%" y1="570" x2="50%" y2="620" stroke="#1e2455" strokeWidth="2" />
+                <line x1="80%" y1="570" x2="80%" y2="620" stroke="#1e2455" strokeWidth="2" />
+
+                {/* Right branch - Sales Projects to 6 team members */}
+                <line x1="85%" y1="390" x2="85%" y2="440" stroke="#1e2455" strokeWidth="2" />
+                <line x1="70%" y1="520" x2="100%" y2="520" stroke="#1e2455" strokeWidth="2" />
+                <line x1="70%" y1="520" x2="70%" y2="570" stroke="#1e2455" strokeWidth="2" />
+                <line x1="75%" y1="520" x2="75%" y2="570" stroke="#1e2455" strokeWidth="2" />
+                <line x1="80%" y1="520" x2="80%" y2="570" stroke="#1e2455" strokeWidth="2" />
+                <line x1="85%" y1="520" x2="85%" y2="570" stroke="#1e2455" strokeWidth="2" />
+                <line x1="90%" y1="520" x2="90%" y2="570" stroke="#1e2455" strokeWidth="2" />
+                <line x1="95%" y1="520" x2="95%" y2="570" stroke="#1e2455" strokeWidth="2" />
+              </svg>
+
+              {/* Chart Content */}
+              <div className="relative z-10 flex flex-col items-center">
+                {/* Executive Level */}
+                <div className="flex gap-8 md:gap-12 justify-center mb-20">
+                  <PositionBox name="Farid Galila" title="CHAIRMAN" />
+                  <PositionBox name="Basem Bahaa" title="CEO" />
+                  <PositionBox name="Ahmed Safwat" title="VICE PRESIDENT" />
+                </div>
+
+                {/* Hassan Mansour */}
+                <div className="mb-32">
+                  <PositionBox name="Hassan Mansour" title="GENERAL MANAGER" isHighlight />
+                </div>
+
+                {/* Three Main Branches */}
+                <div className="flex justify-between w-full px-8" style={{ gap: '40px' }}>
+                  {/* Left Branch - Product */}
+                  <div className="flex flex-col items-center" style={{ flex: '0 0 auto', width: '160px' }}>
+                    <div className="mb-12">
+                      <PositionBox name="Kareem Moamen" title="PRODUCT MANAGER" />
+                    </div>
+                    <div>
+                      <PositionBox name="---" title="PRODUCT MANAGER\nASSISTANT" />
+                    </div>
+                  </div>
+
+                  {/* Middle Branch - Business Unit */}
+                  <div className="flex flex-col items-center" style={{ flex: '0 0 auto', width: '280px' }}>
+                    <div className="mb-12">
+                      <PositionBox name="Mohamed Rabiea" title="BUSINESS UNIT HEAD\n(CHANNELS & SMB)" />
+                    </div>
+                    <div className="flex gap-6 mb-16">
+                      <PositionBox name="---" title="SMB'S\nDEPARTMENT" />
+                      <div className="flex flex-col items-center">
+                        <div className="mb-12">
+                          <PositionBox name="Amira Zalat" title="SALES\nMANAGER" />
+                        </div>
+                        <div className="flex gap-6">
+                          <PositionBox name="Katim Sweilam" title="SALES ACCOUNT\nMANAGER" />
+                          <PositionBox name="Ibrahim Metwaley" title="SALES ACCOUNT\nMANAGER" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Right Branch - Sales Projects */}
+                  <div className="flex flex-col items-center" style={{ flex: '0 0 auto', width: '280px' }}>
+                    <div className="mb-12">
+                      <PositionBox name="---" title="SALES PROJECTS\nDEPARTMENT" />
+                    </div>
+                    <div className="grid grid-cols-2 gap-4">
+                      <PositionBox name="Haidy Nabieh" title="SALES MANAGER -\nRESIDENTIAL &\nHOSPITALITY" />
+                      <PositionBox name="Bishoy George" title="BDM" />
+                      <PositionBox name="Sameh Mohamed" title="BDM - ITS\nGOVERNMENTAL\nSECTOR" />
+                      <PositionBox name="Shaima Fathy" title="SALES\nMANAGER" />
+                      <PositionBox name="Sama Emira" title="BDM" />
+                      <PositionBox name="Kareem Shanawaney" title="BDM - ITS\nPRIVATE\nSECTOR" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
