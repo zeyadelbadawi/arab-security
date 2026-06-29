@@ -7,6 +7,7 @@ import { CTABlock } from "@/components/sections/cta-block";
 import { TestimonialCarousel } from "@/components/sections/testimonial-carousel";
 import { LogoGrid } from "@/components/sections/logo-grid";
 import { LogoGrid2 } from "@/components/sections/logo-grid2";
+import { EventPopup } from "@/components/sections/event-popup";
 
 import { SolutionCard } from "@/components/cards/solution-card";
 import { ProjectCard } from "@/components/cards/project-card";
@@ -80,6 +81,9 @@ function MediaPreviewCard({ item }: { item: MediaItem }) {
 export default function HomePage() {
   return (
     <>
+      {/* Event Popup */}
+      <EventPopup eventSlug="elgouna-2026" />
+
       {/* Hero */}
       <HeroSection
         title="The Integrated Intelligence Behind Tomorrow's Smart Cities"

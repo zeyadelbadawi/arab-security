@@ -14,6 +14,16 @@ export interface MediaItem {
 
 export const mediaItems: MediaItem[] = [
   {
+    slug: "elgouna-2026",
+    title: "El Gouna 2026: Connect. Collaborate. Celebrate.",
+    excerpt: "ASG Distribution and Dahua Technology brought together leading System Integrators and End-Users in El Gouna to celebrate strong partnerships and shared success.",
+    content: "ASG Distribution and Dahua Technology brought together leading System Integrators and End-Users in El Gouna to celebrate strong partnerships and shared success.\n\nWith the presence of both companies' leadership teams, the event also highlighted El Gouna as a successful showcase of security solutions powered by ASG Distribution and Dahua Technology.\n\nTogether, we build a smarter, safer future.\n\n#ASGDistribution #DahuaTechnology #ElGouna #SystemIntegrators #EndUsers",
+    type: "event",
+    date: "2026-02-20",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1781724154367-QshqsmosldMBXCmrYthyZ7KjmWSqWE.jpeg",
+    tags: ["elgouna", "partnership", "dahua", "asg-distribution", "event"],
+  },
+  {
     slug: "asg-group-expands-to-saudi-arabia",
     title: "Arab Security Group Expands Operations to Saudi Arabia",
     excerpt: "Arab Security Group announces the opening of its new regional office in Riyadh, Saudi Arabia, to better serve clients across the GCC region.",
