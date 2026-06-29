@@ -4,6 +4,7 @@ import { StatsCounter } from "@/components/sections/stats-counter";
 import { CTABlock } from "@/components/sections/cta-block";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/animation/scroll-reveal";
 import { Breadcrumb } from "@/components/sections/breadcrumb";
+import { OrganizationChart } from "@/components/sections/organization-chart";
 import { IMAGES } from "@/lib/constants";
 import { siteConfig } from "@/lib/site-config";
 import { Target, Eye, Award, Users, Shield, Heart, Lightbulb, Handshake } from "lucide-react";
@@ -67,6 +68,9 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* Organization Chart */}
+      <OrganizationChart />
 
       {/* History Timeline */}
       <section className="py-20 bg-gray-50">
