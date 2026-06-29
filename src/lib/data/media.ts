@@ -21,7 +21,7 @@ export const mediaItems: MediaItem[] = [
     type: "event",
     date: "2026-02-20",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1781724154367-QshqsmosldMBXCmrYthyZ7KjmWSqWE.jpeg",
-    tags: ["elgouna", "partnership", "dahua", "asg-distribution", "event"],
+    tags: [],
   },
   {
     slug: "asg-group-expands-to-saudi-arabia",
