@@ -29,12 +29,10 @@ const coreValues = [
 ];
 
 const leadership = [
-  { name: "CEO", role: "Founder & Chief Executive Officer", description: "Leading Arab Security Group's vision and strategic direction since 2009." },
-  { name: "CTO", role: "Chief Technology Officer", description: "Driving technology innovation and solution architecture across all divisions." },
-  { name: "COO", role: "Chief Operations Officer", description: "Overseeing project delivery, operations, and quality assurance." },
-  { name: "VP Sales", role: "Vice President of Sales", description: "Leading business development and client relationships across the region." },
-  { name: "VP Engineering", role: "Vice President of Engineering", description: "Managing the engineering team and technical excellence standards." },
-  { name: "HR Director", role: "Director of Human Resources", description: "Building and nurturing Arab Security Group's talented workforce." },
+  { name: "Basem Bahaa", role: "Founder & Chief Executive Officer", description: "Leading Arab Security Group's vision and strategic direction since 2009." },
+  { name: "Farid Gelila", role: "Chairman", description: "Driving technology innovation and solution architecture across all divisions." },
+  { name: "Ahmed Safwat", role: "Vice President", description: "Overseeing project delivery, operations, and quality assurance." },
+
 ];
 
 export default function AboutPage() {
