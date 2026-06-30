@@ -85,7 +85,7 @@ export default function MediaDetailPage() {
                 {/* Image Gallery */}
                 <div className="mb-12">
                   <ImageGallery 
-                    images={[media.image]} 
+                    images={media.images && media.images.length > 0 ? media.images : [media.image]}
                     title={media.title}
                   />
                 </div>

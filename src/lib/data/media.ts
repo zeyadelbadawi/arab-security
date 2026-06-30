@@ -8,6 +8,7 @@ export interface MediaItem {
   type: "news" | "blog" | "event";
   date: string;
   image: string;
+  images?: string[]; // Additional gallery images
   author?: string;
   tags: string[];
 }
@@ -21,6 +22,12 @@ export const mediaItems: MediaItem[] = [
     type: "event",
     date: "2026-02-20",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1781724154367-QshqsmosldMBXCmrYthyZ7KjmWSqWE.jpeg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1781724154367-QshqsmosldMBXCmrYthyZ7KjmWSqWE.jpeg",
+      // Add more image URLs here
+      // Example: "https://example.com/image2.jpg",
+      // Example: "https://example.com/image3.jpg",
+    ],
     tags: ["elgouna", "partnership", "dahua", "asg-distribution", "event"],
   },
   {
