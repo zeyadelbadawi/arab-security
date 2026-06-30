@@ -63,7 +63,7 @@ function MediaPreviewCard({ item }: { item: MediaItem }) {
   };
   return (
     <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow group h-full flex flex-col">
-      <div className="aspect-video overflow-hidden">
+      <div className="w-full h-48 md:h-56 overflow-hidden">
         <img src={item.image} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
       </div>
       <div className="p-5 flex flex-col flex-1">
