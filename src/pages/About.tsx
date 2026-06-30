@@ -154,27 +154,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CEO Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <ScrollReveal>
-              <div className="bg-navy rounded-2xl p-8 sm:p-12 text-center">
-                <div className="w-20 h-20 rounded-full bg-teal/20 flex items-center justify-center mx-auto mb-6">
-                  <Users className="w-10 h-10 text-teal" />
-                </div>
-                <blockquote className="text-white/90 text-lg sm:text-xl leading-relaxed italic mb-6">
-                  "At Arab Security Group, we don't just install systems — we build partnerships. Every project is an opportunity to demonstrate our commitment to excellence and our belief that technology, when properly integrated, can transform organizations."
-                </blockquote>
-                <div>
-                  <p className="font-display font-semibold text-white">CEO, Arab Security Group</p>
-                  <p className="text-teal text-sm">Founder & Chief Executive Officer</p>
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
 
       {/* Leadership Team */}
       <section className="py-20 bg-gray-50">
