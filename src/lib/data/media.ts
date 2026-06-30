@@ -19,9 +19,9 @@ export const mediaItems: MediaItem[] = [
     excerpt: "ASG Distribution and Dahua Technology brought together leading System Integrators and End-Users in El Gouna to celebrate strong partnerships and shared success.",
     content: "ASG Distribution and Dahua Technology brought together leading System Integrators and End-Users in El Gouna to celebrate strong partnerships and shared success.\n\nWith the presence of both companies' leadership teams, the event also highlighted El Gouna as a successful showcase of security solutions powered by ASG Distribution and Dahua Technology.\n\nTogether, we build a smarter, safer future.\n\n#ASGDistribution #DahuaTechnology #ElGouna #SystemIntegrators #EndUsers",
     type: "event",
-    date: "2026-06-17",
+    date: "2026-02-20",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1781724154367-QshqsmosldMBXCmrYthyZ7KjmWSqWE.jpeg",
-    tags: [],
+    tags: ["elgouna", "partnership", "dahua", "asg-distribution", "event"],
   },
   {
     slug: "asg-group-expands-to-saudi-arabia",
@@ -98,4 +98,9 @@ export function getMediaByType(type: MediaItem["type"]): MediaItem[] {
 
 export function getRecentMedia(count = 3): MediaItem[] {
   return [...mediaItems].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, count);
+}
+
+export function getMediaBySlug(slug: string): MediaItem | undefined {
+  return mediaItems.find((m) => m.slug === slug);
+}
 }
