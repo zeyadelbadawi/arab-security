@@ -21,6 +21,7 @@ import Projects from './pages/Projects';
 import ProjectDetail from './pages/ProjectDetail';
 import FAQs from './pages/FAQs';
 import MediaCenter from './pages/MediaCenter';
+import MediaDetail from './pages/MediaDetail';
 import Careers from './pages/Careers';
 import Training from './pages/Training';
 import PartnerWithUs from './pages/PartnerWithUs';
@@ -72,7 +73,7 @@ const App = () => (
             <Route path="/projects/:slug" element={<ProjectDetail />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/media" element={<MediaCenter />} />
-            <Route path="/media/:slug" element={<MediaCenter />} />
+            <Route path="/media/:slug" element={<MediaDetail />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/training" element={<Training />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />

@@ -99,3 +99,8 @@ export function getMediaByType(type: MediaItem["type"]): MediaItem[] {
 export function getRecentMedia(count = 3): MediaItem[] {
   return [...mediaItems].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, count);
 }
+
+export function getMediaBySlug(slug: string): MediaItem | undefined {
+  return mediaItems.find((m) => m.slug === slug);
+}
+}
