@@ -13,7 +13,7 @@ export interface MediaItem {
 }
 
 export const mediaItems: MediaItem[] = [
-  {
+ {
     slug: "elgouna-2026",
     title: "El Gouna 2026: Connect. Collaborate. Celebrate.",
     excerpt: "ASG Distribution and Dahua Technology brought together leading System Integrators and End-Users in El Gouna to celebrate strong partnerships and shared success.",
@@ -21,6 +21,26 @@ export const mediaItems: MediaItem[] = [
     type: "event",
     date: "2026-02-20",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1781724154367-QshqsmosldMBXCmrYthyZ7KjmWSqWE.jpeg",
+images: [
+  "/assets/event/1.jpeg",
+  "/assets/event/2.jpeg",
+  "/assets/event/3.jpeg",
+  "/assets/event/4.jpeg",
+  "/assets/event/5.jpeg",
+  "/assets/event/6.jpeg",
+  "/assets/event/7.jpeg",
+  "/assets/event/8.jpeg",
+  "/assets/event/9.jpeg",
+  "/assets/event/10.jpeg",
+  "/assets/event/11.jpeg",
+  "/assets/event/12.jpeg",
+  "/assets/event/13.jpeg",
+  "/assets/event/14.jpeg",
+  "/assets/event/15.jpeg",
+  "/assets/event/16.jpeg",
+  "/assets/event/17.jpeg",
+  "/assets/event/18.jpeg",
+],
     tags: ["elgouna", "partnership", "dahua", "asg-distribution", "event"],
   },
   {
