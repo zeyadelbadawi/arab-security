@@ -34,11 +34,12 @@ export default function PartnersPage() {
                 <div className="bg-white rounded-xl border border-gray-200 p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 h-full">
                   <div className="flex items-center gap-4 mb-4">
                   <div className="w-20 h-20 rounded-lg bg-gray-50 flex items-center justify-center flex-shrink-0 p-2 border border-gray-100">
-  <img
-    src={partner.logo}
-    alt={partner.name}
-    className="max-w-full max-h-full object-contain grayscale hover:grayscale-0 transition duration-300"
-  />
+
+                    <img
+  src={client.logo}
+  alt={client.name}
+  className="max-w-full max-h-full object-contain transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-lg"
+/>
 </div>
                     <div>
                       <h3 className="font-display font-semibold text-navy">{partner.name}</h3>
