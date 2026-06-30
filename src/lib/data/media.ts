@@ -103,4 +103,3 @@ export function getRecentMedia(count = 3): MediaItem[] {
 export function getMediaBySlug(slug: string): MediaItem | undefined {
   return mediaItems.find((m) => m.slug === slug);
 }
-}
