@@ -8,10 +8,9 @@ interface LogoItem {
 interface LogoGridProps {
   logos: LogoItem[];
   variant?: "static" | "carousel";
-  grayscale?: boolean;
 }
 
-export function LogoGrid({ logos, variant = "static", grayscale = true }: LogoGridProps) {
+export function LogoGrid({ logos, variant = "static" }: LogoGridProps) {
   if (variant === "carousel") {
     return (
       <ScrollReveal>
@@ -20,14 +19,12 @@ export function LogoGrid({ logos, variant = "static", grayscale = true }: LogoGr
             {[...logos, ...logos].map((logo, i) => (
               <div
                 key={`${logo.name}-${i}`}
-                className="flex-shrink-0 h-20 w-44 flex items-center justify-center"
+                className="group flex-shrink-0 h-24 w-48 flex items-center justify-center"
               >
                 <img
                   src={logo.logo}
                   alt={logo.name}
-                  className={`max-h-17 object-contain ${
-                    grayscale ? "opacity-50 grayscale hover:opacity-100 hover:grayscale-0" : ""
-                  } transition-all duration-300`}
+                  className="max-h-20 max-w-full object-contain transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-lg"
                   loading="lazy"
                 />
               </div>
@@ -40,18 +37,16 @@ export function LogoGrid({ logos, variant = "static", grayscale = true }: LogoGr
 
   return (
     <ScrollReveal>
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8 items-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center">
         {logos.map((logo) => (
           <div
             key={logo.name}
-            className="flex items-center justify-center p-4 rounded-lg"
+            className="group flex items-center justify-center p-4 rounded-xl bg-white border border-gray-100 transition-all duration-300 hover:-translate-y-1 hover:border-teal hover:shadow-xl"
           >
             <img
               src={logo.logo}
               alt={logo.name}
-              className={`h-40 object-contain ${
-                grayscale ? "opacity-50 grayscale hover:opacity-100 hover:grayscale-0" : ""
-              } transition-all duration-300`}
+              className="h-28 max-w-full object-contain transition-all duration-300 group-hover:scale-110 group-hover:drop-shadow-lg"
               loading="lazy"
             />
           </div>
