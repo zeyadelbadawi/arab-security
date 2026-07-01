@@ -19,7 +19,44 @@ export default function ContactPage() {
       setTimeout(() => setSubscribed(false), 4000);
     }
   };
-
+const sectors = [
+  {
+    name: "ITS Sector",
+    people: [
+      { name: "Karim Elshanawnay", title: "BDM ITS Private Sector", email: "Karim@arab-security.com" },
+      { name: "Ahmed Abdelhamid", title: "Government BDM", email: "ahmed@arab-security.com" },
+    ],
+  },
+  {
+    name: "Education & Healthcare Sector",
+    people: [
+      { name: "Shimaa Fathy", title: "Project Sales Manager", email: "shimaa@arab-security.com" },
+      { name: "Nourhan Elsebaey", title: "Healthcare BDM", email: "nourhan@arab-security.com" },
+    ],
+  },
+  {
+    name: "Residential & Hospitality Sector",
+    people: [
+      { name: "Haidy Nabieh", title: "Sales Manager Residential & Hospitality Sector", email: "Haidy@arab-security.com" },
+      { name: "Salah Shawky", title: "Residential & Telecom BDM", email: "Salah@arab-security.com" },
+    ],
+  },
+  {
+    name: "Oil & Gas Sector",
+    people: [
+      { name: "Mohamed Osama", title: "Sales Manager", email: "Mohamed@arab-security.com" },
+      { name: "Seif Elmehy", title: "System Integrator & Energy BDM", email: "Seif@arab-security.com" },
+    ],
+  },
+  {
+    name: "Pre-Sales Team",
+    people: [
+      { name: "Ghada Rashad", title: "Pre-Sales Manager", email: "Ghada@arab-security.com" },
+      { name: "Michael Ghali", title: "Pre-sales Director", email: "Michael@arab-security.com" },
+    ],
+  },
+];
+  
   return (
     <>
       <HeroSection
@@ -90,6 +127,49 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      <section className="py-20 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <ScrollReveal>
+      <div className="text-center mb-12">
+        <h2 className="font-display font-bold text-3xl md:text-4xl text-navy mb-4">
+          Our Sectors
+        </h2>
+        <p className="text-gray-500 max-w-2xl mx-auto">
+          Connect directly with the right team based on your sector and project needs.
+        </p>
+      </div>
+    </ScrollReveal>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {sectors.map((sector, index) => (
+        <ScrollReveal key={sector.name} delay={index * 0.1}>
+          <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 h-full hover:shadow-lg transition-shadow">
+            <h3 className="font-display font-bold text-xl text-navy mb-5">
+              {sector.name}
+            </h3>
+
+            <div className="space-y-5">
+              {sector.people.map((person) => (
+                <div key={person.email} className="border-t border-gray-100 pt-4 first:border-t-0 first:pt-0">
+                  <h4 className="font-semibold text-navy">{person.name}</h4>
+                  <p className="text-sm text-gray-500 mb-2">{person.title}</p>
+
+                  <a
+                    href={`mailto:${person.email}`}
+                    className="inline-flex items-center gap-2 text-sm text-teal hover:text-navy transition-colors break-all"
+                  >
+                    <Mail className="w-4 h-4 flex-shrink-0" />
+                    {person.email}
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </ScrollReveal>
+      ))}
+    </div>
+  </div>
+</section>
     </>
   );
 }
