@@ -24,35 +24,30 @@ const sectors = [
     name: "ITS Sector",
     people: [
       { name: "Karim Elshanawnay", title: "BDM ITS Private Sector", email: "Karim@arab-security.com" },
-      { name: "Ahmed Abdelhamid", title: "Government BDM", email: "ahmed@arab-security.com" },
     ],
   },
   {
     name: "Education & Healthcare Sector",
     people: [
       { name: "Shimaa Fathy", title: "Project Sales Manager", email: "shimaa@arab-security.com" },
-      { name: "Nourhan Elsebaey", title: "Healthcare BDM", email: "nourhan@arab-security.com" },
     ],
   },
   {
     name: "Residential & Hospitality Sector",
     people: [
       { name: "Haidy Nabieh", title: "Sales Manager Residential & Hospitality Sector", email: "Haidy@arab-security.com" },
-      { name: "Salah Shawky", title: "Residential & Telecom BDM", email: "Salah@arab-security.com" },
     ],
   },
   {
     name: "Oil & Gas Sector",
     people: [
       { name: "Mohamed Osama", title: "Sales Manager", email: "Mohamed@arab-security.com" },
-      { name: "Seif Elmehy", title: "System Integrator & Energy BDM", email: "Seif@arab-security.com" },
     ],
   },
   {
     name: "Pre-Sales Team",
     people: [
       { name: "Ghada Rashad", title: "Pre-Sales Manager", email: "Ghada@arab-security.com" },
-      { name: "Michael Ghali", title: "Pre-sales Director", email: "Michael@arab-security.com" },
     ],
   },
 ];
