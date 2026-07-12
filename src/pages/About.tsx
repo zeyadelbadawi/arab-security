@@ -34,7 +34,7 @@ const leadership = [
     role: "Chairman",
     description:
       "Driving technology innovation and solution architecture across all divisions.",
-    image: "/images/team/farid-gelila.webp",
+    image: "/assets/team/farid.png",
   },
   {
     name: "Basem Bahaa",
@@ -48,7 +48,7 @@ const leadership = [
     role: "Vice President",
     description:
       "Overseeing project delivery, operations, and quality assurance.",
-    image: "/images/team/ahmed-safwat.webp",
+    image: "/assets/team/safwat.png",
   },
 ];
 
