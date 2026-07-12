@@ -101,10 +101,10 @@ export default function PartnerWithUsPage() {
       {partners.map((partner) => (
         <StaggerItem key={partner.slug}>
        <div className="bg-white rounded-xl border border-gray-200 h-36 px-2 py-2 flex items-center justify-center hover:shadow-md transition-all duration-300">
-       <img
+<img
   src={partner.logo}
   alt={partner.name}
-  className="max-w-full max-h-24 object-contain grayscale hover:grayscale-0 transition duration-300"
+  className="max-w-full max-h-24 object-contain transition duration-300"
   loading="lazy"
 />
 </div>
