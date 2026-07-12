@@ -29,10 +29,27 @@ const coreValues = [
 ];
 
 const leadership = [
-  { name: "Farid Gelila", role: "Chairman", description: "Driving technology innovation and solution architecture across all divisions." },
-    { name: "Basem Bahaa", role: "Founder & Chief Executive Officer", description: "Leading Arab Security Group's vision and strategic direction since 2009." },
-  { name: "Ahmed Safwat", role: "Vice President", description: "Overseeing project delivery, operations, and quality assurance." },
-
+  {
+    name: "Farid Gelila",
+    role: "Chairman",
+    description:
+      "Driving technology innovation and solution architecture across all divisions.",
+    image: "/images/team/farid-gelila.webp",
+  },
+  {
+    name: "Basem Bahaa",
+    role: "Founder & Chief Executive Officer",
+    description:
+      "Leading Arab Security Group's vision and strategic direction since 2009.",
+    image: "/images/team/basem-bahaa.webp",
+  },
+  {
+    name: "Ahmed Safwat",
+    role: "Vice President",
+    description:
+      "Overseeing project delivery, operations, and quality assurance.",
+    image: "/images/team/ahmed-safwat.webp",
+  },
 ];
 
 export default function AboutPage() {
@@ -74,18 +91,39 @@ export default function AboutPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading title="Leadership Team" subtitle="Meet the team driving Arab Security Group's vision and growth." overline="Our Leaders" />
-          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {leadership.map((person, i) => (
               <StaggerItem key={i}>
-                <div className="bg-white rounded-xl border border-gray-200 p-6 text-center h-full hover:shadow-md transition-shadow">
-                  <div className="w-16 h-16 rounded-full bg-navy/5 flex items-center justify-center mx-auto mb-4">
-                    <Users className="w-8 h-8 text-navy/40" />
-                  </div>
-                  <h4 className="font-display font-bold text-navy text-lg">{person.name}</h4>
-                  <p className="text-teal text-sm font-medium mb-2">{person.role}</p>
-                  <p className="text-gray-500 text-sm">{person.description}</p>
-                </div>
-              </StaggerItem>
+  <div className="bg-white rounded-[28px] border border-gray-200 p-8 text-center h-full shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+
+    {/* Image */}
+    <div className="flex justify-center mb-6">
+      <div className="w-44 h-44 rounded-full overflow-hidden bg-slate-100">
+        <img
+          src={person.image}
+          alt={person.name}
+          className="w-full h-full object-cover object-top"
+        />
+      </div>
+    </div>
+
+    {/* Name */}
+    <h3 className="font-display font-bold text-3xl text-navy">
+      {person.name}
+    </h3>
+
+    {/* Role */}
+    <p className="mt-2 text-lg font-semibold text-teal">
+      {person.role}
+    </p>
+
+    {/* Description */}
+    <p className="mt-5 text-gray-500 text-base leading-7 max-w-xs mx-auto">
+      {person.description}
+    </p>
+
+  </div>
+</StaggerItem>
             ))}
           </StaggerContainer>
         </div>
