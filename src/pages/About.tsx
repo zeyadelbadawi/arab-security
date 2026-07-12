@@ -41,7 +41,7 @@ const leadership = [
     role: "Founder & Chief Executive Officer",
     description:
       "Leading Arab Security Group's vision and strategic direction since 2009.",
-    image: "/images/team/basem.png",
+    image: "/assets/team/basem.png",
   },
   {
     name: "Ahmed Safwat",
