@@ -84,8 +84,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Organization Chart */}
-      <OrganizationChart />
 
       {/* Leadership Team */}
       <section className="py-20 bg-gray-50">
@@ -108,7 +106,7 @@ export default function AboutPage() {
     </div>
 
     {/* Name */}
-    <h3 className="font-display font-bold text-3xl text-navy">
+    <h3 className="font-display font-bold text-2xl text-navy">
       {person.name}
     </h3>
 
@@ -129,7 +127,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      
+            {/* Organization Chart */}
+      <OrganizationChart />
+
       {/* History Timeline */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
