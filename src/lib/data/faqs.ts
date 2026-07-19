@@ -12,12 +12,12 @@ export interface FAQ {
       answer: "Arab Security Group serves a wide range of industries including Government & Public Sector, Commercial & Corporate, Industrial & Manufacturing, Hospitality, Healthcare, Education, Transportation & Logistics, Retail & Commercial Centers, Residential & Mixed-Use Developments, and Energy, Oil & Gas.",
       category: "general",
     },
-    {
-      id: "faq-2",
-      question: "Where are Arab Security Group's offices located?",
-      answer: "Arab Security Group is headquartered in Cairo, Egypt (Smart Village, 6th of October), with branch offices in Alexandria, Egypt and Riyadh, Saudi Arabia. We serve clients across the Middle East and North Africa region.",
-      category: "general",
-    },
+{
+  id: "faq-2",
+  question: "Where are Arab Security Group's offices located?",
+  answer: "Arab Security Group is located at 4 Dr. Mohamed Awad Street, Al Mintaqah as Sādisah, Nasr City, Cairo, Egypt. From this strategic location, we provide integrated security, low-current, and smart technology solutions to clients across Egypt and the Middle East.",
+  category: "general",
+},
     {
       id: "faq-3",
       question: "What makes Arab Security Group different from other systems integrators?",
