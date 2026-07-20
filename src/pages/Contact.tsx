@@ -180,7 +180,7 @@ const sectors = [
         <div
           key={sector.name}
           className={
-            sector.name === "Residential & Hospitality Sector"
+            sector.name === "Reside Sector"
               ? "lg:col-span-2"
               : ""
           }
