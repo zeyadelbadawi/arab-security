@@ -153,7 +153,7 @@ const sectors = [
           </div>
         </div>
       </section>
-    <section className="py-20 bg-gray-50">
+<section className="py-20 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <ScrollReveal>
       <div className="text-center mb-12">
@@ -161,7 +161,8 @@ const sectors = [
           Our Sectors
         </h2>
         <p className="text-gray-500 max-w-2xl mx-auto">
-          Connect directly with the right team based on your sector and project needs.
+          Connect directly with the right team based on your sector and project
+          needs.
         </p>
       </div>
     </ScrollReveal>
@@ -170,17 +171,23 @@ const sectors = [
       {sectors.map((sector, index) => (
         <ScrollReveal key={sector.name} delay={index * 0.1}>
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
-            <h3 className="font-display font-bold text-xl text-navy mb-5">
+            <h3 className="font-display font-bold text-xl text-navy mb-6">
               {sector.name}
             </h3>
 
-            <div className="space-y-5">
+            <div
+              className={`grid gap-4 ${
+                sector.people.length > 1
+                  ? "grid-cols-1 md:grid-cols-2"
+                  : "grid-cols-1"
+              }`}
+            >
               {sector.people.map((person) => (
                 <div
                   key={person.email}
-                  className="border-t border-gray-100 pt-4 first:border-t-0 first:pt-0"
+                  className="rounded-xl border border-gray-100 bg-gray-50 p-4"
                 >
-                  <h4 className="font-semibold text-navy">
+                  <h4 className="font-semibold text-navy text-base">
                     {person.name}
                   </h4>
 
@@ -191,9 +198,9 @@ const sectors = [
                   <div className="space-y-2">
                     <a
                       href={`mailto:${person.email}`}
-                      className="flex items-center gap-2 text-sm text-teal hover:text-navy transition-colors break-all"
+                      className="flex items-start gap-2 text-sm text-teal hover:text-navy transition-colors break-all"
                     >
-                      <Mail className="w-4 h-4 flex-shrink-0" />
+                      <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
                       <span>{person.email}</span>
                     </a>
 
@@ -215,6 +222,6 @@ const sectors = [
       ))}
     </div>
   </div>
-</section>    </>
+</section>   </>
   );
 }
