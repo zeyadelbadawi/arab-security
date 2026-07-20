@@ -83,7 +83,7 @@ const sectors = [
    
        {
         name: "Sama Emira",
-        title: "Sales Manager Residential & Hospitality Sector",
+        title: "business development manager Residential & Hospitality Sector",
         email: "sama.emira@asgdistributioncom", 
         phone: "01029887004",
       },
