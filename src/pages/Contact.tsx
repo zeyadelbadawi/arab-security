@@ -152,7 +152,7 @@ const sectors = [
           </div>
         </div>
       </section>
-      <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <ScrollReveal>
       <div className="text-center mb-12">
@@ -165,27 +165,47 @@ const sectors = [
       </div>
     </ScrollReveal>
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
       {sectors.map((sector, index) => (
         <ScrollReveal key={sector.name} delay={index * 0.1}>
-          <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 h-full hover:shadow-lg transition-shadow">
+          <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
             <h3 className="font-display font-bold text-xl text-navy mb-5">
               {sector.name}
             </h3>
 
             <div className="space-y-5">
               {sector.people.map((person) => (
-                <div key={person.email} className="border-t border-gray-100 pt-4 first:border-t-0 first:pt-0">
-                  <h4 className="font-semibold text-navy">{person.name}</h4>
-                  <p className="text-sm text-gray-500 mb-2">{person.title}</p>
+                <div
+                  key={person.email}
+                  className="border-t border-gray-100 pt-4 first:border-t-0 first:pt-0"
+                >
+                  <h4 className="font-semibold text-navy">
+                    {person.name}
+                  </h4>
 
-                  <a
-                    href={`mailto:${person.email}`}
-                    className="inline-flex items-center gap-2 text-sm text-teal hover:text-navy transition-colors break-all"
-                  >
-                    <Mail className="w-4 h-4 flex-shrink-0" />
-                    {person.email}
-                  </a>
+                  <p className="text-sm text-gray-500 mb-3">
+                    {person.title}
+                  </p>
+
+                  <div className="space-y-2">
+                    <a
+                      href={`mailto:${person.email}`}
+                      className="flex items-center gap-2 text-sm text-teal hover:text-navy transition-colors break-all"
+                    >
+                      <Mail className="w-4 h-4 flex-shrink-0" />
+                      <span>{person.email}</span>
+                    </a>
+
+                    {person.phone && (
+                      <a
+                        href={`tel:${person.phone}`}
+                        className="flex items-center gap-2 text-sm text-teal hover:text-navy transition-colors"
+                      >
+                        <Phone className="w-4 h-4 flex-shrink-0" />
+                        <span>{person.phone}</span>
+                      </a>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
@@ -194,7 +214,6 @@ const sectors = [
       ))}
     </div>
   </div>
-</section>
-    </>
+</section>    </>
   );
 }
