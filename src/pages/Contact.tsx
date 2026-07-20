@@ -43,23 +43,6 @@ const sectors = [
     ],
   },
   {
-    name: "Residential & Hospitality Sector",
-    people: [
-      {
-        name: "Haidy Nabieh",
-        title: "Sales Manager Residential & Hospitality Sector",
-        email: "haidy.nabieh@arab-security.com",
-        phone: "01033887586",
-      },
-       {
-        name: "Sama Emira",
-        title: "Sales Manager Residential & Hospitality Sector",
-        email: "sama@arab-security.com", 
-        phone: "01029887004",
-      },
-    ],
-  },
-  {
     name: "Oil & Gas Sector",
     people: [
       {
@@ -81,6 +64,24 @@ const sectors = [
      
     ],
   },
+    {
+    name: "Residential & Hospitality Sector",
+    people: [
+      {
+        name: "Haidy Nabieh",
+        title: "Sales Manager Residential & Hospitality Sector",
+        email: "haidy.nabieh@arab-security.com",
+        phone: "01033887586",
+      },
+       {
+        name: "Sama Emira",
+        title: "Sales Manager Residential & Hospitality Sector",
+        email: "sama.emira@asgdistributioncom", 
+        phone: "01029887004",
+      },
+    ],
+  },
+
 ];
   return (
     <>
