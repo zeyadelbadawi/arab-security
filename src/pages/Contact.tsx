@@ -73,6 +73,14 @@ const sectors = [
         email: "haidy.nabieh@arab-security.com",
         phone: "01033887586",
       },
+ 
+    ],
+  },
+
+      {
+    name: " ",
+    people: [
+   
        {
         name: "Sama Emira",
         title: "Sales Manager Residential & Hospitality Sector",
