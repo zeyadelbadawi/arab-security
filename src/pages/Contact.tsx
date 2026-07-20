@@ -169,59 +169,62 @@ const sectors = [
 
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
       {sectors.map((sector, index) => (
-        <ScrollReveal key={sector.name} delay={index * 0.1}>
-          <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow">
-            <h3 className="font-display font-bold text-xl text-navy mb-6">
-              {sector.name}
-            </h3>
+        <div
+          key={sector.name}
+          className={
+            sector.name === "Residential & Hospitality Sector"
+              ? "lg:col-span-2"
+              : ""
+          }
+        >
+          <ScrollReveal delay={index * 0.1}>
+            <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow h-full">
+              <h3 className="font-display font-bold text-xl text-navy mb-5">
+                {sector.name}
+              </h3>
 
-            <div
-              className={`grid gap-4 ${
-                sector.people.length > 1
-                  ? "grid-cols-1 md:grid-cols-2"
-                  : "grid-cols-1"
-              }`}
-            >
-              {sector.people.map((person) => (
-                <div
-                  key={person.email}
-                  className="rounded-xl border border-gray-100 bg-gray-50 p-4"
-                >
-                  <h4 className="font-semibold text-navy text-base">
-                    {person.name}
-                  </h4>
+              <div className="space-y-5">
+                {sector.people.map((person) => (
+                  <div
+                    key={person.email}
+                    className="border-t border-gray-100 pt-4 first:border-t-0 first:pt-0"
+                  >
+                    <h4 className="font-semibold text-navy">
+                      {person.name}
+                    </h4>
 
-                  <p className="text-sm text-gray-500 mb-3">
-                    {person.title}
-                  </p>
+                    <p className="text-sm text-gray-500 mb-3">
+                      {person.title}
+                    </p>
 
-                  <div className="space-y-2">
-                    <a
-                      href={`mailto:${person.email}`}
-                      className="flex items-start gap-2 text-sm text-teal hover:text-navy transition-colors break-all"
-                    >
-                      <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                      <span>{person.email}</span>
-                    </a>
-
-                    {person.phone && (
+                    <div className="space-y-2">
                       <a
-                        href={`tel:${person.phone}`}
-                        className="flex items-center gap-2 text-sm text-teal hover:text-navy transition-colors"
+                        href={`mailto:${person.email}`}
+                        className="flex items-center gap-2 text-sm text-teal hover:text-navy transition-colors break-all"
                       >
-                        <Phone className="w-4 h-4 flex-shrink-0" />
-                        <span>{person.phone}</span>
+                        <Mail className="w-4 h-4 flex-shrink-0" />
+                        <span>{person.email}</span>
                       </a>
-                    )}
+
+                      {person.phone && (
+                        <a
+                          href={`tel:${person.phone}`}
+                          className="flex items-center gap-2 text-sm text-teal hover:text-navy transition-colors"
+                        >
+                          <Phone className="w-4 h-4 flex-shrink-0" />
+                          <span>{person.phone}</span>
+                        </a>
+                      )}
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
-        </ScrollReveal>
+          </ScrollReveal>
+        </div>
       ))}
     </div>
   </div>
-</section>   </>
+</section>  </>
   );
 }
