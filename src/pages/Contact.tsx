@@ -23,35 +23,65 @@ const sectors = [
   {
     name: "ITS Sector",
     people: [
-      { name: "Karim Elshanawnay", title: "BDM ITS Private Sector", email: "karim.mohamed@arab-security.com" },
+      {
+        name: "Karim Elshanawnay",
+        title: "BDM ITS Private Sector",
+        email: "karim.mohamed@arab-security.com",
+        phone: "01050369380",
+      },
     ],
   },
   {
     name: "Education & Healthcare Sector",
     people: [
-      { name: "Shimaa Fathy", title: "Project Sales Manager", email: "shimaa.fathy@arab-security.com" },
+      {
+        name: "Shimaa Fathy",
+        title: "Project Sales Manager",
+        email: "shimaa.fathy@arab-security.com",
+        phone: "01021753339",
+      },
     ],
   },
   {
     name: "Residential & Hospitality Sector",
     people: [
-      { name: "Haidy Nabieh", title: "Sales Manager Residential & Hospitality Sector", email: "haidy.nabieh@arab-security.com" },
+      {
+        name: "Haidy Nabieh",
+        title: "Sales Manager Residential & Hospitality Sector",
+        email: "haidy.nabieh@arab-security.com",
+        phone: "01033887586",
+      },
+       {
+        name: "Sama Emira",
+        title: "Sales Manager Residential & Hospitality Sector",
+        email: "sama@arab-security.com", 
+        phone: "01029887004",
+      },
     ],
   },
   {
     name: "Oil & Gas Sector",
     people: [
-      { name: "Mohamed Osama", title: "Sales Manager", email: "m.osama@arab-security.com" },
+      {
+        name: "Mohamed Osama",
+        title: "Sales Manager",
+        email: "m.osama@arab-security.com",
+        phone: "01010070665",
+      },
     ],
   },
   {
     name: "Pre-Sales Team",
     people: [
-      { name: "Ghada Rashad", title: "Pre-Sales Manager", email: "ghada.rashad@arab-security.com" },
+      {
+        name: "Ghada Rashad",
+        title: "Pre-Sales Manager",
+        email: "ghada.rashad@arab-security.com",
+      },
+     
     ],
   },
 ];
-  
   return (
     <>
       <HeroSection
