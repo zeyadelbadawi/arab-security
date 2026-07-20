@@ -167,7 +167,7 @@ const sectors = [
       </div>
     </ScrollReveal>
 
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+    <div className="grid grid-flow-dense md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
       {sectors.map((sector, index) => (
         <div
           key={sector.name}
