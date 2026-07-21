@@ -62,159 +62,6 @@ export default function CareersPage() {
       {/* WHY WORK AT ASG */}
       {/* ========================= */}
 
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <SectionHeading
-            title="Why Work at Arab Security Group"
-            subtitle="We offer more than just a job — we offer a career in one of the most dynamic and rewarding industries."
-            overline="Life in ASG"
-          />
-
-          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            {whyWorkAtASG.map((item, i) => (
-
-              <StaggerItem key={i}>
-
-                <div className="bg-white rounded-2xl border border-gray-200 p-8 h-full shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-
-                  <div className="w-14 h-14 rounded-xl bg-teal/10 flex items-center justify-center mb-5">
-
-                    <DynamicIcon
-                      name={item.icon}
-                      className="w-7 h-7 text-teal"
-                    />
-
-                  </div>
-
-                  <h3 className="text-xl font-display font-semibold text-navy mb-3">
-                    {item.title}
-                  </h3>
-
-                  <p className="text-gray-600 leading-7">
-                    {item.description}
-                  </p>
-
-                </div>
-
-              </StaggerItem>
-
-            ))}
-
-          </StaggerContainer>
-
-        </div>
-
-      </section>
-            {/* ========================= */}
-      {/* CORE VALUES */}
-      {/* ========================= */}
-
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <SectionHeading
-            title="Our Core Values"
-            subtitle="The principles that guide everything we do at Arab Security Group."
-            overline="What We Stand For"
-          />
-
-          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            {coreValues.map((value, i) => (
-
-              <StaggerItem key={i}>
-
-                <div className="bg-white rounded-2xl border border-gray-200 p-8 h-full text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-
-                  <div className="w-16 h-16 rounded-full bg-navy/5 flex items-center justify-center mx-auto mb-5">
-
-                    <DynamicIcon
-                      name={value.icon}
-                      className="w-8 h-8 text-navy"
-                    />
-
-                  </div>
-
-                  <h3 className="text-xl font-display font-semibold text-navy mb-3">
-                    {value.title}
-                  </h3>
-
-                  <p className="text-gray-600 leading-7">
-                    {value.description}
-                  </p>
-
-                </div>
-
-              </StaggerItem>
-
-            ))}
-
-          </StaggerContainer>
-
-        </div>
-      </section>
-
-      {/* ========================= */}
-      {/* WORK ENVIRONMENT */}
-      {/* ========================= */}
-
-      <section className="py-20">
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-
-            <ScrollReveal variant="slideLeft">
-
-              <SectionHeading
-                title="Work Environment"
-                alignment="left"
-                overline="Our Culture"
-              />
-
-              <p className="text-gray-600 leading-8 mb-6">
-                At Arab Security Group, we foster a collaborative,
-                innovative, and professional workplace where every team
-                member contributes to delivering integrated technology
-                solutions for mission-critical environments.
-              </p>
-
-              <p className="text-gray-600 leading-8 mb-6">
-                Our engineers work with leading global technologies in
-                security, networking, fire safety, automation, and ELV
-                systems while receiving continuous training,
-                certifications, and professional development.
-              </p>
-
-              <p className="text-gray-600 leading-8">
-                From smart cities and airports to hospitals,
-                universities, government facilities, hotels, and
-                enterprise campuses, every project offers exciting
-                technical challenges and opportunities for career growth.
-              </p>
-
-            </ScrollReveal>
-
-            <ScrollReveal variant="slideRight">
-
-              <img
-                src={IMAGES.heroAboutTeam}
-                alt="Arab Security Group Team"
-                className="w-full rounded-3xl shadow-2xl object-cover"
-              />
-
-            </ScrollReveal>
-
-          </div>
-
-        </div>
-
-      </section>
-            {/* ================================================= */}
-      {/* CURRENT OPENINGS */}
-      {/* ================================================= */}
 
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -479,6 +326,161 @@ export default function CareersPage() {
         </div>
 
       </section>
+      
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <SectionHeading
+            title="Why Work at Arab Security Group"
+            subtitle="We offer more than just a job — we offer a career in one of the most dynamic and rewarding industries."
+            overline="Life in ASG"
+          />
+
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {whyWorkAtASG.map((item, i) => (
+
+              <StaggerItem key={i}>
+
+                <div className="bg-white rounded-2xl border border-gray-200 p-8 h-full shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+
+                  <div className="w-14 h-14 rounded-xl bg-teal/10 flex items-center justify-center mb-5">
+
+                    <DynamicIcon
+                      name={item.icon}
+                      className="w-7 h-7 text-teal"
+                    />
+
+                  </div>
+
+                  <h3 className="text-xl font-display font-semibold text-navy mb-3">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-gray-600 leading-7">
+                    {item.description}
+                  </p>
+
+                </div>
+
+              </StaggerItem>
+
+            ))}
+
+          </StaggerContainer>
+
+        </div>
+
+      </section>
+            {/* ========================= */}
+      {/* CORE VALUES */}
+      {/* ========================= */}
+
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <SectionHeading
+            title="Our Core Values"
+            subtitle="The principles that guide everything we do at Arab Security Group."
+            overline="What We Stand For"
+          />
+
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {coreValues.map((value, i) => (
+
+              <StaggerItem key={i}>
+
+                <div className="bg-white rounded-2xl border border-gray-200 p-8 h-full text-center shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+
+                  <div className="w-16 h-16 rounded-full bg-navy/5 flex items-center justify-center mx-auto mb-5">
+
+                    <DynamicIcon
+                      name={value.icon}
+                      className="w-8 h-8 text-navy"
+                    />
+
+                  </div>
+
+                  <h3 className="text-xl font-display font-semibold text-navy mb-3">
+                    {value.title}
+                  </h3>
+
+                  <p className="text-gray-600 leading-7">
+                    {value.description}
+                  </p>
+
+                </div>
+
+              </StaggerItem>
+
+            ))}
+
+          </StaggerContainer>
+
+        </div>
+      </section>
+
+      {/* ========================= */}
+      {/* WORK ENVIRONMENT */}
+      {/* ========================= */}
+
+      <section className="py-20">
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+
+            <ScrollReveal variant="slideLeft">
+
+              <SectionHeading
+                title="Work Environment"
+                alignment="left"
+                overline="Our Culture"
+              />
+
+              <p className="text-gray-600 leading-8 mb-6">
+                At Arab Security Group, we foster a collaborative,
+                innovative, and professional workplace where every team
+                member contributes to delivering integrated technology
+                solutions for mission-critical environments.
+              </p>
+
+              <p className="text-gray-600 leading-8 mb-6">
+                Our engineers work with leading global technologies in
+                security, networking, fire safety, automation, and ELV
+                systems while receiving continuous training,
+                certifications, and professional development.
+              </p>
+
+              <p className="text-gray-600 leading-8">
+                From smart cities and airports to hospitals,
+                universities, government facilities, hotels, and
+                enterprise campuses, every project offers exciting
+                technical challenges and opportunities for career growth.
+              </p>
+
+            </ScrollReveal>
+
+            <ScrollReveal variant="slideRight">
+
+              <img
+                src={IMAGES.heroAboutTeam}
+                alt="Arab Security Group Team"
+                className="w-full rounded-3xl shadow-2xl object-cover"
+              />
+
+            </ScrollReveal>
+
+          </div>
+
+        </div>
+
+      </section>
+            {/* ================================================= */}
+      {/* CURRENT OPENINGS */}
+      {/* ================================================= */}
+
 
       {/* ====================================== */}
       {/* CTA */}
