@@ -36,7 +36,7 @@ export interface JobOpening {
   
       department: "Technical Office",
   
-      location: "Nasr City / New Administrative Capital, Egypt",
+      location: "Nasr City / New Administrative Capital",
   
       type: "full-time",
   
