@@ -1,14 +1,15 @@
 export interface JobOpening {
-    id: string;
-    title: string;
-    department: string;
-    location: string;
-    type: "full-time" | "part-time" | "contract";
-    experience: string;
-    description: string;
-    requirements: string[];
-    postedDate: string;
-  }
+  id: string;
+  title: string;
+  department: string;
+  location: string;
+  type: "full-time" | "part-time" | "contract";
+  experience: string;
+  description: string;
+  responsibilities: string[];
+  requirements: string[];
+  postedDate: string;
+}
   
   export const coreValues = [
     { title: "Excellence", description: "We strive for the highest standards in every project, every installation, and every interaction.", icon: "Award" },
@@ -27,95 +28,51 @@ export interface JobOpening {
     { title: "Collaborative Culture", description: "Join a supportive, team-oriented environment where your ideas and contributions are valued.", icon: "Users" },
     { title: "Competitive Benefits", description: "Attractive compensation packages, health insurance, annual leave, and performance bonuses.", icon: "Gift" },
   ];
-  
   export const jobOpenings: JobOpening[] = [
     {
-      id: "job-1",
-      title: "Senior Security Systems Engineer",
-      department: "Engineering",
-      location: "Cairo, Egypt",
-      type: "full-time",
-      experience: "5+ years",
-      description: "Design and implement integrated security systems including CCTV, access control, and command & control solutions for enterprise clients.",
-      requirements: [
-        "Bachelor's degree in Electrical/Electronics Engineering",
-        "5+ years experience in security systems integration",
-        "Certification from Axis, Milestone, or equivalent",
-        "Strong knowledge of IP networking and VMS platforms",
-        "Excellent project management skills",
-      ],
-      postedDate: "2026-04-01",
-    },
-    {
-      id: "job-2",
-      title: "Fire & Safety Systems Engineer",
-      department: "Engineering",
-      location: "Cairo, Egypt",
-      type: "full-time",
-      experience: "3+ years",
-      description: "Design, install, and commission fire alarm and life safety systems in compliance with EN 54 and NFPA standards.",
-      requirements: [
-        "Bachelor's degree in Electrical Engineering",
-        "3+ years experience in fire alarm systems",
-        "Knowledge of EN 54, NFPA 72, and NFPA 101",
-        "Experience with Honeywell or Bosch fire systems",
-        "Strong troubleshooting and commissioning skills",
-      ],
-      postedDate: "2026-03-25",
-    },
-    {
-      id: "job-3",
-      title: "Project Manager",
-      department: "Project Management",
-      location: "Riyadh, Saudi Arabia",
-      type: "full-time",
-      experience: "7+ years",
-      description: "Lead and manage large-scale systems integration projects from inception to completion, ensuring delivery on time and within budget.",
-      requirements: [
-        "Bachelor's degree in Engineering or related field",
-        "PMP certification preferred",
-        "7+ years experience in project management",
-        "Experience in ELV/security systems projects",
-        "Strong leadership and communication skills",
-      ],
-      postedDate: "2026-03-20",
-    },
-    {
-      id: "job-4",
-      title: "Network & IT Infrastructure Engineer",
-      department: "Engineering",
-      location: "Cairo, Egypt",
-      type: "full-time",
-      experience: "4+ years",
-      description: "Design and deploy enterprise network infrastructure including structured cabling, switching, routing, and wireless solutions.",
-      requirements: [
-        "Bachelor's degree in Computer Science or IT",
-        "CCNA/CCNP certification",
-        "4+ years experience in enterprise networking",
-        "Experience with Cisco, CommScope, or Panduit",
-        "Knowledge of structured cabling standards",
-      ],
-      postedDate: "2026-03-15",
-    },
-    {
-      id: "job-5",
-      title: "Business Development Manager",
-      department: "Sales",
-      location: "Cairo, Egypt",
-      type: "full-time",
-      experience: "5+ years",
-      description: "Drive business growth by identifying opportunities, building client relationships, and developing proposals for integrated technology solutions.",
-      requirements: [
-        "Bachelor's degree in Business or Engineering",
-        "5+ years experience in B2B sales",
-        "Experience in security/ELV industry preferred",
-        "Strong presentation and negotiation skills",
-        "Existing network in target industries",
-      ],
-      postedDate: "2026-03-10",
-    },
-  ];
+      id: "technical-office-engineer-01",
   
+      title: "Technical Office Engineer – Light Current Systems",
+  
+      department: "Technical Office",
+  
+      location: "Nasr City / New Administrative Capital, Egypt",
+  
+      type: "full-time",
+  
+      experience: "3–5 Years",
+  
+      description:
+        "Join Arab Security Group as a Technical Office Engineer specializing in Light Current Systems. You will be responsible for preparing detailed shop drawings, as-built drawings, riser diagrams, BOQs, technical submittals, and coordinating with project teams to deliver high-quality integrated security and ELV solutions while ensuring compliance with international standards.",
+  
+      responsibilities: [
+        "Prepare shop drawings, single-line diagrams, riser diagrams, and schematic drawings for CCTV, Fire Alarm, Access Control, Public Address, Data Networks, and other ELV systems.",
+        "Prepare and continuously update as-built drawings throughout project execution.",
+        "Develop and submit technical submittals according to project specifications.",
+        "Prepare Quantity Take-Off (QTO) and Bill of Quantities (BOQ).",
+        "Coordinate with Project Managers, Site Engineers, Consultants, Suppliers, and Contractors.",
+        "Prepare and manage RFIs (Requests for Information) whenever clarification is required.",
+        "Ensure approved shop drawings are distributed to all stakeholders on time.",
+        "Review system compatibility with life safety codes, security standards, and building regulations.",
+        "Review drawings, specifications, and installation procedures to maintain quality standards.",
+        "Provide technical support during project execution and resolve site-related technical issues."
+      ],
+  
+      requirements: [
+        "Bachelor's Degree in Electrical Engineering.",
+        "3–5 years of hands-on experience in Light Current Systems design and shop drawings.",
+        "Excellent AutoCAD skills.",
+        "Excellent Revit skills.",
+        "Strong knowledge of MS Office and Microsoft Visio.",
+        "Strong understanding of structured cabling and network infrastructure (Passive & Active).",
+        "Excellent communication and teamwork skills.",
+        "Ability to manage multiple projects under tight deadlines.",
+        "Business-level English reading and writing."
+      ],
+  
+      postedDate: "2026-07-21"
+    }
+  ];
   export function getJobOpenings(): JobOpening[] {
     return jobOpenings;
   }
