@@ -5,7 +5,7 @@ export interface MediaItem {
   title: string;
   excerpt: string;
   content: string;
-  type: "news" | "blog" | "event";
+  type: "News" | "Bblog" | "Event" | "Training";
   date: string;
   image: string;
   author?: string;
@@ -18,7 +18,7 @@ export const mediaItems: MediaItem[] = [
     title: "El Gouna 2026: Connect. Collaborate. Celebrate.",
     excerpt: "ASG Distribution and Dahua Technology brought together leading System Integrators and End-Users in El Gouna to celebrate strong partnerships and shared success.",
     content: "ASG Distribution and Dahua Technology brought together leading System Integrators and End-Users in El Gouna to celebrate strong partnerships and shared success.\n\nWith the presence of both companies' leadership teams, the event also highlighted El Gouna as a successful showcase of security solutions powered by ASG Distribution and Dahua Technology.\n\nTogether, we build a smarter, safer future.\n\n#ASGDistribution #DahuaTechnology #ElGouna #SystemIntegrators #EndUsers",
-    type: "event",
+    type: "Event",
     date: "2026-06-17",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1781724154367-QshqsmosldMBXCmrYthyZ7KjmWSqWE.jpeg",
 images: [
@@ -43,7 +43,104 @@ images: [
 ],
     tags: ["elgouna", "partnership", "dahua", "asg-distribution", "event"],
   },
+{
+  slug: "dahua-hangzhou-songcheng-park-2026",
+  title: "Dahua China Trip 2026",
+  excerpt:
+    "ASG Distribution and Dahua Technology concluded the China Trip 2026 with a memorable cultural visit to Hangzhou Songcheng Park alongside their valued authorized distribution partners.",
+  content:
+    "As part of the closing activities of Dahua China Trip 2026, ASG Distribution, together with Dahua Technology and its valued authorized distribution partners, enjoyed a memorable visit to Hangzhou Songcheng Park in China.\n\nThe experience offered more than just sightseeing—it provided an opportunity to strengthen professional relationships, celebrate successful partnerships, and explore one of China's most iconic cultural destinations.\n\nThe journey reflected our shared commitment to collaboration, innovation, and building stronger connections that extend beyond business.\n\nTogether, we continue to grow, innovate, and create lasting partnerships.\n\n#ASGDistribution #DahuaTechnology #ChinaTrip2026 #Hangzhou #SongchengPark #AuthorizedDistributors #Partnership #Innovation #TogetherWeGrow",
+  type: "News",
+  date: "2026-07-01",
+  image:
+    "https://imoukuwait.com/wp-content/uploads/2026/07/753729725_1535643211695296_7203993570700827241_n.jpg",
+  images: [
+    "https://imoukuwait.com/wp-content/uploads/2026/07/753729725_1535643211695296_7203993570700827241_n.jpg",
+  ],
+  tags: [
+    "dahua",
+    "china-trip",
+    "hangzhou",
+    "songcheng-park",
+    "asg-distribution",
+    "authorized-distributors",
+    "partnership",
+    "news",
+  ],
+},
 
+  {
+  slug: "asg-distribution-training-academy-cairo-2026",
+  title: "ASG Distribution Training Academy 2 – Cairo",
+  excerpt:
+    "The second round of the ASG Distribution Training Academy brought together technicians and authorized distributors in Cairo for an intensive day of hands-on Dahua product training and industry updates.",
+  content:
+    "ASG Distribution successfully hosted the second round of its Training Academy in Cairo, welcoming technicians and authorized distribution partners for a full day of practical learning and professional development.\n\nThe event was attended by Mr. Farid Galila, Chief Executive Officer, Mr. Ahmed Safwat, Vice Chairman, and Mr. Hassan Mansour, General Manager, highlighting the company's ongoing commitment to empowering security professionals through continuous education and technical excellence.\n\nParticipants explored the latest Dahua security and low-current technologies through hands-on demonstrations, technical discussions, and knowledge-sharing sessions designed to strengthen practical expertise and deployment best practices.\n\nThe academy also featured productive discussions with technicians and distributors, where valuable feedback and technical inquiries were addressed. During the event, ASG Distribution announced an additional one-year warranty on Dahua products, the arrival of a new shipment of Dahua Technology solutions, and the official launch of the 'You Matter – Hurghada 2026' program for distributors and technicians.\n\nStay tuned for upcoming Training Academy sessions and more opportunities to grow with ASG Distribution.\n\n#ASGDistribution #ASGTrainingAcademy #Dahua #Cairo #SecuritySolutions #TechnicalTraining #AuthorizedDistributors",
+  type: "Training",
+  date: "2026-05-20",
+  image:
+    "https://imoukuwait.com/wp-content/uploads/2026/07/701686925_1479443493981935_7245132182971915036_n.jpg",
+  images: [
+    "https://imoukuwait.com/wp-content/uploads/2026/07/701686925_1479443493981935_7245132182971915036_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702570528_1479443600648591_8938163303991493822_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/703588390_1479443887315229_2992955136708641885_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/703824330_1479443983981886_3813647538172783381_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/703468060_1479444110648540_7511756764259119794_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/703954822_1479444240648527_8954615339631426326_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/703170429_1479444293981855_2980187664402206260_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/703519898_1479444530648498_6512950921103061667_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702830101_1479444687315149_3078291341303563349_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702280873_1479444880648463_5941247612780708897_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/701961194_1479444953981789_4844256658566892207_n.jpg",
+  ],
+  tags: [
+    "asg-distribution",
+    "training-academy",
+    "dahua",
+    "cairo",
+    "technical-training",
+    "authorized-distributors",
+    "security-solutions",
+    "news",
+  ],
+},
+
+{
+  slug: "asg-distribution-training-academy-mansoura-2026",
+  title: "ASG Distribution Training Academy 1 – Mansoura",
+  excerpt:
+    "The first round of the ASG Distribution Training Academy kicked off in Mansoura, bringing together technicians and authorized distributors for a full day of Dahua product training and technical development.",
+  content:
+    "ASG Distribution successfully launched the first round of its Training Academy in Mansoura as part of its ongoing initiative to empower technicians and authorized distribution partners with the latest security technologies and industry expertise.\n\nThe training program featured hands-on technical sessions, knowledge-sharing discussions, and practical demonstrations covering Dahua's latest security and low-current solutions. Participants exchanged valuable experiences while enhancing their technical skills and deployment knowledge.\n\nThe event also included productive discussions with technicians and distributors, providing an opportunity to address technical inquiries, gather feedback, and strengthen collaboration across the partner network. During the academy, ASG Distribution officially announced the launch of the 'You Matter 2 – Hurghada 2026' program for distributors and technicians.\n\nStay tuned for upcoming Training Academy sessions as we continue investing in professional development and delivering innovative security solutions across the region.\n\n#ASGDistribution #ASGTrainingAcademy #Dahua #Mansoura #TechnicalTraining #SecuritySolutions #AuthorizedDistributors",
+  type: "news",
+  date: "2026-05-18",
+  image:
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702570454_1477917690801182_7832903345255597268_n.jpg",
+  images: [
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702570454_1477917690801182_7832903345255597268_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702136385_1477917050801246_1918142177796805172_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702306952_1477918087467809_7897877452027133560_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/700998023_1477917884134496_1069349978895410474_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/701811571_1477917414134543_7209261526008281212_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702893877_1477917334134551_6122610914342304337_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702306956_1477918850801066_7589132833037527380_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702812959_1477917980801153_5971901725064551680_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702494761_1477918547467763_2719250333705557083_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702122428_1477918764134408_3858899206135633234_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/702487426_1477918837467734_6792156868037864752_n.jpg",
+  ],
+  tags: [
+    "asg-distribution",
+    "training-academy",
+    "dahua",
+    "mansoura",
+    "technical-training",
+    "authorized-distributors",
+    "security-solutions",
+    "news",
+  ],
+},
+  
 ];
 
 export function getMediaItems(): MediaItem[] {
