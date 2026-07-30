@@ -5,7 +5,7 @@ export interface MediaItem {
   title: string;
   excerpt: string;
   content: string;
-  type: "News" | "Bblog" | "Event" | "Training";
+  type: "News" | "Bblog" | "Event" | "Training" | "Collaboration";
   date: string;
   image: string;
   author?: string;
@@ -164,6 +164,39 @@ images: [
     "product-management",
     "award",
     "partnership",
+    "security-solutions",
+    "news",
+  ],
+},
+
+  {
+  slug: "global-phdc-2025-minister-visit",
+  title: "Dr. Khaled Abdel Ghaffar Visits the ASG Distribution Booth at Global PHDC 2025",
+  excerpt:
+    "ASG Distribution welcomed Dr. Khaled Abdel Ghaffar during his visit to the company's booth at Global PHDC 2025, where the latest healthcare security technologies and smart solutions were showcased.",
+  content:
+    "ASG Distribution proudly welcomed Dr. Khaled Abdel Ghaffar, Deputy Prime Minister of Egypt and Minister of Health and Population, during his visit to the ASG Distribution and Dahua Technology Egypt booth at the Global Congress on Population, Health, and Human Development (Global PHDC) 2025.\n\nDuring the visit, the Minister explored a range of advanced security technologies and intelligent healthcare solutions designed to enhance safety, operational efficiency, and digital transformation across healthcare facilities.\n\nASG Distribution proudly participated in Global PHDC 2025 as a Gold Sponsor for the second consecutive year, reaffirming its commitment to supporting the healthcare sector with innovative security and smart technology solutions.\n\nHeld from November 12 to 15, 2025, at St. Regis Al Masa Hotel in Egypt's New Administrative Capital, the congress brought together government officials, healthcare leaders, and technology innovators to shape the future of healthcare and human development.\n\nASG Distribution continues to deliver cutting-edge security and smart infrastructure solutions that help healthcare organizations build safer, more connected, and future-ready environments.\n\n#ASGDistribution #GlobalPHDC #HealthcareTechnology #DahuaTechnology #SmartHealthcare #GoldSponsor #SecuritySolutions",
+  type: "news",
+  date: "2025-11-12",
+  image:
+    "https://imoukuwait.com/wp-content/uploads/2026/07/582800360_1329805142279105_4777885413131529612_n.jpg",
+  images: [
+    "https://imoukuwait.com/wp-content/uploads/2026/07/582800360_1329805142279105_4777885413131529612_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/583189205_1329834555609497_7984659344867563608_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/581920867_1331217935471159_7565945719001776701_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/579439008_1329805085612444_3336096526876597424_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/581133592_1329805138945772_5824168714828217667_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/581208661_1329805082279111_1114836760124976959_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/579864175_746672491782738_6934690392921985806_n.jpg",
+  ],
+  tags: [
+    "asg-distribution",
+    "global-phdc",
+    "healthcare",
+    "gold-sponsor",
+    "dahua",
+    "egypt",
+    "healthcare-security",
     "security-solutions",
     "news",
   ],
