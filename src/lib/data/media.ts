@@ -201,6 +201,62 @@ images: [
     "news",
   ],
 },
+
+  {
+  slug: "asg-distribution-10th-anniversary-2025",
+  title: "10 Years of the Power of Partnership",
+  excerpt:
+    "ASG Distribution celebrated its 10th Anniversary by bringing together more than 250 System Integrators, End Users, vendors, and strategic partners in the largest customer gathering in Egypt's security industry.",
+  content:
+    "ASG Distribution proudly celebrated a defining milestone in its journey—ten years of growth, innovation, and trusted partnerships—under the inspiring theme, '10 Years of the Power of Partnership.'\n\nThe celebration brought together more than 250 attendees, including System Integrators (SI), End Users, technology vendors, and strategic business partners, making it the largest customer gathering in Egypt's security industry. More than a celebration, the event reflected a decade of collaboration built on trust, shared success, and a common vision for the future.\n\nThroughout the evening, guests experienced memorable moments that honored the people and partnerships behind ASG Distribution's success. Inspiring speeches from valued partners highlighted years of collaboration, while recognition ceremonies celebrated outstanding System Integrator and End User clients whose contributions have played a vital role in the company's continued growth.\n\nThe event also served as a platform to strengthen relationships, exchange ideas, and explore new opportunities that will shape the next chapter of innovation across the security and low-current technology sectors. Every conversation, every award, and every shared memory reinforced the values that have driven ASG Distribution forward over the past decade.\n\nAs ASG Distribution enters its second decade, the company remains committed to empowering its partners with world-class technologies, exceptional support, and long-term collaboration. Together with its customers, vendors, and strategic partners, ASG Distribution looks ahead with confidence to building an even smarter, safer, and more connected future.\n\nTen years of partnership have created countless success stories—and this is only the beginning.\n\n#ASGDistribution #10YearsOfPartnership #PowerOfPartnership #TogetherWeGrow #SystemIntegrators #EndUsers #SecuritySolutions #Innovation",
+  type: "event",
+  date: "2025-07-09",
+  image:
+    "https://imoukuwait.com/wp-content/uploads/2026/07/514360237_1219992289927058_7926125854848487034_n.jpg",
+  images: [
+    "https://imoukuwait.com/wp-content/uploads/2026/07/514360237_1219992289927058_7926125854848487034_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/514248354_1224846239441663_9006223474202151843_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/514286748_1219992553260365_5338636927335061563_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/514033106_1219991943260426_6607413248353041051_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/515960650_1219991883260432_7674021831287526168_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/514408001_1219991426593811_5579500932087856902_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/515017206_1219990253260595_8357057100268370516_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/514255207_1219989876593966_1157245824189120753_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/514042284_1219989379927349_4878054096474752663_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/514403933_1219989363260684_5753177464776185286_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/514352673_1219989373260683_2321735162774488486_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/517460492_1224105742849046_7042616540166256239_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/515500308_1224105376182416_2836618919241251330_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/518306102_1224104886182465_252738979496103784_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/515495317_1224104432849177_6183987942998415279_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/517008919_1224104039515883_657416929654650388_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/517153238_1224104096182544_5155814327610552246_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/518321137_1224104066182547_6586481497782137473_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/518284664_1224100512849569_1653266711720997664_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/518270968_1224099702849650_6256983084271455128_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/514359415_1224097119516575_6343057240772826400_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/518404646_1224095819516705_5579930941550705230_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/515980477_1224847919441495_8221701685842938298_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/515888562_1224847802774840_9108891906215156473_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/516135749_1224848442774776_4573660575426869364_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/515937392_1224848136108140_33478845552454209_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/514288527_1224848009441486_4874483321294713648_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/517586282_1224847266108227_651852422053613409_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/515858936_1224847312774889_7496241914862613864_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/518149164_1224847356108218_1229482325809826502_n.jpg"
+  ],
+  tags: [
+    "asg-distribution",
+    "10th-anniversary",
+    "power-of-partnership",
+    "system-integrators",
+    "end-users",
+    "vendors",
+    "partnership",
+    "security-industry",
+    "event"
+  ],
+},
 ];
 
 export function getMediaItems(): MediaItem[] {
