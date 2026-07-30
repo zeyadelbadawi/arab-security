@@ -140,7 +140,34 @@ images: [
     "news",
   ],
 },
-  
+  {
+  slug: "dahua-annual-distributor-conference-2026",
+  title: "ASG Distribution Celebrates Success at the Dahua Annual Distributor Conference 2026",
+  excerpt:
+    "ASG Distribution proudly participated in the Dahua Technology Annual Distributor Conference 2026, where the company celebrated a major achievement with the recognition of its Dahua Product Manager.",
+  content:
+    "ASG Distribution was honored to participate in the Dahua Technology Annual Distributor Conference 2026, a prestigious event that brought together partners, distributors, and industry leaders to celebrate collaboration, innovation, and shared success.\n\nThe conference provided an excellent opportunity to strengthen the long-standing partnership between ASG Distribution and Dahua Technology while recognizing outstanding achievements across the regional distribution network.\n\nA proud highlight of the event was the recognition of Kareem Moemen, ASG Distribution's Dahua Product Manager, who received the 2025 Best DT Product Management Award. This achievement reflects his dedication, technical expertise, and the company's ongoing commitment to delivering excellence in product management and customer support.\n\nASG Distribution extends its sincere appreciation to Dahua Technology for its continuous trust, collaboration, and support. Together, we look forward to achieving even greater milestones and driving innovation across the security industry.\n\n#ASGDistribution #DahuaTechnology #AnnualDistributorConference #BestProductManagement #Partnership #Innovation #SecuritySolutions",
+  type: "news",
+  date: "2026-07-01",
+  image:
+    "https://imoukuwait.com/wp-content/uploads/2026/07/624331189_1389430666316552_4012545646310283204_n.jpg",
+  images: [
+    "https://imoukuwait.com/wp-content/uploads/2026/07/624331189_1389430666316552_4012545646310283204_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/624805311_1389430902983195_5140985935873786077_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/625087442_1389430842983201_7878099112698096532_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/623843641_1389430712983214_6693921030830136142_n.jpg",
+  ],
+  tags: [
+    "asg-distribution",
+    "dahua",
+    "annual-distributor-conference",
+    "product-management",
+    "award",
+    "partnership",
+    "security-solutions",
+    "news",
+  ],
+},
 ];
 
 export function getMediaItems(): MediaItem[] {
