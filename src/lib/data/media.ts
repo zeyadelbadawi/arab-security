@@ -112,7 +112,7 @@ images: [
     "The first round of the ASG Distribution Training Academy kicked off in Mansoura, bringing together technicians and authorized distributors for a full day of Dahua product training and technical development.",
   content:
     "ASG Distribution successfully launched the first round of its Training Academy in Mansoura as part of its ongoing initiative to empower technicians and authorized distribution partners with the latest security technologies and industry expertise.\n\nThe training program featured hands-on technical sessions, knowledge-sharing discussions, and practical demonstrations covering Dahua's latest security and low-current solutions. Participants exchanged valuable experiences while enhancing their technical skills and deployment knowledge.\n\nThe event also included productive discussions with technicians and distributors, providing an opportunity to address technical inquiries, gather feedback, and strengthen collaboration across the partner network. During the academy, ASG Distribution officially announced the launch of the 'You Matter 2 – Hurghada 2026' program for distributors and technicians.\n\nStay tuned for upcoming Training Academy sessions as we continue investing in professional development and delivering innovative security solutions across the region.\n\n#ASGDistribution #ASGTrainingAcademy #Dahua #Mansoura #TechnicalTraining #SecuritySolutions #AuthorizedDistributors",
-  type: "news",
+  type: "Training",
   date: "2026-05-18",
   image:
     "https://imoukuwait.com/wp-content/uploads/2026/07/702570454_1477917690801182_7832903345255597268_n.jpg",
@@ -176,7 +176,7 @@ images: [
     "ASG Distribution welcomed Dr. Khaled Abdel Ghaffar during his visit to the company's booth at Global PHDC 2025, where the latest healthcare security technologies and smart solutions were showcased.",
   content:
     "ASG Distribution proudly welcomed Dr. Khaled Abdel Ghaffar, Deputy Prime Minister of Egypt and Minister of Health and Population, during his visit to the ASG Distribution and Dahua Technology Egypt booth at the Global Congress on Population, Health, and Human Development (Global PHDC) 2025.\n\nDuring the visit, the Minister explored a range of advanced security technologies and intelligent healthcare solutions designed to enhance safety, operational efficiency, and digital transformation across healthcare facilities.\n\nASG Distribution proudly participated in Global PHDC 2025 as a Gold Sponsor for the second consecutive year, reaffirming its commitment to supporting the healthcare sector with innovative security and smart technology solutions.\n\nHeld from November 12 to 15, 2025, at St. Regis Al Masa Hotel in Egypt's New Administrative Capital, the congress brought together government officials, healthcare leaders, and technology innovators to shape the future of healthcare and human development.\n\nASG Distribution continues to deliver cutting-edge security and smart infrastructure solutions that help healthcare organizations build safer, more connected, and future-ready environments.\n\n#ASGDistribution #GlobalPHDC #HealthcareTechnology #DahuaTechnology #SmartHealthcare #GoldSponsor #SecuritySolutions",
-  type: "news",
+  type: "Collaboration",
   date: "2025-11-12",
   image:
     "https://imoukuwait.com/wp-content/uploads/2026/07/582800360_1329805142279105_4777885413131529612_n.jpg",
