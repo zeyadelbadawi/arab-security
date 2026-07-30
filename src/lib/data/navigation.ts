@@ -187,7 +187,6 @@ export const navigation: NavItem[] = [
           items: [
             { label: "Media Center", href: "/media" },
             { label: "FAQs", href: "/faqs" },
-            { label: "Training", href: "/training" },
             { label: "Careers", href: "/careers" },
           ],
         },
