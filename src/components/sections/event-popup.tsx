@@ -8,13 +8,13 @@ interface EventPopupProps {
 }
 
 const CAROUSEL_IMAGES = [
-  'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Connect.%20Collaborate.%20Celebrate.-Gxs2S5ljSk3lq802Mnls7qHFhAmQ2X.jpg',
-  '/assets/partners/12121212.jpg',
-  '/assets/partners/121.jpg',
+  "https://imoukuwait.com/wp-content/uploads/2026/07/753729725_1535643211695296_7203993570700827241_n.jpg",
 ];
 
-export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: EventPopupProps) {
-  const [isOpen, setIsOpen] = useState(false);
+export function EventPopup({
+  eventSlug = "dahua-hangzhou-songcheng-park-2026",
+  autoClose = true,
+}: EventPopupProps) {  const [isOpen, setIsOpen] = useState(false);
   const [showContent, setShowContent] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -81,7 +81,7 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
             {/* Carousel Image */}
             <img
               src={CAROUSEL_IMAGES[currentImageIndex]}
-              alt="El Gouna Partnership Event"
+              alt="Dahua China Trip 2026"
               className="w-full h-full object-contain transition-opacity duration-300"
             />
 
@@ -129,34 +129,43 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
 
               {/* Title */}
               <h2 className="font-display text-lg md:text-3xl font-bold text-navy mb-1 leading-tight">
-                Connect. Collaborate. Celebrate.
-              </h2>
-              <p className="text-teal font-semibold text-xs md:text-sm mb-3 md:mb-5">El Gouna, Egypt 2026</p>
+  Dahua China Trip 2026
+</h2>
+
+<p className="text-teal font-semibold text-xs md:text-sm mb-3 md:mb-5">
+  Hangzhou, China • July 2026
+</p>
 
               {/* Description - Show full on desktop, compact on mobile */}
-              <div className="space-y-2 md:space-y-3 text-gray-700 text-xs md:text-sm leading-relaxed">
-                <p className="md:block hidden">
-                  ASG Distribution and Dahua Technology brought together leading System Integrators and End-Users to celebrate strong partnerships and shared success.
-                </p>
-                <p className="md:block hidden">
-                  With the presence of both companies&apos; leadership teams, the event highlighted El Gouna as a successful showcase of security solutions.
-                </p>
-                <p className="block md:hidden">
-                  ASG Distribution and Dahua Technology brought together partners to celebrate success.
-                </p>
-                <p className="font-semibold text-navy text-xs md:text-sm">
-                  Together, we build a smarter, safer future.
-                </p>
+<div className="space-y-2 md:space-y-3 text-gray-700 text-xs md:text-sm leading-relaxed">
+  <p className="md:block hidden">
+    ASG Distribution and Dahua Technology concluded the China Trip 2026 with a memorable visit to Hangzhou Songcheng Park alongside their valued authorized distribution partners.
+  </p>
 
-                {/* Hashtags */}
-                <div className="flex flex-wrap gap-2 pt-2">
-                  {['#ASGDistribution', '#DahuaTechnology', '#ElGouna'].map((tag) => (
-                    <span key={tag} className="text-xs text-teal font-medium">
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
+  <p className="md:block hidden">
+    The journey strengthened partnerships, celebrated shared achievements, and reflected our commitment to innovation, collaboration, and long-term success.
+  </p>
+
+  <p className="block md:hidden">
+    ASG Distribution and Dahua Technology celebrated strong partnerships during the China Trip 2026.
+  </p>
+
+  <p className="font-semibold text-navy text-xs md:text-sm">
+    Together, we continue to grow, innovate, and build lasting partnerships.
+  </p>
+
+  <div className="flex flex-wrap gap-2 pt-2">
+    {[
+      "#ASGDistribution",
+      "#DahuaTechnology",
+      "#ChinaTrip2026",
+    ].map((tag) => (
+      <span key={tag} className="text-xs text-teal font-medium">
+        {tag}
+      </span>
+    ))}
+  </div>
+</div>
             </div>
           </div>
         </div>
@@ -164,7 +173,7 @@ export function EventPopup({ eventSlug = 'elgouna-2026', autoClose = true }: Eve
         {/* Bottom - Centered CTA Button (Responsive) */}
         <div className="border-t border-gray-200 bg-gradient-to-r from-navy/5 to-teal/5 px-3 md:px-8 py-3 md:py-6 flex justify-center">
           <Link
-            to={`/media/elgouna-2026`}
+            to={`/media/dahua-hangzhou-songcheng-park-2026`}
             className="inline-flex items-center gap-1 md:gap-2 px-4 md:px-8 py-2 md:py-3 bg-teal hover:bg-teal/90 text-white font-semibold text-xs md:text-base rounded-lg transition-all duration-300 shadow-md hover:shadow-lg group"
           >
             View Full Event Details
