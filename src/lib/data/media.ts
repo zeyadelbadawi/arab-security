@@ -257,6 +257,117 @@ images: [
     "event"
   ],
 },
+
+  {
+  slug: "itc-headquarters-china-visit-2025",
+  title: "ASG Distribution Strengthens Partnership with ITC Through Technical Visit to China",
+  excerpt:
+    "ASG Distribution's ITC Product Manager visited ITC's headquarters in China, completing advanced technical training and exploring the company's state-of-the-art manufacturing facilities to strengthen regional expertise.",
+  content:
+    "As part of its ongoing commitment to delivering world-class audio-visual solutions, ASG Distribution's ITC Product Manager, Mr. Ibrahim Fadl, visited ITC's global headquarters in China for an advanced technical and product development program.\n\nThe visit included comprehensive training on ITC's latest technologies, solutions, and product innovations, providing valuable first-hand knowledge of the company's rapidly evolving audio-visual ecosystem. In addition, Mr. Fadl toured ITC's state-of-the-art manufacturing facilities, gaining deeper insight into the engineering excellence, quality standards, and innovation processes behind the brand's industry-leading solutions.\n\nThis strategic visit reinforces the strong partnership between ASG Distribution and ITC while ensuring that customers across the region benefit from the latest technological advancements, enhanced technical expertise, and world-class support.\n\nBy investing in continuous learning and direct collaboration with global technology leaders, ASG Distribution continues to empower its partners and customers with innovative, reliable, and future-ready audio-visual solutions.\n\n#ASGDistribution #ITC #AudioVisual #Innovation #Technology #China #StrategicPartnership #ProfessionalTraining",
+  type: "news",
+  date: "2025-04-01",
+  image:
+    "https://imoukuwait.com/wp-content/uploads/2026/07/492736655_1172361348023486_293786768878975202_n.jpg",
+  images: [
+    "https://imoukuwait.com/wp-content/uploads/2026/07/492736655_1172361348023486_293786768878975202_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/492502953_1172361424690145_7122606254030466639_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/493722025_1172361401356814_7533713020323819102_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/493019920_1172361421356812_8898084227179831742_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/493711413_1172361451356809_1560791890724131971_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/494005101_1172361388023482_7794060350196887199_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/493928962_1172361504690137_6437998566579954934_n.jpg",
+  ],
+  tags: [
+    "asg-distribution",
+    "itc",
+    "china",
+    "training",
+    "audio-visual",
+    "technology",
+    "strategic-partnership",
+    "innovation",
+    "news",
+  ],
+},
+
+
+  {
+  slug: "asg-distribution-kstar-canton-fair-2025",
+  title: "ASG Distribution Explores Strategic Opportunities with Kstar at Canton Fair 2025",
+  excerpt:
+    "ASG Distribution visited Kstar during Canton Fair 2025 in China, strengthening strategic collaboration and exploring advanced energy technologies to expand its portfolio of innovative solutions.",
+  content:
+    "ASG Distribution, led by General Manager Mr. Hassan Mansour, visited the Kstar booth during Canton Fair 2025 in China as part of the company's ongoing commitment to expanding its global partnerships and introducing innovative technologies to the regional market.\n\nRecognized as a global leader in energy solutions, Kstar showcased its latest advancements in power infrastructure, energy storage, and intelligent energy technologies. The visit provided ASG Distribution with valuable insights into Kstar's cutting-edge portfolio and future innovations that support sustainable and high-performance energy solutions.\n\nDuring the visit, senior representatives from both companies held strategic discussions focused on strengthening their partnership and exploring new opportunities for collaboration. The meeting reinforced a shared vision of delivering reliable, future-ready energy solutions that meet the evolving needs of customers across the region.\n\nThis milestone reflects ASG Distribution's dedication to building strong international alliances and continuously expanding its portfolio with world-class technologies that create long-term value for its partners and clients.\n\n#ASGDistribution #Kstar #CantonFair2025 #EnergySolutions #StrategicPartnership #Innovation #SmartEnergy #China",
+  type: "news",
+  date: "2025-04-01",
+  image:
+    "https://imoukuwait.com/wp-content/uploads/2026/07/491714119_1162780098981611_7307817094179882874_n.jpg",
+  images: [
+    "https://imoukuwait.com/wp-content/uploads/2026/07/491714119_1162780098981611_7307817094179882874_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/07/486170666_1162780095648278_4102847352221670925_n-1.jpg",
+  ],
+  tags: [
+    "asg-distribution",
+    "kstar",
+    "canton-fair",
+    "china",
+    "energy",
+    "smart-energy",
+    "strategic-partnership",
+    "innovation",
+    "news",
+  ],
+},
+
+
+  {
+  slug: "you-matter-hurghada-2025",
+  title: "You Matter 2025 – Egypt's Largest Gathering of Low-Current Professionals",
+  excerpt:
+    "ASG Distribution and Dahua Technology Egypt brought together authorized distributors and low-current professionals for 'You Matter 2025,' the largest technical community event of its kind in Egypt.",
+  content:
+    "ASG Distribution, in collaboration with Dahua Technology Egypt, proudly hosted 'You Matter 2025' in Hurghada—an exceptional event that brought together authorized distributors, business partners, and low-current professionals from across Egypt for an inspiring experience of learning, collaboration, and celebration.\n\nRecognized as the largest gathering of low-current technicians in Egypt, the event reflected ASG Distribution's commitment to investing in the people who drive the success of the security industry. Participants from different governorates came together to exchange knowledge, strengthen professional relationships, and explore the latest innovations shaping the future of security and low-current technologies.\n\nAcross multiple days, attendees enjoyed technical sessions, interactive activities, networking opportunities, and engaging discussions with industry experts, creating an environment that encouraged both professional growth and meaningful collaboration. Beyond the technical content, the event celebrated the dedication and achievements of ASG Distribution's trusted partners and authorized distributors, reinforcing the company's philosophy that every partner plays a vital role in its continued success.\n\n'You Matter' is more than an event—it is a long-term initiative that reflects ASG Distribution's vision of empowering its technical community, recognizing excellence, and building stronger partnerships across the Egyptian market.\n\nTogether with Dahua Technology Egypt, ASG Distribution remains committed to creating opportunities that inspire innovation, strengthen technical expertise, and shape the future of the security industry.\n\n#ASGDistribution #YouMatter #DahuaTechnology #LowCurrent #TechnicalCommunity #AuthorizedDistributors #Partnership #SecuritySolutions",
+  type: "event",
+  date: "2025-03-01",
+  image:
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484921114_1138453084747646_1591935281315696706_n.jpg",
+  images: [
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484921114_1138453084747646_1591935281315696706_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484147398_1138453054747649_6741874830299270539_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484210358_1138461771413444_2889066054410560277_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484126633_1138452924747662_2494488059317913214_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484081841_1138452981414323_1323637682830855534_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/485345916_1138453011414320_5342098645080898709_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484462746_1138452854747669_2853169623284432309_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484998965_1138453138080974_4512516485423994696_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/485137693_1138453198080968_2971774742243512123_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484796571_1138453148080973_5683968359270546348_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484487945_1138453231414298_1622905988593285278_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484232375_1138461741413447_713159516897465403_n-1.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484345397_1138461341413487_1192120129157548430_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484540056_1138461351413486_2202422445037348228_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484536432_1138461701413451_2395132463215078019_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484953716_1138461768080111_5736526962262495967_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484312809_1138461711413450_1145531980019406968_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484232375_1138461741413447_713159516897465403_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484047289_1138450511414570_1216313705573643426_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484456858_1138450281414593_7750960076437197994_n.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/08/484873371_1138338634759091_4039214985254017801_n.jpg",
+  ],
+  tags: [
+    "asg-distribution",
+    "you-matter",
+    "hurghada",
+    "dahua",
+    "low-current",
+    "technical-training",
+    "authorized-distributors",
+    "networking",
+    "security-solutions",
+    "event",
+  ],
+},
 ];
 
 export function getMediaItems(): MediaItem[] {
