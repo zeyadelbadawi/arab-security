@@ -21,7 +21,7 @@ export function ImageGallery({ images, title }: ImageGalleryProps) {
   const goToNext = () => goToSlide(selectedIndex + 1);
 
   return (
-    <div className="space-y-6">
+    <div className="w-full max-w-full overflow-hidden space-y-6">
       {/* Main Gallery Display */}
       <div className="space-y-4">
         {/* Primary Image with Lightbox */}
@@ -95,9 +95,10 @@ export function ImageGallery({ images, title }: ImageGalleryProps) {
 
         {/* Thumbnail Strip */}
         {images.length > 1 && (
-          <div className="flex gap-3 overflow-x-auto pb-2 -mx-4 px-4 md:mx-0 md:px-0">
+         <div className="w-full max-w-full overflow-x-auto overflow-y-hidden pb-2">
             {images.map((image, index) => (
               <motion.button
+                layout={false}
                 key={index}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
