@@ -14,6 +14,31 @@ export interface MediaItem {
 
 export const mediaItems: MediaItem[] = [
  {
+  slug: "dahua-hangzhou-songcheng-park-2026",
+  title: "Dahua China Trip 2026",
+  excerpt:
+    "ASG Distribution and Dahua Technology concluded the China Trip 2026 with a memorable cultural visit to Hangzhou Songcheng Park alongside their valued authorized distribution partners.",
+  content:
+    "As part of the closing activities of Dahua China Trip 2026, ASG Distribution, together with Dahua Technology and its valued authorized distribution partners, enjoyed a memorable visit to Hangzhou Songcheng Park in China.\n\nThe experience offered more than just sightseeing—it provided an opportunity to strengthen professional relationships, celebrate successful partnerships, and explore one of China's most iconic cultural destinations.\n\nThe journey reflected our shared commitment to collaboration, innovation, and building stronger connections that extend beyond business.\n\nTogether, we continue to grow, innovate, and create lasting partnerships.\n\n#ASGDistribution #DahuaTechnology #ChinaTrip2026 #Hangzhou #SongchengPark #AuthorizedDistributors #Partnership #Innovation #TogetherWeGrow",
+  type: "news",
+  date: "2026-07-01",
+  image:
+    "https://imoukuwait.com/wp-content/uploads/2026/07/753729725_1535643211695296_7203993570700827241_n.jpg",
+  images: [
+    "https://imoukuwait.com/wp-content/uploads/2026/07/753729725_1535643211695296_7203993570700827241_n.jpg",
+  ],
+  tags: [
+    "dahua",
+    "china-trip",
+    "hangzhou",
+    "songcheng-park",
+    "asg-distribution",
+    "authorized-distributors",
+    "partnership",
+    "news",
+  ],
+},
+{
     slug: "elgouna-2026",
     title: "El Gouna 2026: Connect. Collaborate. Celebrate.",
     excerpt: "ASG Distribution and Dahua Technology brought together leading System Integrators and End-Users in El Gouna to celebrate strong partnerships and shared success.",
@@ -43,31 +68,6 @@ images: [
 ],
     tags: ["elgouna", "partnership", "dahua", "asg-distribution", "event"],
   },
-{
-  slug: "dahua-hangzhou-songcheng-park-2026",
-  title: "Dahua China Trip 2026",
-  excerpt:
-    "ASG Distribution and Dahua Technology concluded the China Trip 2026 with a memorable cultural visit to Hangzhou Songcheng Park alongside their valued authorized distribution partners.",
-  content:
-    "As part of the closing activities of Dahua China Trip 2026, ASG Distribution, together with Dahua Technology and its valued authorized distribution partners, enjoyed a memorable visit to Hangzhou Songcheng Park in China.\n\nThe experience offered more than just sightseeing—it provided an opportunity to strengthen professional relationships, celebrate successful partnerships, and explore one of China's most iconic cultural destinations.\n\nThe journey reflected our shared commitment to collaboration, innovation, and building stronger connections that extend beyond business.\n\nTogether, we continue to grow, innovate, and create lasting partnerships.\n\n#ASGDistribution #DahuaTechnology #ChinaTrip2026 #Hangzhou #SongchengPark #AuthorizedDistributors #Partnership #Innovation #TogetherWeGrow",
-  type: "news",
-  date: "2026-07-01",
-  image:
-    "https://imoukuwait.com/wp-content/uploads/2026/07/753729725_1535643211695296_7203993570700827241_n.jpg",
-  images: [
-    "https://imoukuwait.com/wp-content/uploads/2026/07/753729725_1535643211695296_7203993570700827241_n.jpg",
-  ],
-  tags: [
-    "dahua",
-    "china-trip",
-    "hangzhou",
-    "songcheng-park",
-    "asg-distribution",
-    "authorized-distributors",
-    "partnership",
-    "news",
-  ],
-},
 
   {
   slug: "asg-distribution-training-academy-cairo-2026",
