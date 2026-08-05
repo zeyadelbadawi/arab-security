@@ -1,7 +1,7 @@
 // CDN Image URLs
 export const IMAGES = {
     heroCommandCenter: "https://mgx-backend-cdn.metadl.com/generate/images/967905/2026-04-08/651bd48b-0305-4bb4-ad3c-cb7cf7389d85.png",
-    heroAboutTeam: "https://mgx-backend-cdn.metadl.com/generate/images/967905/2026-04-08/e0a2fbf5-58ad-4514-b3e1-987accde95ce.png",
+    heroAboutTeam: "https://imoukuwait.com/wp-content/uploads/2026/08/photo_2026-08-05_11-48-41.jpg",
     heroNetworking: "https://mgx-backend-cdn.metadl.com/generate/images/967905/2026-04-08/d67d9b6c-d850-4858-9f02-9170c720855b.png",
     heroSurveillance: "https://mgx-backend-cdn.metadl.com/generate/images/967905/2026-04-08/79e4ddef-ec6f-4060-ae73-80a2181555ac.png",
     heroFireAlarm: "https://mgx-backend-cdn.metadl.com/generate/images/967905/2026-04-08/7d0f495c-5ae2-460e-8d1e-1d42957b1b4a.png",
