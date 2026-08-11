@@ -682,7 +682,37 @@ export const projects: Project[] = [
     isFeatured: false,
   },
 
-
+{
+  slug: "marassi-integrated-access-control",
+  title: "Marassi | Integrated Access Control System",
+  client: "Marassi",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "access-control",
+    "integrated-security",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Marassi required a reliable access control solution to regulate entry, enhance security, and ensure controlled access across key areas of the development.",
+  solution:
+    "Arab Security Group implemented an integrated Access Control System, enabling secure and efficient management of authorized entry points throughout the development.",
+  result:
+    "The solution strengthened overall security, improved access management, and provided greater control and visibility over movement across the development.",
+  impactMetrics: [
+    { label: "Access Coverage", value: 100, suffix: "%" },
+    { label: "Access Control", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Security Efficiency", value: 99, suffix: "%" },
+  ],
+  isFeatured: false,
+},
 
 
   // 5) Hilton Nile Towers
