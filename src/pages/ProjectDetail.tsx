@@ -32,7 +32,7 @@ export default function ProjectDetailPage() {
   }>(null);
 
   const projectVideoCards =
-    project.slug === "its-egypt-radar-smart-system"
+    project.slug === "moi-amman"
       ? [
           {
             id: "arabic",
