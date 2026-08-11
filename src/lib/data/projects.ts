@@ -46,6 +46,73 @@ export const projects: Project[] = [
 },
 
   {
+  slug: "emaar-safe-city-traffic-management",
+  title: "Emaar | Safe City Traffic Management Solution",
+  client: "Emaar",
+  location: "N/A",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "smart-intelligent",
+    "parking-traffic",
+    "integrated-security",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Emaar required an intelligent traffic management solution to monitor vehicle speeds, accurately detect violations, and seamlessly integrate with its existing systems to enhance road safety across the community.",
+  solution:
+    "Arab Security Group implemented a Safe City Solution featuring an advanced speeding monitoring and violation detection system, fully integrated with Emaar's existing infrastructure to enable automated monitoring, accurate enforcement, and centralized management.",
+  result:
+    "The solution improved road safety, streamlined traffic enforcement, and enabled faster violation processing through a fully integrated and automated system, enhancing operational efficiency and supporting a safer driving environment.",
+  impactMetrics: [
+    { label: "Traffic Monitoring", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "System Integration", value: 100, suffix: "%" },
+    { label: "Enforcement Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "signal-intelligent-traffic-signal-management",
+  title: "Signal | Intelligent Traffic Signal Management System",
+  client: "Signal",
+  location: "N/A",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "transportation-logistics",
+  solutionsUsed: [
+    "parking-traffic",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Managing traffic flow at busy intersections required a reliable and intelligent traffic signal system to reduce congestion, improve road safety, and ensure efficient vehicle movement.",
+  solution:
+    "Arab Security Group delivered an Intelligent Transportation System (ITS) featuring advanced traffic signal control, real-time traffic management, and smart intersection solutions to optimize traffic flow and enhance operational efficiency.",
+  result:
+    "The solution improved traffic mobility, reduced congestion, enhanced road safety, and enabled more efficient traffic operations through intelligent signal control and centralized management.",
+  impactMetrics: [
+    { label: "Traffic Coverage", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Signal Integration", value: 100, suffix: "%" },
+    { label: "Traffic Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  
+
+  {
     slug: "capital-walk-led-displays",
     title: "Capital Walk | Advertising LED Displays",
     client: "Capital Walk",
