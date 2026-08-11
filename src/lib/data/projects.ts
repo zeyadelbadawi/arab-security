@@ -110,6 +110,471 @@ export const projects: Project[] = [
   isFeatured: false,
 },
 
+  {
+  slug: "smart-cities-city-wide-cctv-surveillance",
+  title: "Smart Cities | City-Wide CCTV & Surveillance Solution",
+  client: "Security Directorates",
+  location: "Dakahlia, Alexandria & Giza, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Government & Public Sector",
+  solutionsUsed: [
+    "smart-intelligent",
+    "integrated-security",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Enhancing public safety across multiple cities required a reliable surveillance network capable of providing continuous street monitoring and supporting Security Directorates with real-time situational awareness.",
+  solution:
+    "Arab Security Group deployed an advanced Smart City CCTV solution, installing surveillance systems across Dakahlia, Alexandria, and Giza, integrated with Security Directorates to enable centralized street monitoring and improved security operations.",
+  result:
+    "The project strengthened public safety, improved city-wide surveillance capabilities, and enabled faster incident detection and response through reliable, centralized monitoring across multiple governorates.",
+  impactMetrics: [
+    { label: "City Coverage", value: 3, suffix: " Governorates" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "Centralized Monitoring", value: 100, suffix: "%" },
+    { label: "Security Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "watanya-roads-integrated-toll-station",
+  title: "Watanya Roads | Integrated Toll Station Solution",
+  client: "Watanya Roads",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [
+
+          IMAGES.alWatanyahFeatured,
+      IMAGES.alWatanyah01,
+      IMAGES.alWatanyah02,
+  ],
+  industry: "transportation-logistics",
+  solutionsUsed: [
+    "integrated-security",
+    "parking-traffic",
+    "audio-visual",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Watanya Roads required an integrated toll station solution to streamline vehicle processing, enhance security, and improve operational efficiency while ensuring accurate vehicle identification and continuous monitoring.",
+  solution:
+    "Arab Security Group delivered a complete toll station solution featuring CCTV surveillance, ANPR cameras, automatic barriers, and a public address system, creating a secure and efficient traffic management environment.",
+  result:
+    "The solution improved toll operations, enhanced security, accelerated vehicle processing, and enabled accurate license plate recognition, delivering a safer and more efficient tolling experience.",
+  impactMetrics: [
+    { label: "Traffic Coverage", value: 100, suffix: "%" },
+    { label: "Operation", value: 24, suffix: "/7" },
+    { label: "Vehicle Identification", value: 100, suffix: "%" },
+    { label: "Processing Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "orascom-hotel-management-integrated-hotel-technology",
+  title: "Orascom Hotel Management | Integrated Hotel Technology Solutions",
+  client: "Orascom Hotel Management",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "hospitality",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+    "light-current-elv",
+    "audio-visual",
+    "access-control",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Orascom Hotel Management required a reliable and scalable technology infrastructure to enhance security, communication, and operational efficiency across 19 hotel properties while maintaining a consistent guest experience.",
+  solution:
+    "Arab Security Group delivered comprehensive integrated solutions across 19 hotels, including security systems, surveillance, access control, networking, public address, and smart building technologies tailored to each property's operational needs.",
+  result:
+    "The project enhanced safety, streamlined hotel operations, improved communication, and delivered a secure, efficient, and seamless experience for both guests and hotel management across all locations.",
+  impactMetrics: [
+    { label: "Hotels Covered", value: 19, suffix: " Properties" },
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "orascom-hotel-management-integrated-hotel-technology",
+  title: "Orascom Hotel Management | Integrated Hotel Technology Solutions",
+  client: "Orascom Hotel Management",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "hospitality",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+    "light-current-elv",
+    "audio-visual",
+    "access-control",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Orascom Hotel Management required a reliable and scalable technology infrastructure to enhance security, communication, and operational efficiency across 19 hotel properties while maintaining a consistent guest experience.",
+  solution:
+    "Arab Security Group delivered comprehensive integrated solutions across 19 hotels, including security systems, surveillance, access control, networking, public address, and smart building technologies tailored to each property's operational needs.",
+  result:
+    "The project enhanced safety, streamlined hotel operations, improved communication, and delivered a secure, efficient, and seamless experience for both guests and hotel management across all locations.",
+  impactMetrics: [
+    { label: "Hotels Covered", value: 19, suffix: " Properties" },
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "sunrise-hotels-cctv-surveillance",
+  title: "Sunrise Hotels | Comprehensive CCTV Surveillance System",
+  client: "Sunrise Hotels",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "hospitality",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Sunrise Hotels required a high-performance surveillance system to strengthen security, monitor key areas, and ensure the safety of guests, staff, and hotel assets without disrupting daily operations.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, providing strategic camera coverage, high-definition monitoring, and reliable security across the hotel premises.",
+  result:
+    "The solution enhanced overall security, improved incident monitoring and response, and created a safer environment for guests, employees, and hotel operations.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "markato-integrated-security-smart-building",
+  title: "Markato | Integrated Security & Smart Building Solutions",
+  client: "Markato",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "retail-commercial-centers",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+    "light-current-elv",
+    "audio-visual",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Markato required a fully integrated technology infrastructure to enhance security, connectivity, guest experience, and life safety while supporting smooth day-to-day operations across the facility.",
+  solution:
+    "Arab Security Group implemented a complete solution including CCTV surveillance, high-speed Wi-Fi, fire alarm systems, and IPTV, delivering a secure, connected, and modern environment.",
+  result:
+    "The project improved security, ensured reliable connectivity, enhanced guest satisfaction, and provided a safe, efficient, and technology-driven experience throughout the property.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Network Availability", value: 99, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "steigenberger-hotels-cctv-surveillance",
+  title: "Steigenberger Hotels | Advanced CCTV Surveillance System",
+  client: "Steigenberger Hotels",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "hospitality",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Steigenberger Hotels required a reliable surveillance solution to enhance guest safety, protect hotel assets, and provide continuous monitoring across critical areas of the property.",
+  solution:
+    "Arab Security Group deployed a comprehensive CCTV surveillance system, delivering high-definition camera coverage, real-time monitoring, and a scalable security infrastructure tailored to the hotel's requirements.",
+  result:
+    "The solution strengthened hotel security, improved incident detection and response, and ensured a safer environment for guests, staff, and daily operations.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "sofitel-hotel-cctv-video-wall",
+  title: "Sofitel Hotel | Integrated CCTV & Video Wall Solution",
+  client: "Sofitel Hotel",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "hospitality",
+  solutionsUsed: [
+    "integrated-security",
+    "audio-visual",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Sofitel Hotel required an integrated visual security solution to enhance surveillance, improve operational awareness, and enable real-time monitoring of critical areas across the property.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system integrated with a video wall, providing centralized monitoring, high-definition video, and enhanced visibility for security operations.",
+  result:
+    "The solution strengthened security, improved situational awareness, enabled faster incident response, and delivered efficient centralized monitoring for seamless hotel operations.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Monitoring Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "albatros-hotels-cctv-surveillance",
+  title: "Albatros Hotels | Comprehensive CCTV Surveillance System",
+  client: "Albatros Hotels",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "hospitality",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Albatros Hotels required a reliable surveillance solution to strengthen security, monitor key areas, and ensure the safety of guests, staff, and hotel assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, providing high-quality camera coverage and reliable monitoring across the hotel's premises.",
+  result:
+    "The solution enhanced overall security, improved incident detection and response, and created a safer environment for guests, employees, and hotel operations.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "cgp-integrated-security-it-infrastructure",
+  title: "CGP | Integrated Security & IT Infrastructure Solution",
+  client: "CGP",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "commercial-corporate",
+  solutionsUsed: [
+    "integrated-security",
+    "light-current-elv",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "CGP required a robust and integrated security and IT infrastructure capable of supporting reliable surveillance, centralized monitoring, and high-performance network connectivity across the facility.",
+  solution:
+    "Arab Security Group delivered a comprehensive solution combining CCTV surveillance, structured infrastructure, Milestone video management software, and Aruba network switches, creating a reliable and scalable security ecosystem.",
+  result:
+    "The solution enhanced security and situational awareness while providing centralized video management and dependable network performance, supporting efficient monitoring and day-to-day operations.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Network Reliability", value: 99, suffix: "%" },
+    { label: "Monitoring Operation", value: 24, suffix: "/7" },
+    { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "granda-life-integrated-residential-security",
+  title: "Granda Life | Integrated Residential Security & Technology Solution",
+  client: "Granda Life",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "integrated-security",
+    "access-control",
+    "light-current-elv",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Granda Life required an integrated security and technology infrastructure to ensure comprehensive protection, controlled access, seamless communication, and reliable connectivity throughout the residential compound.",
+  solution:
+    "Arab Security Group delivered a complete solution including CCTV surveillance, access control, intercom systems, DSS Pro, and IT infrastructure, integrating multiple technologies into one cohesive security ecosystem.",
+  result:
+    "The solution enhanced security and access management, improved communication across the compound, and provided reliable infrastructure for efficient monitoring and day-to-day community operations.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Access Control", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Infrastructure Reliability", value: 99, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "markez-comprehensive-cctv-surveillance",
+  title: "Markez | Comprehensive CCTV Surveillance System",
+  client: "Markez",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "commercial-corporate",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Markez required a reliable surveillance solution to enhance security, monitor critical areas, and ensure effective oversight across the facility.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, providing reliable camera coverage and continuous monitoring throughout the facility.",
+  result:
+    "The solution strengthened overall security, improved situational awareness, and enabled faster detection and response to incidents.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+{
+  slug: "jayed-compound-cctv-vehicle-access-control",
+  title: "JAYED Compound | Integrated CCTV & Vehicle Access Control Solution",
+  client: "JAYED Compound",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "integrated-security",
+    "parking-traffic",
+    "access-control",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "JAYED Compound required a reliable security solution to control vehicle access and enhance surveillance across entry and exit points, ensuring a safer and more secure residential environment.",
+  solution:
+    "Arab Security Group implemented an integrated CCTV surveillance and barrier system, providing continuous monitoring and controlled vehicle access throughout the compound.",
+  result:
+    "The solution enhanced overall security, improved vehicle access management, and enabled better monitoring of the compound's entry and exit points.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Access Control", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "al-ahly-bank-compound-cctv-surveillance",
+  title: "Al Ahly Bank Compound | Comprehensive CCTV Surveillance System",
+  client: "Al Ahly Bank Compound",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Al Ahly Bank Compound required a reliable surveillance solution to enhance security, monitor key areas, and ensure the safety of residents, staff, and property assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, providing reliable camera coverage and continuous monitoring across the compound.",
+  result:
+    "The solution strengthened overall security, improved situational awareness, and enabled faster incident detection and response, creating a safer residential environment.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
   
 
   {
@@ -148,37 +613,7 @@ export const projects: Project[] = [
     isFeatured: true,
   },
 
-  {
-    slug: "highway-al-watanyah",
-    title: "Highway | Al Watanyah",
-    client: "Al Watanyah",
-    location: "Egypt",
-    duration: "N/A",
-    heroImage: IMAGES.alWatanyahFeatured,
-    galleryImages: [
-      IMAGES.alWatanyahFeatured,
-      IMAGES.alWatanyah01,
-      IMAGES.alWatanyah02,
-    ],
-    industry: "transportation-logistics",
-    solutionsUsed: [
-      "integrated-security",
-    ],
-    servicesProvided: [
-      "installation-commissioning",
-      "testing-integration",
-    ],
-    challenge: "Introducing Dahua systems to replace existing vendors across road networks.",
-    solution: "Deployment of IP surveillance and DSS platform across highways and toll gates.",
-    result: "The system supports monitoring across roads and toll infrastructure.",
-    impactMetrics: [
-      { label: "Network Coverage", value: 100, suffix: "%" },
-      { label: "Surveillance Operation", value: 24, suffix: "/7" },
-      { label: "System Reliability", value: 99, suffix: "%" },
-      { label: "Response Efficiency", value: 40, suffix: "% ↑" },
-    ],
-    isFeatured: true,
-  },
+
 
 
   // 5) Hilton Nile Towers
