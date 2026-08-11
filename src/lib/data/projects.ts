@@ -2,61 +2,48 @@ import type { Project } from "../types";
 import { IMAGES } from "../constants";
 
 export const projects: Project[] = [
-  {
-    slug: "its-egypt-radar-smart-system",
-    title: "ITS - Egypt Radar Smart System",
-    client: "ITS Egypt",
-    location: "Egypt",
-    duration: "N/A",
-    heroImage: "https://imoukuwait.com/wp-content/uploads/2026/04/1-scaled.jpg",
-  
-    galleryImages: [
-      "https://imoukuwait.com/wp-content/uploads/2026/04/1-scaled.jpg",
-      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-2.jpeg",
-      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-5.jpeg",
-      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-8.jpeg",
-      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-9.jpeg",
-      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-10.jpeg",
-      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-11.jpeg",
-      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-12.jpeg",
-      "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-13.jpeg",
-    ],
-  
-    videos: [
-      "https://imoukuwait.com/wp-content/uploads/2026/04/ASG-ITS-Solution-HQ.mp4",
-    ],
-  
-    industry: "Government & Public Sector",
-  
-    solutionsUsed: [
-      "smart-intelligent",
-      "integrated-security",
-      "parking-traffic",
-    ],
-  
-    servicesProvided: [
-      "installation-commissioning",
-      "testing-integration",
-    ],
-  
-    challenge:
-      "Managing road safety, speed monitoring, and real-time traffic control across highways and urban roads in Egypt required a highly accurate and scalable smart system capable of operating in diverse environmental and traffic conditions.",
-  
-    solution:
-      "Arab Security Group deployed an advanced ITS radar-based smart system designed to monitor vehicle speed, detect violations, and provide real-time traffic insights. The solution integrated high-precision radar sensors with intelligent analytics and centralized monitoring platforms, enabling seamless detection, tracking, and reporting across multiple road networks.",
-  
-    result:
-      "The implementation of the ITS radar smart system significantly enhanced traffic monitoring capabilities, improved road safety enforcement, and enabled authorities to make data-driven decisions. The system delivered accurate real-time insights, reduced violations, and supported efficient traffic management across key locations.",
-  
-    impactMetrics: [
-      { label: "Monitoring Coverage", value: 100, suffix: "%" },
-      { label: "System Operation", value: 24, suffix: "/7" },
-      { label: "Detection Accuracy", value: 99, suffix: "%" },
-      { label: "Violation Reduction", value: 40, suffix: "% ↑" },
-    ],
-  
-    isFeatured: true,
-  },
+{
+  slug: "moi-amman",
+  title: "MOI (Amman)",
+  client: "Ministry of Interior",
+  location: "Amman, Jordan",
+  duration: "N/A",
+  heroImage:
+    "https://imoukuwait.com/wp-content/uploads/2026/04/1-scaled.jpg",
+  galleryImages: [
+    "https://imoukuwait.com/wp-content/uploads/2026/04/1-scaled.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-2.jpeg",
+    "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-5.jpeg",
+    "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-8.jpeg",
+    "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-9.jpeg",
+    "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-10.jpeg",
+    "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-11.jpeg",
+    "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-12.jpeg",
+    "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-13.jpeg",
+  ],
+  industry: "Government & Public Sector",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Securing Ministry of Interior facilities across multiple locations required a large-scale surveillance system capable of delivering reliable, continuous monitoring while maintaining consistent performance across diverse sites.",
+  solution:
+    "Arab Security Group deployed and installed more than 500 high-performance surveillance cameras across multiple Ministry of Interior sites, providing comprehensive coverage, centralized monitoring, and a scalable security infrastructure.",
+  result:
+    "The project significantly enhanced situational awareness and security operations, delivering reliable surveillance coverage, improved incident response, and a robust monitoring system that supports the Ministry's nationwide security objectives.",
+  impactMetrics: [
+    { label: "Cameras Deployed", value: 500, suffix: "+" },
+    { label: "Monitoring Operation", value: 24, suffix: "/7" },
+    { label: "Site Coverage", value: 100, suffix: "%" },
+    { label: "Security Infrastructure", value: 100, suffix: "%" },
+  ],
+  isFeatured: true,
+},
 
   {
     slug: "capital-walk-led-displays",
