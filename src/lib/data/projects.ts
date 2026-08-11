@@ -575,42 +575,111 @@ export const projects: Project[] = [
   ],
   isFeatured: false,
 },
-  
 
   {
-    slug: "capital-walk-led-displays",
-    title: "Capital Walk | Advertising LED Displays",
-    client: "Capital Walk",
-    location: "New Administrative Capital",
+  slug: "green-square-integrated-cctv-it-infrastructure",
+  title: "Green Square | Integrated CCTV & IT Infrastructure Solution",
+  client: "Al Ahly Sabbour",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "integrated-security",
+    "light-current-elv",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Green Square required a reliable security and technology infrastructure to enhance surveillance across the compound while ensuring a robust foundation for its connected systems.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system and IT infrastructure, providing extensive monitoring capabilities supported by reliable and scalable connectivity.",
+  result:
+    "The solution strengthened security, improved situational awareness, and established a dependable infrastructure capable of supporting efficient surveillance and future technology requirements across the development.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "Infrastructure Reliability", value: 99, suffix: "%" },
+    { label: "System Scalability", value: 100, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+
+  {
+  slug: "capital-walk-video-wall",
+  title: "Capital Walk | Professional Video Wall Solution",
+  client: "Capital Walk",
+  location: "New Administrative Capital, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "retail-commercial-centers",
+  solutionsUsed: [
+    "audio-visual",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Capital Walk required an advanced visual display solution to enhance communication, monitoring, and information visibility across its facilities while delivering a high-quality viewing experience.",
+  solution:
+    "Arab Security Group implemented a professional Video Wall solution, providing high-resolution, seamless content display and centralized visual management for effective monitoring and communication.",
+  result:
+    "The solution enhanced visual communication, improved information visibility, and delivered an impactful display experience suitable for monitoring, presentations, and operational needs.",
+  impactMetrics: [
+    { label: "Display Coverage", value: 100, suffix: "%" },
+    { label: "Display Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Visual Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+
+  {
+    slug: "aura-compound-cfc-barrier-gates",
+    title: "Aura Compound – CFC | Barrier Gates",
+    client: "Aura Compound",
+    location: "CFC, Cairo, Egypt",
     duration: "N/A",
-    heroImage: IMAGES.capitalWalkFeatured,
+    heroImage: IMAGES.auraCompoundFeatured,
     galleryImages: [
-      IMAGES.capitalWalkFeatured,
-      IMAGES.capitalWalk01,
-      IMAGES.capitalWalk02,
-      IMAGES.capitalWalk03,
-      IMAGES.capitalWalk04,
-      IMAGES.capitalWalk05,
-      IMAGES.capitalWalk06,
-      IMAGES.capitalWalk07,
+      IMAGES.auraCompoundFeatured,
+      IMAGES.auraCompound01,
+      IMAGES.auraCompound02,
+      IMAGES.auraCompound03,
+      IMAGES.auraCompound04,
+      IMAGES.auraCompound05,
+      IMAGES.auraCompound06,
+      IMAGES.auraCompound07,
+      IMAGES.auraCompound08,
     ],
-    industry: "retail-commercial-centers",
-    solutionsUsed: [
-      "audio-visual",
+    industry: "residential-mixed-use",
+        solutionsUsed: [
+      "parking-traffic",
+      "access-control",
+      "physical-security",
     ],
     servicesProvided: [
       "installation-commissioning",
+      "testing-integration",
     ],
-    challenge: "It was a challenge to install on walls, but utilizing front maintenance cabinets solved it and was approved by ECG consultant.",
-    solution: "Supplying, installing, and commissioning Dahua LED outdoor displays.",
-    result: "The LED display system was successfully installed and approved.",
+    challenge: "Navigating the security requirements and privacy concerns of the compound while securing all entrances, exits, and garage access points.",
+    solution: "Supplying, installing, and commissioning barrier gates equipped with RFID readers. The implemented system used Magnetic Barrier Gates integrated with Centurion RFID readers.",
+    result: "The project enhanced the compound’s security infrastructure and improved regulation of human flow at access points while maintaining residents’ privacy.",
     impactMetrics: [
-      { label: "Display Coverage", value: 100, suffix: "%" },
-      { label: "Surveillance Operation", value: 24, suffix: "/7" },
-      { label: "System Reliability", value: 99, suffix: "%" },
-      { label: "Installation Efficiency", value: 40, suffix: "% ↑" },
+      { label: "Access Coverage", value: 100, suffix: "%" },
+      { label: "Installation Status", value: 100, suffix: "%" },
+      { label: "System Operation", value: 24, suffix: "/7" },
+      { label: "Security Efficiency", value: 99, suffix: "%" },
     ],
-    isFeatured: true,
+    isFeatured: false,
   },
 
 
@@ -695,48 +764,6 @@ export const projects: Project[] = [
     ],
     isFeatured: false,
   },
-
-
-  {
-    slug: "aura-compound-cfc-barrier-gates",
-    title: "Aura Compound – CFC | Barrier Gates",
-    client: "Aura Compound",
-    location: "CFC, Cairo, Egypt",
-    duration: "N/A",
-    heroImage: IMAGES.auraCompoundFeatured,
-    galleryImages: [
-      IMAGES.auraCompoundFeatured,
-      IMAGES.auraCompound01,
-      IMAGES.auraCompound02,
-      IMAGES.auraCompound03,
-      IMAGES.auraCompound04,
-      IMAGES.auraCompound05,
-      IMAGES.auraCompound06,
-      IMAGES.auraCompound07,
-      IMAGES.auraCompound08,
-    ],
-    industry: "residential-mixed-use",
-        solutionsUsed: [
-      "parking-traffic",
-      "access-control",
-      "physical-security",
-    ],
-    servicesProvided: [
-      "installation-commissioning",
-      "testing-integration",
-    ],
-    challenge: "Navigating the security requirements and privacy concerns of the compound while securing all entrances, exits, and garage access points.",
-    solution: "Supplying, installing, and commissioning barrier gates equipped with RFID readers. The implemented system used Magnetic Barrier Gates integrated with Centurion RFID readers.",
-    result: "The project enhanced the compound’s security infrastructure and improved regulation of human flow at access points while maintaining residents’ privacy.",
-    impactMetrics: [
-      { label: "Access Coverage", value: 100, suffix: "%" },
-      { label: "Installation Status", value: 100, suffix: "%" },
-      { label: "System Operation", value: 24, suffix: "/7" },
-      { label: "Security Efficiency", value: 99, suffix: "%" },
-    ],
-    isFeatured: false,
-  },
-
 
 
   {
