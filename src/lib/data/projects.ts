@@ -714,6 +714,70 @@ export const projects: Project[] = [
   isFeatured: false,
 },
 
+  {
+  slug: "tmg-integrated-vehicle-access-security",
+  title: "TMG | Integrated Vehicle Access & Security Solution",
+  client: "Talaat Mostafa Group (TMG)",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "integrated-security",
+    "parking-traffic",
+    "access-control",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Talaat Mostafa Group (TMG) required an integrated security solution to monitor its developments, control vehicle access, and improve the identification and management of vehicles entering and exiting its premises.",
+  solution:
+    "Arab Security Group implemented a comprehensive solution combining CCTV surveillance, automatic barriers, and License Plate Recognition (LPR) systems to provide secure and efficient vehicle access management.",
+  result:
+    "The solution enhanced overall security, streamlined vehicle entry and exit, improved access control, and provided greater visibility over vehicle movement across TMG's developments.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Vehicle Access Control", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Vehicle Management Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "waterway-integrated-cctv-network-infrastructure",
+  title: "Waterway | Integrated CCTV & Network Infrastructure Solution",
+  client: "Waterway Developments",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "integrated-security",
+    "light-current-elv",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Waterway Developments required a reliable security and network infrastructure to enhance surveillance capabilities while ensuring stable connectivity across the development.",
+  solution:
+    "Arab Security Group implemented an integrated solution combining CCTV surveillance systems and network switches, providing comprehensive monitoring supported by reliable network infrastructure.",
+  result:
+    "The solution strengthened security, improved surveillance coverage, and provided dependable network connectivity to support efficient monitoring and ongoing operations across the development.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Network Reliability", value: 99, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "Monitoring Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
 
   // 5) Hilton Nile Towers
   {
