@@ -6,7 +6,7 @@ export const projects: Project[] = [
   slug: "moi-amman",
   title: "MOI (Amman)",
   client: "Ministry of Interior",
-  location: "Amman, Jordan",
+  location: "Egypt",
   duration: "N/A",
   heroImage:
     "https://imoukuwait.com/wp-content/uploads/2026/04/1-scaled.jpg",
