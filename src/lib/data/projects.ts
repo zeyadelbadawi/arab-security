@@ -779,6 +779,74 @@ export const projects: Project[] = [
   isFeatured: false,
 },
 
+
+  {
+  slug: "katameya-dunes-integrated-cctv-network-infrastructure",
+  title: "Katameya Dunes | Integrated CCTV & Network Infrastructure Solution",
+  client: "Katameya Dunes",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "integrated-security",
+    "light-current-elv",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Katameya Dunes required a reliable security and network infrastructure to enhance surveillance across the compound while ensuring stable connectivity for its security systems.",
+  solution:
+    "Arab Security Group implemented an integrated solution combining CCTV surveillance and network switches, providing comprehensive monitoring supported by reliable and scalable network infrastructure.",
+  result:
+    "The solution strengthened overall security, improved surveillance coverage, and provided dependable network connectivity to support efficient monitoring and day-to-day operations across the compound.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Network Reliability", value: 99, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "Monitoring Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+{
+  slug: "cemex-cctv-control-room",
+  title: "CEMEX | Integrated CCTV & Control Room Solution",
+  client: "CEMEX",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "industrial-manufacturing",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "CEMEX required a robust security solution to enhance surveillance across its facilities while enabling centralized monitoring and efficient security management from a dedicated control room.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system and Control Room, providing centralized video monitoring, enhanced visibility, and efficient management of security operations.",
+  result:
+    "The solution strengthened facility security, improved situational awareness, and enabled faster incident detection and response through centralized, real-time surveillance.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Monitoring Operation", value: 24, suffix: "/7" },
+    { label: "Centralized Monitoring", value: 100, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  
+  
+
   // 5) Hilton Nile Towers
   {
     slug: "hilton-nile-towers",
