@@ -845,7 +845,70 @@ export const projects: Project[] = [
 },
 
   
-  
+  {
+  slug: "al-arabi-cctv-surveillance",
+  title: "Al Arabi Companies | Comprehensive CCTV Surveillance System",
+  client: "Al Arabi Companies",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "commercial-corporate",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Al Arabi Companies required a reliable surveillance solution to strengthen security, monitor key areas, and ensure effective oversight across their facilities.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, providing reliable camera coverage and continuous monitoring across the company's facilities.",
+  result:
+    "The solution enhanced overall security, improved situational awareness, and enabled faster incident detection and response, creating a safer and more secure working environment.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+
+  {
+  slug: "lulu-hypermarket-cctv-surveillance",
+  title: "LULU Hypermarket | Comprehensive CCTV Surveillance System",
+  client: "LULU Hypermarket",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "retail-commercial-centers",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "LULU Hypermarket required a reliable surveillance solution to enhance security, monitor high-traffic areas, and protect customers, employees, and assets across the facility.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, providing extensive camera coverage and continuous monitoring across key areas of the hypermarket.",
+  result:
+    "The solution strengthened overall security, improved situational awareness, and enabled faster incident detection and response, creating a safer and more secure shopping environment.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
 
   // 5) Hilton Nile Towers
   {
