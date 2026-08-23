@@ -990,7 +990,202 @@ export const projects: Project[] = [
     isFeatured: true,
   },
 
+{
+  slug: "glc-cctv-milestone-vms",
+  title: "GLC | Integrated CCTV & Milestone VMS Solution",
+  client: "GLC",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "commercial-corporate",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "GLC required a reliable surveillance solution capable of providing comprehensive security monitoring and efficient management of video feeds across its facilities.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system integrated with Milestone VMS, enabling centralized video management, monitoring, and efficient control of security operations.",
+  result:
+    "The solution enhanced security and situational awareness while providing centralized, efficient video management and faster access to critical surveillance footage.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Video Management", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "Monitoring Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
 
+
+  {
+  slug: "ezz-steel-cctv-vehicle-access",
+  title: "EZZ Steel | Integrated CCTV & Vehicle Access Control Solution",
+  client: "EZZ Steel",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "industrial-manufacturing",
+  solutionsUsed: [
+    "integrated-security",
+    "parking-traffic",
+    "access-control",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "EZZ Steel required a reliable security solution to enhance surveillance across its facilities and control vehicle access at key entry and exit points.",
+  solution:
+    "Arab Security Group implemented an integrated CCTV surveillance and barrier system, providing continuous monitoring and controlled vehicle access across the facility.",
+  result:
+    "The solution strengthened overall security, improved vehicle access management, and enhanced visibility across critical areas, supporting safer and more efficient facility operations.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Vehicle Access Control", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+
+  {
+  slug: "fatallah-supermarket-cctv-surveillance",
+  title: "Fatallah Supermarket | Comprehensive CCTV Surveillance System",
+  client: "Fatallah Supermarket",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "retail-commercial-centers",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Fatallah Supermarket required a reliable surveillance solution to enhance security, monitor customer and operational areas, and protect employees, customers, and assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, providing extensive camera coverage and continuous monitoring across key areas of the supermarket.",
+  result:
+    "The solution strengthened overall security, improved situational awareness, and enabled faster incident detection and response, creating a safer and more secure shopping environment.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+
+  {
+  slug: "mansour-automotive-cctv-surveillance",
+  title: "Mansour Automotive | Comprehensive CCTV Surveillance System",
+  client: "Mansour Automotive",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "commercial-corporate",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Mansour Automotive required a reliable surveillance solution to enhance security, monitor key areas, and protect vehicles, employees, customers, and facility assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, providing extensive camera coverage and continuous monitoring across the automotive facility.",
+  result:
+    "The solution strengthened overall security, improved situational awareness, and enabled faster incident detection and response, creating a safer environment for customers, employees, and operations.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "pepsi-mobile-fleet-monitoring",
+  title: "Pepsi | Mobile Fleet Monitoring Solution",
+  client: "Pepsi",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "transportation-logistics",
+  solutionsUsed: [
+    "smart-intelligent",
+    "parking-traffic",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Pepsi required an effective fleet monitoring solution to track vehicles, improve operational visibility, and ensure better management of its mobile fleet.",
+  solution:
+    "Arab Security Group implemented a Mobile Fleet Monitoring Solution across Pepsi's vehicles, enabling real-time tracking, fleet visibility, and monitoring of vehicle movements and operations.",
+  result:
+    "The solution improved fleet visibility, enhanced operational control, and enabled more efficient vehicle management, helping Pepsi optimize its mobile operations.",
+  impactMetrics: [
+    { label: "Fleet Coverage", value: 100, suffix: "%" },
+    { label: "Real-Time Monitoring", value: 24, suffix: "/7" },
+    { label: "Fleet Visibility", value: 100, suffix: "%" },
+    { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+
+  {
+  slug: "beyti-mobile-fleet-monitoring",
+  title: "Beyti | Mobile Fleet Monitoring Solution",
+  client: "Beyti",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "transportation-logistics",
+  solutionsUsed: [
+    "smart-intelligent",
+    "parking-traffic",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Beyti required a reliable solution to monitor its vehicle fleet, track vehicle movements, and gain better visibility over daily transportation operations.",
+  solution:
+    "Arab Security Group deployed a Mobile Fleet Monitoring Solution across Beyti's fleet, providing real-time vehicle tracking, movement monitoring, and greater operational visibility.",
+  result:
+    "The solution enhanced fleet management, improved operational efficiency, and provided greater control and visibility over vehicle movements and daily fleet activities.",
+  impactMetrics: [
+    { label: "Fleet Coverage", value: 100, suffix: "%" },
+    { label: "Real-Time Monitoring", value: 24, suffix: "/7" },
+    { label: "Fleet Visibility", value: 100, suffix: "%" },
+    { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
 
 ];
 
