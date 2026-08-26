@@ -1350,38 +1350,6 @@ export const projects: Project[] = [
 },
 
   {
-  slug: "al-salam-hospital-cctv-surveillance",
-  title: "Al Salam Hospital | Comprehensive CCTV Surveillance System",
-  client: "Al Salam Hospital",
-  location: "Egypt",
-  duration: "N/A",
-  heroImage: "",
-  galleryImages: [],
-  industry: "Healthcare",
-  solutionsUsed: [
-    "integrated-security",
-    "smart-intelligent",
-  ],
-  servicesProvided: [
-    "installation-commissioning",
-    "testing-integration",
-  ],
-  challenge:
-    "Al Salam Hospital required a reliable surveillance system to enhance security across the facility, monitor critical areas, and maintain continuous visibility while supporting a safe environment for patients, visitors, and staff.",
-  solution:
-    "Arab Security Group implemented a comprehensive CCTV system across the hospital, strategically installing cameras in key areas to provide effective coverage, continuous monitoring, and improved security control.",
-  result:
-    "The CCTV solution enhanced the hospital's overall security and visibility, enabling real-time monitoring and access to recorded footage to support incident detection, investigation, and day-to-day security operations.",
-  impactMetrics: [
-    { label: "Security Coverage", value: 100, suffix: "%" },
-    { label: "Surveillance Operation", value: 24, suffix: "/7" },
-    { label: "System Reliability", value: 99, suffix: "%" },
-    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
-  ],
-  isFeatured: false,
-},
-
-  {
   slug: "abu-qurqas-hospital-security-solution",
   title: "Abu Qurqas Hospital | Integrated CCTV & Access Control Solution",
   client: "Abu Qurqas Hospital",
