@@ -1478,7 +1478,103 @@ export const projects: Project[] = [
 },
 
 
+{
+  slug: "general-authority-health-insurance-cctv-surveillance",
+  title: "General Authority for Health Insurance | Comprehensive CCTV Surveillance System",
+  client: "General Authority for Health Insurance",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "The General Authority for Health Insurance required a reliable surveillance solution to enhance security across its facilities, monitor critical areas, and maintain continuous visibility for staff, visitors, and assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas to provide effective coverage and enable continuous monitoring of the facilities.",
+  result:
+    "The CCTV solution enhanced overall security and visibility, enabling real-time monitoring and access to recorded footage. This supported faster incident detection, effective investigations, and improved security management across the facilities.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
 
+
+  {
+  slug: "maghagha-hospital-cctv-surveillance",
+  title: "Maghagha Hospital | Comprehensive CCTV Surveillance System",
+  client: "Maghagha Hospital",
+  location: "Maghagha, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Maghagha Hospital required a reliable surveillance solution to strengthen security across the facility, monitor critical areas, and maintain continuous visibility to support the safety of patients, visitors, and staff.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas of the hospital to provide effective coverage and continuous monitoring.",
+  result:
+    "The CCTV solution enhanced the hospital's security and visibility, enabling real-time monitoring and access to recorded footage to support incident detection, investigation, and overall safety.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+
+  {
+  slug: "sokhna-emergency-hospital-cctv-access-control",
+  title: "Sokhna Emergency Hospital | Integrated CCTV & Access Control Solution",
+  client: "Sokhna Emergency Hospital",
+  location: "Ain Sokhna, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "access-control",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Sokhna Emergency Hospital required an integrated security solution to monitor critical areas, strengthen facility security, and control access to restricted spaces while maintaining a safe environment for patients, visitors, and staff.",
+  solution:
+    "Arab Security Group implemented an integrated CCTV surveillance and access control system, providing continuous monitoring across key areas while managing entry for authorized personnel and securing restricted zones.",
+  result:
+    "The solution enhanced overall security and access management, providing real-time surveillance, controlled entry, and recorded footage to support incident detection, investigation, and improved safety across the hospital.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Access Control", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "Security Efficiency", value: 99, suffix: "%" },
+  ],
+  isFeatured: false,
+},
   
   
 ];
