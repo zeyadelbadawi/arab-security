@@ -1576,7 +1576,1032 @@ export const projects: Project[] = [
   isFeatured: false,
 },
   
-  
+  // 1) General Authority for Health Insurance
+{
+  slug: "general-authority-health-insurance-cctv-surveillance",
+  title: "General Authority for Health Insurance | Comprehensive CCTV Surveillance System",
+  client: "General Authority for Health Insurance",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "The General Authority for Health Insurance required a reliable surveillance solution to enhance security across its facilities, monitor critical areas, and maintain continuous visibility for staff, visitors, and assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas to provide effective coverage and enable continuous monitoring of the facilities.",
+  result:
+    "The CCTV solution enhanced overall security and visibility, enabling real-time monitoring and access to recorded footage. This supported faster incident detection, effective investigations, and improved security management across the facilities.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 2) Maghagha Hospital
+{
+  slug: "maghagha-hospital-cctv-surveillance",
+  title: "Maghagha Hospital | Comprehensive CCTV Surveillance System",
+  client: "Maghagha Hospital",
+  location: "Maghagha, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Maghagha Hospital required a reliable surveillance solution to strengthen security across the facility, monitor critical areas, and maintain continuous visibility to support the safety of patients, visitors, and staff.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas of the hospital to provide effective coverage and continuous monitoring.",
+  result:
+    "The CCTV solution enhanced the hospital's security and visibility, enabling real-time monitoring and access to recorded footage to support incident detection, investigation, and overall safety.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 3) Sokhna Emergency Hospital
+{
+  slug: "sokhna-emergency-hospital-cctv-access-control",
+  title: "Sokhna Emergency Hospital | Integrated CCTV & Access Control Solution",
+  client: "Sokhna Emergency Hospital",
+  location: "Ain Sokhna, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "access-control",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Sokhna Emergency Hospital required an integrated security solution to monitor critical areas, strengthen facility security, and control access to restricted spaces while maintaining a safe environment for patients, visitors, and staff.",
+  solution:
+    "Arab Security Group implemented an integrated CCTV surveillance and access control system, providing continuous monitoring across key areas while managing entry for authorized personnel and securing restricted zones.",
+  result:
+    "The solution enhanced overall security and access management, providing real-time surveillance, controlled entry, and recorded footage to support incident detection, investigation, and improved safety across the hospital.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Access Control", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "Security Efficiency", value: 99, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+// 4) Nasser Hospital
+{
+  slug: "nasser-hospital-cctv-surveillance",
+  title: "Nasser Hospital | Comprehensive CCTV Surveillance System",
+  client: "Nasser Hospital",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Nasser Hospital required a reliable surveillance system to enhance security across the facility, monitor critical areas, and maintain continuous visibility to support the safety of patients, visitors, staff, and hospital assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas to provide effective coverage and enable continuous monitoring of the hospital.",
+  result:
+    "The CCTV solution strengthened the hospital's security and monitoring capabilities, providing real-time visibility and recorded footage to support incident detection, investigation, and overall safety across the facility.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 5) Qena Ophthalmology Hospital
+{
+  slug: "qena-ophthalmology-hospital-cctv-surveillance",
+  title: "Qena Ophthalmology Hospital | Comprehensive CCTV Surveillance System",
+  client: "Qena Ophthalmology Hospital",
+  location: "Qena, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Qena Ophthalmology Hospital required a reliable surveillance system to enhance security, monitor critical areas, and maintain continuous visibility across the facility while supporting a safe environment for patients, visitors, and staff.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas to provide effective coverage and enable continuous monitoring of the hospital.",
+  result:
+    "The CCTV solution strengthened the hospital's security and monitoring capabilities, providing real-time visibility and recorded footage to support incident detection, investigation, and overall safety across the facility.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 6) Shibin El Qanater Hospital
+{
+  slug: "shibin-el-qanater-hospital-cctv-access-control",
+  title: "Shibin El Qanater Hospital | Integrated CCTV & Access Control Solution",
+  client: "Shibin El Qanater Hospital",
+  location: "Shibin El Qanater, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "access-control",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Shibin El Qanater Hospital required an integrated security solution to monitor the facility, protect critical areas, and regulate access to restricted spaces while maintaining a safe environment for patients, visitors, and staff.",
+  solution:
+    "Arab Security Group implemented an integrated CCTV surveillance and access control system, providing continuous monitoring across key areas while managing entry and securing restricted zones within the hospital.",
+  result:
+    "The solution enhanced the hospital's overall security and access management, providing real-time surveillance, controlled entry, and recorded footage to support incident detection, investigation, and improved safety across the facility.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Access Control", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "Security Efficiency", value: 99, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+// 7) Atfih Hospital
+{
+  slug: "atfih-hospital-cctv-surveillance",
+  title: "Atfih Hospital | Comprehensive CCTV Surveillance System",
+  client: "Atfih Hospital",
+  location: "Atfih, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Atfih Hospital required a reliable surveillance system to strengthen security across the facility, monitor critical areas, and maintain continuous visibility to support the safety of patients, visitors, staff, and hospital assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas of the hospital to provide effective coverage and continuous monitoring.",
+  result:
+    "The CCTV solution enhanced the hospital's security and visibility, enabling real-time monitoring and access to recorded footage to support incident detection, investigation, and overall safety across the facility.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 8) Roshdy Pharmacies
+{
+  slug: "roshdy-pharmacies-cctv-surveillance",
+  title: "Roshdy Pharmacies | Multi-Branch CCTV Surveillance System",
+  client: "Roshdy Pharmacies",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "retail-commercial-centers",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Roshdy Pharmacies required a reliable surveillance solution to enhance security across its branches, monitor key areas, and maintain continuous visibility to protect employees, customers, inventory, and other valuable assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system across the pharmacies, strategically positioning cameras to provide effective coverage of critical areas and support continuous monitoring.",
+  result:
+    "The CCTV solution strengthened security and visibility across the pharmacies, enabling real-time monitoring and access to recorded footage to support incident detection, investigation, and improved operational security.",
+  impactMetrics: [
+    { label: "Branch Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Security Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 9) Nasr Petroleum
+{
+  slug: "nasr-petroleum-access-control-turnstiles",
+  title: "Nasr Petroleum | Integrated Access Control & Turnstile Solution",
+  client: "Nasr Petroleum",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "industrial-manufacturing",
+  solutionsUsed: [
+    "access-control",
+    "physical-security",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Nasr Petroleum required a secure and efficient access management solution to regulate entry and exit, prevent unauthorized access, and ensure controlled movement of employees and visitors across the facility.",
+  solution:
+    "Arab Security Group implemented an access control system integrated with full-height turnstiles, providing secure physical barriers and controlled entry points while allowing authorized personnel to move efficiently through the facility.",
+  result:
+    "The solution strengthened access security and improved control over personnel movement, reducing the risk of unauthorized entry while providing a more organized and secure access experience for employees and visitors.",
+  impactMetrics: [
+    { label: "Access Coverage", value: 100, suffix: "%" },
+    { label: "Controlled Entry", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Security Efficiency", value: 99, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+// 10) EMC
+{
+  slug: "emc-cctv-surveillance",
+  title: "EMC | Comprehensive CCTV Surveillance System",
+  client: "EMC",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "commercial-corporate",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "EMC required a reliable surveillance solution to strengthen security across its facilities, monitor critical areas, and maintain continuous visibility to protect employees, visitors, and valuable assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas to provide effective coverage and enable continuous monitoring of the facility.",
+  result:
+    "The CCTV solution enhanced EMC's overall security and visibility, providing real-time monitoring and recorded footage to support incident detection, investigation, and improved day-to-day security operations.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 11) TotalEnergies
+{
+  slug: "totalenergies-mobile-fleet-monitoring",
+  title: "TotalEnergies | Mobile Fleet Monitoring Solution",
+  client: "TotalEnergies",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "transportation-logistics",
+  solutionsUsed: [
+    "smart-intelligent",
+    "parking-traffic",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "TotalEnergies required an effective solution to improve visibility and control over its mobile fleet, enabling better monitoring of vehicles and supporting safer, more efficient fleet operations.",
+  solution:
+    "Arab Security Group implemented a mobile monitoring solution across TotalEnergies' fleet, providing real-time vehicle tracking and visibility into fleet movements to support centralized monitoring and operational management.",
+  result:
+    "The solution enhanced fleet visibility and operational control, allowing TotalEnergies to monitor vehicle movements more effectively, improve fleet management, and support safer and more efficient day-to-day operations.",
+  impactMetrics: [
+    { label: "Fleet Coverage", value: 100, suffix: "%" },
+    { label: "Real-Time Monitoring", value: 24, suffix: "/7" },
+    { label: "Fleet Visibility", value: 100, suffix: "%" },
+    { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 12) Benban
+{
+  slug: "benban-thermal-surveillance",
+  title: "Benban | Thermal Surveillance Solution",
+  client: "Benban",
+  location: "Benban, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "industrial-manufacturing",
+  solutionsUsed: [
+    "smart-intelligent",
+    "integrated-security",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "The Benban site required a reliable surveillance solution capable of monitoring large and critical areas, particularly in challenging environmental conditions where traditional cameras may have limited visibility.",
+  solution:
+    "Arab Security Group implemented thermal camera technology to provide continuous monitoring and detect heat signatures across critical areas, ensuring reliable surveillance even in low-light and challenging visibility conditions.",
+  result:
+    "The thermal surveillance solution enhanced site security and monitoring capabilities, providing reliable detection and improved visibility in difficult conditions while supporting faster identification of potential security incidents.",
+  impactMetrics: [
+    { label: "Monitoring Coverage", value: 100, suffix: "%" },
+    { label: "Operation", value: 24, suffix: "/7" },
+    { label: "Detection Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 13) Petrochemicals Company
+{
+  slug: "petrochemicals-company-cctv-surveillance",
+  title: "Petrochemicals Company | High-Performance CCTV Surveillance System",
+  client: "Petrochemicals Company",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "industrial-manufacturing",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "The Petrochemicals Company required a reliable and high-performance surveillance solution to monitor critical areas, strengthen facility security, and maintain continuous visibility across its industrial environment.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically deploying cameras across key areas to provide high-quality monitoring, reliable coverage, and continuous visibility throughout the facility.",
+  result:
+    "The CCTV solution enhanced overall security and monitoring capabilities, providing clear surveillance and recorded footage to support incident detection, investigation, and improved operational security across the facility.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Monitoring Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 14) Petroleum Pipelines
+{
+  slug: "petroleum-pipelines-cctv-surveillance",
+  title: "Petroleum Pipelines | Comprehensive CCTV Surveillance System",
+  client: "Petroleum Pipelines",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "industrial-manufacturing",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Petroleum Pipelines required a reliable surveillance solution to strengthen security across its facilities, monitor critical areas, and maintain continuous visibility to protect infrastructure, equipment, and personnel.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas to provide effective coverage and continuous monitoring of the facility.",
+  result:
+    "The CCTV solution enhanced security and visibility across the site, enabling real-time monitoring and access to recorded footage to support incident detection, investigation, and improved protection of critical infrastructure.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Infrastructure Protection", value: 100, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+// 15) National Bank of Kuwait
+{
+  slug: "national-bank-kuwait-light-current-infrastructure",
+  title: "National Bank of Kuwait | Integrated Light Current Infrastructure",
+  client: "National Bank of Kuwait",
+  location: "Kuwait",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "commercial-corporate",
+  solutionsUsed: [
+    "light-current-elv",
+    "integrated-security",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "National Bank of Kuwait required an integrated light current infrastructure to support reliable communication, security, and technology systems while ensuring efficient operation across its facilities.",
+  solution:
+    "Arab Security Group delivered a comprehensive light current package, integrating the required low-current systems and infrastructure to provide a reliable, organized, and scalable technology environment for the bank.",
+  result:
+    "The solution enhanced the facility's technological infrastructure, supporting reliable system performance, improved operational efficiency, and a more secure and connected environment tailored to the bank's requirements.",
+  impactMetrics: [
+    { label: "Infrastructure Coverage", value: 100, suffix: "%" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Operational Availability", value: 24, suffix: "/7" },
+    { label: "Infrastructure Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 16) Faisal Bank
+{
+  slug: "faisal-bank-atm-solution",
+  title: "Faisal Bank | Integrated ATM Solution",
+  client: "Faisal Bank",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "commercial-corporate",
+  solutionsUsed: [
+    "smart-intelligent",
+    "integrated-security",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Faisal Bank required a reliable ATM solution to support secure, efficient, and convenient banking services while ensuring consistent availability and smooth customer access to essential transactions.",
+  solution:
+    "Arab Security Group implemented an integrated ATM solution designed to support secure and reliable ATM operations, providing the required infrastructure and systems for efficient service delivery.",
+  result:
+    "The solution enhanced ATM availability and operational efficiency, providing customers with convenient access to banking services while supporting secure and reliable day-to-day ATM operations.",
+  impactMetrics: [
+    { label: "ATM Availability", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Service Reliability", value: 99, suffix: "%" },
+    { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 17) Agricultural Bank
+{
+  slug: "agricultural-bank-integrated-security-genetec",
+  title: "Agricultural Bank | Integrated Security & Genetec Solution",
+  client: "Agricultural Bank",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "commercial-corporate",
+  solutionsUsed: [
+    "integrated-security",
+    "access-control",
+    "parking-traffic",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "The Agricultural Bank required an integrated security solution to monitor its facilities, control access, manage vehicle entry and exit, and centralize security operations across its premises.",
+  solution:
+    "Arab Security Group implemented a comprehensive solution combining CCTV surveillance, access control, vehicle barriers, and Genetec security software to provide centralized monitoring, controlled access, and efficient security management.",
+  result:
+    "The integrated solution strengthened the bank's overall security infrastructure, improved visibility and access management, enhanced vehicle control, and enabled centralized security monitoring and management through Genetec software.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Access Control", value: 100, suffix: "%" },
+    { label: "Vehicle Access Control", value: 100, suffix: "%" },
+    { label: "Centralized Monitoring", value: 100, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+// 18) KFH Bank
+{
+  slug: "kfh-bank-lpr-vehicle-access",
+  title: "KFH Bank | LPR & Vehicle Access Control Solution",
+  client: "KFH Bank",
+  location: "Kuwait",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "commercial-corporate",
+  solutionsUsed: [
+    "parking-traffic",
+    "access-control",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "KFH Bank required a secure and efficient vehicle access solution to manage entry and exit, control parking access, and improve visibility over vehicles accessing the facility.",
+  solution:
+    "Arab Security Group implemented a License Plate Recognition (LPR) system integrated with vehicle barriers, enabling automatic license plate recognition and controlled vehicle entry and exit for a more organized access process.",
+  result:
+    "The solution enhanced vehicle access security and improved traffic management, providing automated identification, controlled entry and exit, and greater visibility over vehicles accessing the bank's premises.",
+  impactMetrics: [
+    { label: "Vehicle Access Coverage", value: 100, suffix: "%" },
+    { label: "LPR Identification", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Access Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 19) River Transport Authority
+{
+  slug: "river-transport-authority-mobile-monitoring",
+  title: "River Transport Authority | Mobile Fleet Monitoring Solution",
+  client: "River Transport Authority",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "transportation-logistics",
+  solutionsUsed: [
+    "smart-intelligent",
+    "parking-traffic",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "The River Transport Authority required a solution to improve visibility and control over its mobile assets, enabling better monitoring of fleet movements and supporting more efficient day-to-day transportation operations.",
+  solution:
+    "Arab Security Group implemented a mobile monitoring solution to provide real-time visibility over mobile assets, allowing the authority to track movements and monitor fleet operations from a centralized platform.",
+  result:
+    "The solution improved fleet visibility and operational control, enabling more effective monitoring of mobile assets, better movement management, and increased efficiency across daily transportation operations.",
+  impactMetrics: [
+    { label: "Fleet Coverage", value: 100, suffix: "%" },
+    { label: "Real-Time Monitoring", value: 24, suffix: "/7" },
+    { label: "Asset Visibility", value: 100, suffix: "%" },
+    { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 20) Electricity Company
+{
+  slug: "electricity-company-cctv-infrastructure",
+  title: "Electricity Company | CCTV & Security Infrastructure Solution",
+  client: "Electricity Company",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "industrial-manufacturing",
+  solutionsUsed: [
+    "integrated-security",
+    "light-current-elv",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "The Electricity Company required a reliable security and infrastructure solution to strengthen surveillance across its facilities while providing the necessary infrastructure to support efficient and dependable system operation.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV system supported by the required infrastructure, providing effective surveillance coverage across key areas and a reliable foundation for the security system.",
+  result:
+    "The integrated solution enhanced facility security and monitoring while establishing dependable infrastructure that supports continuous CCTV operation, improved visibility, and more effective management of security across the site.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "CCTV Operation", value: 24, suffix: "/7" },
+    { label: "Infrastructure Reliability", value: 99, suffix: "%" },
+    { label: "Monitoring Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 21) Operations Room Department
+{
+  slug: "operations-room-cctv-video-wall",
+  title: "Operations Room | Centralized CCTV & Video Wall Solution",
+  client: "Operations Room Department",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "government-public-sector",
+  solutionsUsed: [
+    "integrated-security",
+    "audio-visual",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "The Operations Room Department required a centralized solution to monitor multiple areas in real time and display surveillance feeds clearly, enabling operators to maintain better situational awareness and respond quickly to incidents.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV system integrated with a professional video wall, enabling centralized monitoring and clear visualization of multiple camera feeds from the operations room.",
+  result:
+    "The solution enhanced situational awareness and operational control by providing centralized, real-time surveillance and clear visualization of multiple feeds, enabling operators to monitor activities more effectively and support faster incident response.",
+  impactMetrics: [
+    { label: "Monitoring Coverage", value: 100, suffix: "%" },
+    { label: "Video Wall Coverage", value: 100, suffix: "%" },
+    { label: "Monitoring Operation", value: 24, suffix: "/7" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 22) Hurghada Port
+{
+  slug: "hurghada-port-cctv-vehicle-access",
+  title: "Hurghada Port | Integrated CCTV & Vehicle Access Solution",
+  client: "Hurghada Port",
+  location: "Hurghada, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "transportation-logistics",
+  solutionsUsed: [
+    "integrated-security",
+    "parking-traffic",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Hurghada Port required an integrated security solution to strengthen surveillance across the port while improving control over vehicle entry and exit and maintaining a secure and organized flow of traffic.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system alongside vehicle barriers, providing continuous monitoring of critical areas and controlled vehicle access throughout the port.",
+  result:
+    "The solution enhanced overall port security and visibility while improving vehicle access management. CCTV provided continuous surveillance, while the barriers helped regulate entry and exit, supporting a safer and more controlled port environment.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Vehicle Access Control", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "Traffic Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 23) CAPMAS
+{
+  slug: "capmas-cctv-surveillance",
+  title: "CAPMAS | Comprehensive CCTV Surveillance System",
+  client: "Central Agency for Public Mobilization and Statistics",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "government-public-sector",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "The Central Agency for Public Mobilization and Statistics required a reliable surveillance solution to enhance security across its facilities, monitor critical areas, and maintain continuous visibility over staff, visitors, and assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas to provide effective coverage and enable continuous monitoring of the facility.",
+  result:
+    "The CCTV solution strengthened overall security and visibility, providing real-time monitoring and recorded footage to support incident detection, investigation, and more effective security management across the agency's facilities.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Security Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 24) Sharm Inn
+{
+  slug: "sharm-inn-cctv-wifi-solution",
+  title: "Sharm Inn | Integrated CCTV & Wi-Fi Solution",
+  client: "Sharm Inn",
+  location: "Sharm El Sheikh, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "hospitality",
+  solutionsUsed: [
+    "integrated-security",
+    "light-current-elv",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Sharm Inn required an integrated solution to enhance property security while providing reliable wireless connectivity across the hotel, ensuring a seamless experience for guests and efficient connectivity for staff.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system alongside a reliable Wi-Fi network, providing continuous monitoring of key areas and dependable wireless connectivity throughout the property.",
+  result:
+    "The integrated solution enhanced hotel security and improved connectivity, enabling effective surveillance across the property while providing guests and staff with reliable Wi-Fi access for a more connected and efficient environment.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Wi-Fi Coverage", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Network Reliability", value: 99, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+// 25) Green Sahel
+{
+  slug: "green-sahel-cctv-surveillance",
+  title: "Green Compound North Coast | Comprehensive CCTV Surveillance System",
+  client: "Green Compound North Coast",
+  location: "North Coast, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Green Compound North Coast required a reliable surveillance solution to enhance security across the compound, monitor key areas, and maintain continuous visibility to support the safety of residents, visitors, and property assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas to provide effective coverage and enable continuous monitoring throughout the compound.",
+  result:
+    "The CCTV solution strengthened security and visibility across the compound, enabling real-time monitoring and access to recorded footage to support incident detection, investigation, and improved overall security management.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Security Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 26) Barceló Tiran
+{
+  slug: "barcelo-tiran-cctv-security-screening",
+  title: "Barceló Tiran | Integrated CCTV & Security Screening Solution",
+  client: "Barceló Tiran",
+  location: "Sharm El Sheikh, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "hospitality",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Barceló Tiran required an integrated security solution to enhance surveillance across the property while strengthening screening procedures at entry points and improving the detection of prohibited or potentially dangerous items.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV system alongside X-ray screening and metal detection gates, providing continuous surveillance and enhanced security screening at key access points throughout the property.",
+  result:
+    "The integrated solution strengthened overall security by combining continuous visual monitoring with advanced entry screening, enabling the property to better detect potential security threats and maintain a safer environment for guests, visitors, and staff.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Entry Screening", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "Security Efficiency", value: 99, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+// 27) Al Araby Compound
+{
+  slug: "al-araby-compound-integrated-smart-systems",
+  title: "Al Araby Compound | Integrated Security & Smart Community Solution",
+  client: "Al Araby Compound",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+    "light-current-elv",
+    "audio-visual",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Al Araby Compound required an integrated technology solution to enhance security, connectivity, communication, and smart management across the community while providing residents with a more connected and efficient living environment.",
+  solution:
+    "Arab Security Group implemented a comprehensive solution combining CCTV, Wi-Fi, public address systems, and smart systems to provide integrated security, reliable connectivity, effective communication, and intelligent control across the compound.",
+  result:
+    "The integrated solution enhanced security, connectivity, communication, and smart functionality throughout the compound, creating a more connected, efficient, and technologically advanced environment for residents, visitors, and management.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Connectivity Coverage", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Smart Infrastructure", value: 100, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+// 28) Fouka Bay
+{
+  slug: "fouka-bay-access-control",
+  title: "Fouka Bay | Integrated Access Control Solution",
+  client: "Fouka Bay",
+  location: "North Coast, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "access-control",
+    "integrated-security",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Fouka Bay required a reliable access control solution to regulate entry and exit, protect restricted areas, and ensure that only authorized individuals could access designated facilities across the development.",
+  solution:
+    "Arab Security Group implemented a comprehensive access control system, providing controlled entry points and secure access management across key areas of Fouka Bay.",
+  result:
+    "The solution strengthened overall security and access management, enabling controlled entry, reducing the risk of unauthorized access, and providing a more organized and secure environment for residents, visitors, and staff.",
+  impactMetrics: [
+    { label: "Access Coverage", value: 100, suffix: "%" },
+    { label: "Controlled Entry", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Security Efficiency", value: 99, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+// 29) Madinaty
+{
+  slug: "madinaty-safe-city-solution",
+  title: "Madinaty | Safe City Security & Monitoring Solution",
+  client: "Madinaty",
+  location: "Cairo, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "residential-mixed-use",
+  solutionsUsed: [
+    "smart-intelligent",
+    "integrated-security",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Madinaty required an integrated security approach to monitor public areas, enhance situational awareness, and support effective management of security across the large-scale community and its surrounding infrastructure.",
+  solution:
+    "Arab Security Group implemented a Safe City solution designed to provide centralized monitoring and enhanced visibility across key areas, supporting security teams with the technology required to monitor and manage the community effectively.",
+  result:
+    "The Safe City solution strengthened security and situational awareness across Madinaty, enabling more effective monitoring of public areas, faster identification of incidents, and improved coordination of security operations throughout the community.",
+  impactMetrics: [
+    { label: "Monitoring Coverage", value: 100, suffix: "%" },
+    { label: "Centralized Monitoring", value: 100, suffix: "%" },
+    { label: "Operation", value: 24, suffix: "/7" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 30) Agiba Petroleum
+{
+  slug: "agiba-petroleum-speed-detection",
+  title: "Agiba Petroleum | Vehicle Speed Detection Solution",
+  client: "Agiba Petroleum",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "industrial-manufacturing",
+  solutionsUsed: [
+    "parking-traffic",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Agiba Petroleum required a reliable solution to monitor vehicle speeds within its premises, helping improve road safety and encourage compliance with designated speed limits across the site.",
+  solution:
+    "Arab Security Group implemented speed detection cameras to monitor vehicle speeds and identify speeding incidents, providing effective surveillance and supporting better control of vehicle movement across the facility.",
+  result:
+    "The solution improved road safety and traffic control by enabling continuous speed monitoring, supporting the identification of speeding vehicles, and encouraging safer driving practices across the facility.",
+  impactMetrics: [
+    { label: "Speed Monitoring", value: 100, suffix: "%" },
+    { label: "Traffic Operation", value: 24, suffix: "/7" },
+    { label: "Detection Reliability", value: 99, suffix: "%" },
+    { label: "Road Safety Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+// 31) Sea Beach Sharm
+{
+  slug: "sea-beach-sharm-cctv-surveillance",
+  title: "Sea Beach Sharm | Comprehensive CCTV Surveillance System",
+  client: "Sea Beach Sharm",
+  location: "Sharm El Sheikh, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "hospitality",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Sea Beach Sharm required a reliable surveillance solution to enhance security across the property, monitor key areas, and maintain continuous visibility to support the safety of guests, visitors, staff, and assets.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas to provide effective coverage and enable continuous monitoring throughout the property.",
+  result:
+    "The CCTV solution enhanced the property's overall security and visibility, providing real-time monitoring and recorded footage to support incident detection, investigation, and improved security management.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
 ];
 
 export function getProjects(): Project[] {
