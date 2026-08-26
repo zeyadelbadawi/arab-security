@@ -1187,6 +1187,332 @@ export const projects: Project[] = [
   isFeatured: false,
 },
 
+{
+  slug: "aluminum-factory-cctv-surveillance",
+  title: "Aluminum Factory | Comprehensive CCTV Surveillance System",
+  client: "Aluminum Factory",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "industrial-manufacturing",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "The aluminum factory required a reliable surveillance system to monitor production areas, entrances, exits, and critical facilities while maintaining continuous visibility across the site and improving overall security and operational control.",
+  solution:
+    "Arab Security Group designed and installed a comprehensive CCTV surveillance system across the factory, strategically positioning cameras to provide effective coverage of key areas and enable centralized monitoring of activities throughout the facility.",
+  result:
+    "The CCTV system enhanced the factory's security and visibility, enabling real-time monitoring, faster detection of incidents, and improved control over the facility. The solution also provided recorded footage to support investigations and strengthen overall operational security.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Monitoring Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+
+  {
+  slug: "qena-paper-industries-cctv-surveillance",
+  title: "Qena Paper Industries | Comprehensive CCTV Surveillance System",
+  client: "Qena Paper Industries",
+  location: "Qena, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "industrial-manufacturing",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Qena Paper Industries required an effective security and surveillance system capable of monitoring its industrial premises, critical areas, and access points while maintaining continuous visibility across the site.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas of the facility to provide reliable coverage and centralized monitoring.",
+  result:
+    "The CCTV solution enhanced overall security and visibility across the facility, enabling real-time monitoring, incident detection, and access to recorded footage whenever needed for investigation and operational control.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Monitoring Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+
+  {
+  slug: "350-healthcare-cctv-display-solution",
+  title: "350 Healthcare | Integrated CCTV & Display Solution",
+  client: "350 Healthcare",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "audio-visual",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "350 Healthcare required an integrated solution to enhance security and monitoring across its facilities while ensuring important information could be clearly displayed and easily accessed by staff and visitors.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system alongside professional display screens, providing reliable monitoring of key areas while supporting clear and effective visual communication throughout the facility.",
+  result:
+    "The integrated solution improved security visibility and monitoring while enhancing information display across the facility. CCTV enabled effective surveillance and recorded footage, while the screens provided a clear and professional platform for displaying important content.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Display Coverage", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "57357-hospital-cctv-surveillance",
+  title: "57357 Hospital | Comprehensive CCTV Surveillance System",
+  client: "57357 Hospital",
+  location: "Cairo, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "57357 Hospital required a reliable surveillance solution to enhance security across its healthcare environment, monitor critical areas, and maintain continuous visibility while ensuring a safe environment for patients, visitors, and staff.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system across the hospital, strategically positioning cameras to provide effective coverage of key areas and enable continuous monitoring of the facility.",
+  result:
+    "The CCTV solution strengthened the hospital's security and monitoring capabilities, providing real-time visibility and recorded footage to support incident detection, investigation, and overall safety across the facility.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "al-salam-hospital-cctv-surveillance",
+  title: "Al Salam Hospital | Comprehensive CCTV Surveillance System",
+  client: "Al Salam Hospital",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Al Salam Hospital required a reliable surveillance system to enhance security across the facility, monitor critical areas, and maintain continuous visibility while supporting a safe environment for patients, visitors, and staff.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV system across the hospital, strategically installing cameras in key areas to provide effective coverage, continuous monitoring, and improved security control.",
+  result:
+    "The CCTV solution enhanced the hospital's overall security and visibility, enabling real-time monitoring and access to recorded footage to support incident detection, investigation, and day-to-day security operations.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "al-salam-hospital-cctv-surveillance",
+  title: "Al Salam Hospital | Comprehensive CCTV Surveillance System",
+  client: "Al Salam Hospital",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Al Salam Hospital required a reliable surveillance system to enhance security across the facility, monitor critical areas, and maintain continuous visibility while supporting a safe environment for patients, visitors, and staff.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV system across the hospital, strategically installing cameras in key areas to provide effective coverage, continuous monitoring, and improved security control.",
+  result:
+    "The CCTV solution enhanced the hospital's overall security and visibility, enabling real-time monitoring and access to recorded footage to support incident detection, investigation, and day-to-day security operations.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "abu-qurqas-hospital-security-solution",
+  title: "Abu Qurqas Hospital | Integrated CCTV & Access Control Solution",
+  client: "Abu Qurqas Hospital",
+  location: "Abu Qurqas, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "access-control",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Abu Qurqas Hospital required an integrated security solution to monitor the facility, protect critical areas, and control access to authorized personnel while maintaining a safe environment for patients, visitors, and staff.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance and access control system, combining continuous monitoring with controlled entry to secure key areas and improve overall security management.",
+  result:
+    "The integrated solution strengthened the hospital's security infrastructure by providing enhanced surveillance and controlled access. This enabled better monitoring of activities, restricted unauthorized entry, and improved overall safety and security across the facility.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Access Control", value: 100, suffix: "%" },
+    { label: "System Operation", value: 24, suffix: "/7" },
+    { label: "Security Efficiency", value: 99, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+
+  {
+  slug: "air-force-hospital-parking-management",
+  title: "Air Force Hospital | Smart Parking Management Solution",
+  client: "Air Force Hospital",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "parking-traffic",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "The Air Force Hospital required an efficient parking solution to better organize vehicle movement, manage available parking spaces, and provide a smoother experience for patients, visitors, and staff.",
+  solution:
+    "Arab Security Group implemented a professional parking management solution designed to organize vehicle entry and exit, improve traffic flow, and support efficient utilization of the hospital's parking facilities.",
+  result:
+    "The parking solution improved vehicle flow and parking organization, creating a more efficient and controlled parking experience while helping the hospital manage its parking facilities more effectively.",
+  impactMetrics: [
+    { label: "Parking Coverage", value: 100, suffix: "%" },
+    { label: "Vehicle Flow", value: 100, suffix: "%" },
+    { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
+    { label: "Parking Management", value: 100, suffix: "%" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "seif-pharmacies-cctv-surveillance",
+  title: "Seif Pharmacies | Multi-Branch CCTV Surveillance System",
+  client: "Seif Pharmacies",
+  location: "Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "retail-commercial-centers",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Seif Pharmacies required a reliable surveillance solution to enhance security across its branches, monitor key areas, and maintain continuous visibility to protect employees, customers, and assets.",
+  solution:
+    "Arab Security Group implemented a CCTV surveillance system across the pharmacies, strategically installing cameras to provide effective coverage of critical areas and enable continuous monitoring of daily operations.",
+  result:
+    "The CCTV solution strengthened security and visibility across the pharmacies, enabling real-time monitoring and access to recorded footage to support incident detection, investigation, and overall operational security.",
+  impactMetrics: [
+    { label: "Branch Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Security Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+  {
+  slug: "qena-ophthalmology-hospital-cctv-surveillance",
+  title: "Qena Ophthalmology Hospital | Comprehensive CCTV Surveillance System",
+  client: "Qena Ophthalmology Hospital",
+  location: "Qena, Egypt",
+  duration: "N/A",
+  heroImage: "",
+  galleryImages: [],
+  industry: "Healthcare",
+  solutionsUsed: [
+    "integrated-security",
+    "smart-intelligent",
+  ],
+  servicesProvided: [
+    "installation-commissioning",
+    "testing-integration",
+  ],
+  challenge:
+    "Qena Ophthalmology Hospital required a reliable surveillance system to enhance security, monitor critical areas, and maintain continuous visibility across the facility while supporting a safe environment for patients, visitors, and staff.",
+  solution:
+    "Arab Security Group implemented a comprehensive CCTV surveillance system, strategically installing cameras across key areas to provide effective coverage and enable continuous monitoring of the hospital.",
+  result:
+    "The CCTV solution strengthened the hospital's security and monitoring capabilities, providing real-time visibility and recorded footage to support incident detection, investigation, and overall safety across the facility.",
+  impactMetrics: [
+    { label: "Security Coverage", value: 100, suffix: "%" },
+    { label: "Surveillance Operation", value: 24, suffix: "/7" },
+    { label: "System Reliability", value: 99, suffix: "%" },
+    { label: "Response Efficiency", value: 40, suffix: "% ↑" },
+  ],
+  isFeatured: false,
+},
+
+
+
+  
+  
 ];
 
 export function getProjects(): Project[] {
