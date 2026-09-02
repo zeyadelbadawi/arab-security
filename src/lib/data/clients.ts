@@ -77,7 +77,7 @@ export const clients: Client[] = [
   { slug: "national-authority-for-management-and-investment", name: "National Authority for Management and Investment", logo: "/assets/clients/national-authority-for-management-and-investment.png", industry: "real-estate", isFeatured: false },
   { slug: "hassan-allam-construction", name: "Hassan Allam Construction", logo: "/assets/clients/hassan-allam-trading-and-engineering.png", industry: "real-estate", isFeatured: false },
   { slug: "shebin-el-kom-specialized-surgery-hospital", name: "Shebin El-Kom Specialized Surgery Hospital", logo: "/assets/clients/shebin-el-kom-specialized-surgery-hospital.png", industry: "healthcare", isFeatured: false },
-  { slug: "al-sakha-academy", name: "Al Sakha Academy", logo: "/assets/clients/alsakha.png", industry: "healthcare", isFeatured: false },
+  { slug: "al-sakha-academy", name: "Al Sakha Academy", logo: "/assets/clients/al-sakha-academy.png", industry: "healthcare", isFeatured: false },
   { slug: "cleopatra-hospitals-group", name: "Cleopatra Hospitals Group", logo: "/assets/clients/cleopatra-hospitals-group.png", industry: "healthcare", isFeatured: false },
   { slug: "pharco-corporation", name: "Pharco Corporation", logo: "/assets/clients/pharco-corporation.png", industry: "healthcare", isFeatured: false },
   { slug: "el-fekria-central-hospital", name: "El Fekria Central Hospital", logo: "/assets/clients/el-fekria-central-hospital.png", industry: "healthcare", isFeatured: false },
