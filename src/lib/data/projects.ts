@@ -9,7 +9,8 @@ export const projects: Project[] = [
   location: "Egypt",
   duration: "N/A",
   heroImage:
-    "https://imoukuwait.com/wp-content/uploads/2026/04/1-scaled.jpg",
+              "/assets/Emaar-Misr_1920x1080.jpg",
+
   galleryImages: [
           "/assets/Emaar-Misr_1920x1080.jpg",
     "https://imoukuwait.com/wp-content/uploads/2026/04/1-scaled.jpg",
