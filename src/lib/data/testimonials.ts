@@ -15,22 +15,16 @@ export const testimonials: Testimonial[] = [
     authorTitle: "Chief Technology Officer",
     authorCompany: "National Bank of Egypt",
   },
+
   {
     id: "3",
-    quote: "Working with Arab Security Group on our ministry's security upgrade was a seamless experience. Their understanding of government requirements and security protocols made them the ideal partner for this sensitive project.",
-    authorName: "Gen. Karim Abdel-Nour",
-    authorTitle: "Head of Security Operations",
-    authorCompany: "Ministry of Interior",
-  },
-  {
-    id: "4",
     quote: "Arab Security Group's maintenance and operations team has been managing our technology systems for over 3 years. Their proactive approach has reduced our system downtime by 90% and significantly improved our operational efficiency.",
     authorName: "Eng. Omar Tawfik",
     authorTitle: "Facility Operations Manager",
     authorCompany: "Vodafone Egypt",
   },
   {
-    id: "5",
+    id: "4",
     quote: "The smart parking and security solution Arab Security Group implemented at our mall has dramatically improved the visitor experience. Parking throughput increased by 50%, and our tenants love the people counting analytics.",
     authorName: "Mr. Hossam El-Din",
     authorTitle: "General Manager",
