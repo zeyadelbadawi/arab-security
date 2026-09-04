@@ -9,11 +9,9 @@ export const projects: Project[] = [
   location: "Egypt",
   duration: "N/A",
   heroImage:
-              "/assets/s.jpg",
+    "https://imoukuwait.com/wp-content/uploads/2026/04/1-scaled.jpg",
 
   galleryImages: [
-          "/assets/s.jpg",
-    "https://imoukuwait.com/wp-content/uploads/2026/04/1-scaled.jpg",
     "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-2.jpeg",
     "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-5.jpeg",
     "https://imoukuwait.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-28-at-4.25.36-PM-8.jpeg",
@@ -214,44 +212,10 @@ export const projects: Project[] = [
     { label: "System Operation", value: 24, suffix: "/7" },
     { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
   ],
-  isFeatured: false,
+  isFeatured: true,
 },
 
-  {
-  slug: "orascom-hotel-management-integrated-hotel-technology",
-  title: "Orascom Hotel Management | Integrated Hotel Technology Solutions",
-  client: "Orascom Hotel Management",
-  location: "Egypt",
-  duration: "N/A",
-  heroImage: "",
-  galleryImages: [],
-  industry: "hospitality",
-  solutionsUsed: [
-    "integrated-security",
-    "smart-intelligent",
-    "light-current-elv",
-    "audio-visual",
-    "access-control",
-  ],
-  servicesProvided: [
-    "installation-commissioning",
-    "testing-integration",
-  ],
-  challenge:
-    "Orascom Hotel Management required a reliable and scalable technology infrastructure to enhance security, communication, and operational efficiency across 19 hotel properties while maintaining a consistent guest experience.",
-  solution:
-    "Arab Security Group delivered comprehensive integrated solutions across 19 hotels, including security systems, surveillance, access control, networking, public address, and smart building technologies tailored to each property's operational needs.",
-  result:
-    "The project enhanced safety, streamlined hotel operations, improved communication, and delivered a secure, efficient, and seamless experience for both guests and hotel management across all locations.",
-  impactMetrics: [
-    { label: "Hotels Covered", value: 19, suffix: " Properties" },
-    { label: "Security Coverage", value: 100, suffix: "%" },
-    { label: "System Operation", value: 24, suffix: "/7" },
-    { label: "Operational Efficiency", value: 40, suffix: "% ↑" },
-  ],
-  isFeatured: false,
-},
-
+ 
   {
   slug: "sunrise-hotels-cctv-surveillance",
   title: "Sunrise Hotels | Comprehensive CCTV Surveillance System",
@@ -713,7 +677,7 @@ export const projects: Project[] = [
     { label: "System Operation", value: 24, suffix: "/7" },
     { label: "Security Efficiency", value: 99, suffix: "%" },
   ],
-  isFeatured: false,
+  isFeatured: true,
 },
 
   {
