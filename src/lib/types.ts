@@ -198,6 +198,7 @@ export interface SiteConfig {
   tagline: string;
   description: string;
   phone: string;
+  phones: string[];
   email: string;
   address: string;
   socialLinks: SocialLink[];
