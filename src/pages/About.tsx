@@ -15,7 +15,7 @@ const historyTimeline = [
   { year: "2015", title: "Expanded to ELV & Networking", description: "Broadened our portfolio to include structured cabling, networking, and ELV systems." },
   { year: "2018", title: "Smart Solutions Division", description: "Launched our smart building and IoT solutions division to meet growing market demand." },
   { year: "2020", title: "Regional Expansion", description: "Opened our UAE Branch and expanded operations across the MENA region." },
-  { year: "2023", title: "Saudi Arabia Office", description: "Opened our Riyadh office to serve clients across the GCC region." },
+  { year: "2023", title: "300+ Projects Milestone", description: "Celebrated the delivery of over 300 successful projects across 10 industries." },
   { year: "2025", title: "500+ Projects Milestone", description: "Celebrated the delivery of over 500 successful projects across 10 industries." },
 ];
 
