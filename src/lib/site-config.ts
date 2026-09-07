@@ -5,6 +5,7 @@ export const siteConfig: SiteConfig = {
   tagline: "More Secure Than Ever",
   description: "Integrated Security & Technology Solutions for the Enterprise. From design to deployment and beyond — Arab Security Group delivers end-to-end systems integration for organizations that demand reliability.",
   phone: "0223495290",
+  phones: ["0223495290", "01097111713", "0223495291"],
   email: "infoegypt@arab-security.com",
   address: "4 Dr. Mohamed Awad, Al Mintaqah as Sādisah, Nasr City, Cairo, Egypt",
   socialLinks: [
