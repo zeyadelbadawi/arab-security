@@ -184,11 +184,15 @@ export function Footer() {
                 <MapPin className="w-4 h-4 text-teal mt-0.5 flex-shrink-0" />
                 <span className="text-white/60 text-sm">{siteConfig.address}</span>
               </li>
-              <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-teal flex-shrink-0" />
-                <a href={`tel:${siteConfig.phone}`} className="text-white/60 hover:text-teal text-sm transition-colors">
-                  {siteConfig.phone}
-                </a>
+              <li className="flex items-start gap-3">
+                <Phone className="w-4 h-4 text-teal mt-0.5 flex-shrink-0" />
+                <div className="flex flex-col gap-1">
+                  {siteConfig.phones.map((phone) => (
+                    <a key={phone} href={`tel:${phone}`} className="text-white/60 hover:text-teal text-sm transition-colors">
+                      {phone}
+                    </a>
+                  ))}
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-teal flex-shrink-0" />
