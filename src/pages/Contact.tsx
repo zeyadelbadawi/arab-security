@@ -124,7 +124,11 @@ const sectors = [
                       <Phone className="w-5 h-5 text-teal mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="text-white/60 text-xs mb-1">Phone</p>
-                        <a href={`tel:${siteConfig.phone}`} className="text-white hover:text-teal transition-colors text-sm">{siteConfig.phone}</a>
+                        <div className="flex flex-col gap-1">
+                          {siteConfig.phones.map((phone) => (
+                            <a key={phone} href={`tel:${phone}`} className="text-white hover:text-teal transition-colors text-sm">{phone}</a>
+                          ))}
+                        </div>
                       </div>
                     </div>
                     <div className="flex items-start gap-3">
